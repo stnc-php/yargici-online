@@ -1,0 +1,811 @@
+
+.mod-mini-login {
+    display:inline-block;
+    vertical-align: top;
+    .btn-signin {
+        display: block;
+        padding: 8px 10px;
+        display: none;
+        i {
+            font-style: normal;
+            display: inline-block;
+            vertical-align: middle;
+            width: 20px;
+            height: 20px;
+            text-align: center;
+        }
+        i:before {
+            font-size: 20px;
+            color: $colorDefault;
+            @include transition(all 0.2s ease);
+        }
+        span {
+            @include transition(all 0.2s ease);
+            display: none;
+        }
+    }
+    .btn-member{
+        display: block;
+        padding: 8px 10px;
+        i {
+            font-style: normal;
+            display: inline-block;
+            vertical-align: middle;
+            width: 20px;
+            height: 20px;
+            text-align: center;
+        }
+        i:before {
+            font-size: 20px;
+            color: $colorDefault;
+            @include transition(all 0.2s ease);
+        }
+        span {
+            @include transition(all 0.2s ease);
+            display: none;
+        }
+    }
+
+    .sub .ems-form {display: none;}
+    .mod-mini-login-body .sub.login,
+    .mod-mini-login-footer {
+        display: none;
+    }
+    .sub .ems-form {
+        position: absolute;
+        top: 60px;
+        left: -110px;
+        width: 335px;
+        background: #ffffff;
+        border-radius: 3px;
+        @include transition(all 0.2s ease);
+        &-inner{
+            padding: 20px;
+            .ems-field {
+                margin-bottom: 10px;
+                &.submit {
+                    margin-bottom: 0;
+                    .uyeGirisFacebookConnectKutu{
+                        border-top: 1px solid $borderColor;
+                        padding-top: 20px;
+                    }
+                }
+                &-double{
+                    text-align: right;
+                    padding-top: 10px;
+                    margin-bottom: 20px;
+                }
+                a.btnKutuLogin {
+                    width: 125px;
+                    text-align: center;
+                }
+                a#lnkSifremiUnuttum {
+                    float: left;
+                    line-height: 50px;
+                    span{ font-size: 12px; font-family: $fM; color: $text; text-decoration: underline; }
+                }
+                a.btnFacebookLoginKutu { width: 100%; }
+            }
+        }
+    }
+    .mod-mini-login-header {
+        position:relative;
+        cursor: pointer;
+        span {
+            font-size: 14px; 
+            font-family: $fontSite;
+        }
+    }
+    .mod-mini-login-body {
+        position:relative;
+        .sub.login {
+            position: absolute;
+            z-index: 2;
+            width:220px;
+            top: 10px;
+            left: 0;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 0 3px 3px 3px;
+            @include transition(all 0.2s ease);
+            span { font-size:14px; color: $title; @include transition(all .2s ease); }
+            & .btnKutuLogout {
+                text-align: left;
+                background: none;
+                padding: 0;
+                span { color: $red; }
+            }
+            a {
+                &:hover span {
+                    color: $text; 
+                }
+            }
+        }
+        .ems-col {
+            margin-bottom:15px;
+            &.title {
+                display: none;
+                span {
+                    margin-bottom: 20px;
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid $borderColor;
+                    display: block;
+                    font-family: $fD;
+                    font-size: 14px;
+                }
+            }
+        }
+    }   
+}
+
+.mod-mini-fav{
+    display: inline-block;
+    vertical-align: top;
+    > a {
+        display: block;
+        padding: 9px 10px 8px 10px;
+        i.icon-ico_hearth{
+            width: 20px;
+            height: 20px;
+            display: block;
+            &:before{
+                font-size: 20px;
+                color: $colorDefault;
+                @include transition(all 0.2s ease);
+            }
+        }
+    }
+}
+
+/*login sayfa*/
+.page-login {
+    display: table;
+    width: 100%;
+    .ems-right {
+        display: table-cell;
+        vertical-align: top;
+        width: 50%;
+        max-width: 565px;
+        text-align: left;
+        background: #fbfbfb;
+        padding: 35px 0 30px 40px;
+    }
+    &-inline{
+        background:url(#{$baseHref + "/lab/projects/yargici/upload/banners/page-cover/login-cover.jpg"}) no-repeat;
+        background-size: cover;
+        background-position: top left;
+    } 
+    .ems-login, .ems-signup {
+        &-header {
+            font-family: $fB;
+            font-size: 18px;
+            padding: 0 0 20px 0;
+            letter-spacing: 2px;
+        }
+        &-desc{
+            span{
+                display: inline-block;
+                padding-bottom: 15px;
+            }
+        }
+        .ems-form-left, .ems-form-right {
+            width: 50%;
+            display: inline-block;
+            vertical-align: top;
+            text-align: left;
+        }
+        .ems-message  { margin-bottom: 20px; }
+        
+        .ems-form-inner {
+            .ems-field { 
+                max-width: 375px;
+                input{ background: #fbfbfb; border: 1px solid $borderColor; }
+                &-check{ 
+                    .ems-form-obj {
+                        span.check-text { font-size:15px; line-height:20px; }
+                        b{ font-weight: normal; }
+                    }
+                }
+                &.remember{
+                    text-align: left;
+                    font-size: 12px;
+                }
+                &.submit{
+                    a.btn-default{
+                        margin-top: 20px;
+                        background: $colorDefault;
+                        &:hover{
+                            background: $lines;
+                        }
+                        span{ color: #fff; }
+                    }
+                }
+                &.ems-field-fb{
+                    padding-top:40px;
+                    border-top:1px solid $borderColor;
+                    .btn-default{
+                        background: #304b92;
+                        i.icon-ico_fb{ float: left; }
+                        i.icon-ico_fb, i.icon-ico_fb:before{ font-size: 20px; }
+                    }
+                }
+                &.ems-field-link{
+                    .btn-default { background: none; }
+                    span{ text-decoration: underline; }
+                }
+                &.submit, &.login-control, &.full{
+                    a.btn-default{
+                        width: 100%;
+                        b{
+                            text-decoration: underline;
+                            padding-left: 5px;
+                            font-weight: normal;
+                        }
+                    }
+                }
+                a.btn-default-member{
+                    background: none;
+                    span{
+                        font-size: 15px;
+                        color: $colorDefault;
+                        font-family: $fD;
+                        text-transform: initial;
+                    }
+                    b{
+                        font-size: 15px;
+                        text-decoration: underline;
+                        padding-left: 5px;
+                        font-weight: normal;
+                        color: $colorDefault;
+                        font-family: $fB;
+                        text-transform: initial;
+                    }
+                    &:hover{background: none; }
+                }
+                &.login-control{
+                    .btn-default:hover { background: none; }
+                }
+            }
+            .ems-field.mobile-phone{
+                .ems-form-label{
+                    left: 90px;
+                }
+                &.is-completed{
+                    .ems-form-label{
+                        left: 82px;
+                    }    
+                }
+            }
+        }
+    }
+        
+    /*New member*/
+    .ems-login, .ems-signup{
+        display: inline-block;
+        width: 100%;
+        max-width: 375px;
+    }
+    .ems-signup {
+        display: none;
+    }
+    .ems-login {
+        display: inline-block;
+    }
+}
+
+/*Login enter control*/
+body.member-login-ready {
+    .ems-login {
+        display: none;
+    }
+    .ems-signup {
+        display: inline-block;
+    }
+}
+
+/*Page Member*/
+.page-member {
+
+    /*layout*/
+    .ems-row-1 {
+        display: table;
+        width: 100%;
+        .ems-col {
+            display: table-cell;
+            vertical-align: top;
+            &.ems-col-1{
+                width: 210px;
+            }
+            &.ems-col-2{
+                width:calc(100% - 210px);
+            }
+        }
+    }
+    .ems-page-default {
+        padding:0 0 50px 50px;
+        /*Form*/
+        .ems-form {
+            &-inner{
+                .ems-field {
+                    .ems-form-obj{
+                        width: 100%;
+                        max-width: 375px;
+                    }
+                    &.check-list{
+                        padding: 10px 0;
+                    }
+                    &.submit{
+                        .btn-default{
+                            width: 100%;
+                            background: $colorDefault;
+                        }
+                    }
+                }
+            }
+        }
+        .page-left-padding{
+            padding-left: 20px;
+        }
+    }
+
+    /*Address Info*/
+    .ems-page-member-address {
+        .ems-grid-address .ems-grid-row .col-1{
+            width: 70%;
+            .ems-address-name{
+                font-family: $fB;
+                font-size: 15px;
+                padding-bottom: 20px;
+            }
+            .ems-address{
+                font-family: $fD;
+                font-size: 15px;
+                line-height: 25px;
+            }
+        }
+        .ems-grid-address .ems-grid-row .col-2 {
+            border-right-width: 0;
+            text-align: right;
+            width: 30%;
+            > div {
+                width: 100%;
+            }
+            .ems-address-buttons {
+                text-align: right;
+                .btn-default {
+                    width: auto;
+                    display: inline-block;
+                    vertical-align: top;
+                    text-align: center;
+                    background: none;
+                    font-size: 15px;
+                    color: $colorDefault;
+                    font-family: $fB;
+                    &-delete{
+                        color: $red;
+                    }
+                }
+            }
+        }
+        .add-new-address {
+            .btn-default {
+                font-size: 15px;
+                background: none;
+                padding-left: 0;
+                margin: 10px 0;
+                span {
+                    color: $colorDefault;
+                    font-size: 15px;
+                    text-decoration: underline;
+                    font-family: $fD;
+                    letter-spacing: inherit;
+                    &:before {
+                        display: inline-block;
+                        content: '+';
+                        font-size: 15px;
+                        color: $colorDefault;
+                        margin-right: 3px;
+                    }
+                }
+            }
+        }
+    }
+
+    /*Order lists*/
+    .ems-page-member-order {
+        .order-filter {
+            margin-bottom: 40px;
+            display: inline-block;
+            width: 100%;
+            &-select{
+                float: left;   
+                width: calc(62% - 190px);
+                margin-right: 2%;
+                .sStylerMainWrp.sStylerWrp_select{
+                    .sStylerWrp{ font-family: $fB; }
+                }
+            }
+            &-button{
+                float: left;
+                width: 30%;
+                max-width: 190px;
+                a.btn-default {
+                    width: 100%;
+                    line-height: 1;
+                    background: $colorDefault;
+                }
+            }
+        }
+    }
+
+    /*Order detail*/
+    .ems-page-member-order-detail {
+        .order-detail-info {
+            padding-bottom: 20px;
+            padding-top: 20px;
+            > div {
+                float: left;
+                width: 50%;
+                > div {
+                    float: left;
+                    width: 50%;
+                    padding: 10px 10px 10px 0;
+                    font-size: 15px;
+                    word-break: break-word;
+                    &.text{
+                        font-family: $fB;
+                    }
+                    &:empty {
+                        &:before {
+                            content: "-";
+                        }
+                    }
+                }
+            }
+        }
+        .order-address {
+            width: 46%;
+            margin-top: 20px;
+            &-delivery{
+                float: left;
+            }
+            &-billing{
+                float: right;
+            }
+            .content{
+                display: block;
+                border: 1px solid $borderColor;
+                padding: 20px;
+            }
+            .title{
+                padding-bottom: 20px;
+                span{ font-family: $fB; font-size: 18px; letter-spacing: 2px; }
+            }
+            .text {
+                font-family: $fB;
+                margin-bottom: 15px;
+            }
+            .value {
+                span{ line-height: 25px; max-height: 45px; overflow: hidden; }
+            }
+        }
+    }
+}
+
+/*Mobile 960px*/
+@media screen and (max-width: $breakpointSM) {
+
+    /*Mobile Hidden control*/
+    .mod-mini-fav, .mod-mini-login { display: none; }
+
+    .page-login-layout{
+        .site-footer, .campaign-bnr{ display: none; }
+    }
+
+    /*Login page*/
+    .page-login {
+        &-inline{
+            background: #fbfbfb;
+            padding: 20px;
+        }
+        .ems-right {
+            width: 100%;
+            max-width: 100%;
+            padding: 0;
+            background: #fbfbfb;
+        }
+        .ems-login, .ems-signup {
+            margin: 0;
+            max-width: 100%;
+            padding: 0;
+            &-header {
+                color: $lines;
+                font-size: 24px;
+            }
+            .ems-form{
+                &-inner{
+                    .ems-field{
+                        max-width: 100%;
+                        input, select, textarea{ background: #fbfbfb; }
+                        &.submit {
+                            .btn-default{ padding-top: 20px; padding-bottom: 19px; }
+                            a.btnYeniUyeKaydet, a.btnLogin{ max-width: 100%; }
+                        }
+                        &.ems-field-fb{
+                            .btn-default{ padding-top: 20px; padding-bottom: 19px; }
+                        }
+                        &.enter-link {
+                            background: $vlightBg;
+                            text-align: center;
+                            margin-top: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    /*Member page*/
+    .page-member {
+        &.ems-container {
+            padding: 0;
+        }
+        .row-holder-1 {
+            > div {
+                display: block;
+            }
+        }
+        .row-1 {
+            width: 100%;
+        }
+        .row-2 {
+            padding-left: 0;
+        }
+        .ems-page-default, .pageDefault {
+            padding: 25px 0 70px;
+        }
+        .inner-title {
+            font-size: 20px;
+        }
+        .page-top-title, .pageHeaderDefault, .page-top-desc, .pageDescDefault, .ems-form, .ems-page-member-address .add-new-address, .ems-page-member-order .order-filter, .inner-title {
+            padding: 0 20px 20px 20px !important;
+            margin: 0 !important;           
+        }
+        .ems-page-member-order-detail .order-detail-info, .ems-page-member-order-detail .order-address, .IadeTalep, .ems-page-member-order-detail .bottom-step {
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+        .page-top-desc-border {
+            border-bottom: 0;
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+        .ems-message, .pageErrorUyeSifre, .pageErrorSifremiUnuttum, .pageSifremiUnuttum_mesaj {
+            margin: 0 30px 30px;
+        }
+
+        .member-menu-selecbox {
+            display: inline-block !important;
+            .sStylerWrp {
+                border-bottom: 1px solid $lines;
+                background: none;
+                height: 78px;
+                padding: 40px 20px 15px 20px; 
+                &:after {
+                        right: 30px;
+                        font-size: 12px;
+                    }
+                .sStyleHolder {
+                    span {
+                        font-size: 24px;
+                        font-family: $fM;
+                    }
+                }
+            }
+        }
+
+        .member-menu {
+            height: 0;
+            position: relative;
+            top: -80px;
+            z-index: 1;
+            h4 {
+                padding: 15px 20px 5px 20px;
+                margin: 0;
+                font-size: 14px;
+                color: $sText;
+            }
+            ul {display:none;}
+        }
+
+        //adres bilgilerim
+        .ems-page-member-address {
+            .add-new-address {
+                a.btnAdresEkle {
+                    display: block;
+                }
+            }
+        }
+
+        /*Order lists*/
+        .ems-page-member-order {
+            .order-filter {
+                > select {
+                    display: block;
+                    margin-right: 0;
+                    max-width: none;
+                }
+                > a {
+                    display: block;
+                }
+            }
+        }
+
+        /*siparis detay*/
+        .ems-page-member-order-detail {
+            .order-detail-info {
+                > div {
+                    display: block;
+                    width: 100%;
+                    > div {
+                        padding: 13px 20px;
+                        margin-top: 0;
+                    }
+                }
+            }
+            .order-address {
+                &-delivery{
+                    float: left;
+                }
+                &-billing{
+                    float: left;
+                }
+            }
+        }
+        .ems-page-member-order {
+            .ems-grid-order.v2 {
+                .rowSipHolder {
+                    .detay {height: auto;}
+                    }
+                    .ems-grid-header {
+                        float:left;
+                    }
+                }
+        }
+        
+
+        //favorilerim
+        .ems-page-member-favorites {
+            .page-top-desc {
+                > span, > a.btnFavoriListeTumSil {
+                    display: block;
+                    width: 100%;
+                    max-width: none;
+                    float: none;
+                }
+                > a.btnFavoriListeTumSil {
+                    margin-top: 30px;
+                }
+            }
+        }
+
+        //iadelerim
+        .ems-page-member-refund {
+            .page-top-desc {
+                .btnDefault {
+                    display: block !important;
+                    float: none;
+                    margin-top: 0;
+                }
+            }
+        }
+        .IadeTalep {
+            .dvIadeForm {
+                li.subTitle {
+                    span {
+                        margin-bottom: 35px;
+                    }
+                }
+                li > div {
+                    width: 100%;
+                }
+            }
+        }
+        [id$="lbfIadeTalepBasarili"] {
+            margin-left: 30px;
+        }
+
+        //takip listem
+        .ems-page-member-follow-list {
+            .report-holder {
+                .remove-list {
+                    float: none;
+                    margin: 0 20px 15px;
+                    > a {
+                        display: block;
+                    }
+                }
+            }  
+        }
+        .site-content .ems-page-member-follow-list .ems-grid-row .ems-grid-price {
+                padding-left:20px !important;   
+            } 
+        //sifre degistir
+        .ems-page-member-password {
+            .pageDescUyeSifre {
+                padding-left: 0;
+                padding-right: 0;
+                padding-bottom: 0;
+            }
+            .pageErrorUyeSifre {
+                margin: 30px 0 0;
+            }
+        }
+
+        //Mesaj Gönder
+
+        .ems-page-member-message {
+            .ems-grid-header {
+                max-width:90px;
+            }
+            .ems-grid-row {
+                width: calc(100% - 90px);
+            }
+                
+
+        }
+        .pageMesajGonder {
+            padding:25px 20px 70px 20px;
+            .pageHeaderMesaj {
+                padding:0 !important;
+            }
+        }
+
+        .kutuMesaj {
+            padding: 0 20px;
+            .kutuBodyMesaj {
+                display: inline-block;
+                border: 0;
+                margin: 0 0 30px 0;
+                > div {
+                    display:inline-block;
+                    width: 100%;
+                    text-align: left; 
+                    padding: 0;
+                    border-bottom: 1px solid $borderColor;
+                    a {
+                        text-align:left;
+                        padding: 10px 0;
+                    }
+                    &.active a:before { 
+                        left: 50px;
+                    }
+                }
+            }
+            .kutuHeaderMesaj {
+                padding: 20px 0 25px 0;
+                display:none;
+                }
+        }
+
+        .ems-message-detail-form {
+            padding: 0 20px;
+        }
+
+    }
+    .page-top-title {
+        display: none;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .page-member .ems-page-member-address .ems-grid-address .ems-grid-row .col-2 > div.ems-address-buttons {
+        a {
+            display: block;
+            margin: 0;
+            text-align: right;
+        }
+    }
+
+}

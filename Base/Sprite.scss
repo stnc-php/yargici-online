@@ -1,0 +1,131 @@
+@include fontFace('icomoon', '/lab/projects/yargici/styles/fonts/icon/icomoon', normal, normal);
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-ico_arw-empty-bttm:before {
+  content: "\e900";
+}
+.icon-ico_arw-empty-top:before {
+  content: "\e901";
+}
+.icon-ico_arw-fill-bttm:before {
+  content: "\e902";
+}
+.icon-ico_arw-fill-left:before {
+  content: "\e903";
+}
+.icon-ico_arw-fill-right:before {
+  content: "\e904";
+}
+.icon-ico_call:before {
+  content: "\e905";
+}
+.icon-ico_cargo:before {
+  content: "\e906";
+}
+.icon-ico_cart-special:before {
+  content: "\e907";
+}
+.icon-ico_check:before {
+  content: "\e908";
+}
+.icon-ico_close:before {
+  content: "\e909";
+}
+.icon-ico_fb:before {
+  content: "\e90a";
+}
+.icon-ico_filter-delete:before {
+  content: "\e90b";
+}
+.icon-ico_hamburger:before {
+  content: "\e90c";
+}
+.icon-ico_hearth:before {
+  content: "\e90d";
+}
+.icon-ico_home-icon:before {
+  content: "\e90e";
+}
+.icon-ico_home-works:before {
+  content: "\e90f";
+}
+.icon-ico_instgrm:before {
+  content: "\e910";
+}
+.icon-ico_mini-cart:before {
+  content: "\e911";
+}
+.icon-ico_mini-member:before {
+  content: "\e912";
+}
+.icon-ico_pin:before {
+  content: "\e913";
+}
+.icon-ico_quad:before {
+  content: "\e914";
+}
+.icon-ico_safe:before {
+  content: "\e915";
+}
+.icon-ico_search:before {
+  content: "\e916";
+}
+.icon-ico_slide-left:before {
+  content: "\e917";
+}
+.icon-ico_slide-lright:before {
+  content: "\e918";
+}
+.icon-ico_star:before {
+  content: "\e919";
+}
+.icon-ico_store-icon:before {
+  content: "\e91a";
+}
+.icon-ico_triple:before {
+  content: "\e91b";
+}
+.icon-ico_triple-pointer:before {
+  content: "\e91c";
+}
+.icon-ico_twt:before {
+  content: "\e91d";
+}
+.icon-ico_vimeo:before {
+  content: "\e91e";
+}
+
+.ems-icon {
+	  position: relative;
+    display:inline-block; 
+    vertical-align:middle; 
+    text-indent:-999em; 
+    transition: all 0.2s ease;
+	  font-size: 0px;
+ 	@at-root {
+		.asd, .lang-tr { background:url(#{$baseHref + "/images/frontend/sprite.png"}) no-repeat; }
+    .safe-icon{ background:url(#{$baseHref + "/lab/projects/yargici/images/frontend/safe-icon.png"}) no-repeat; width:40px; height:45px; }
+    .cargo-icon{ background:url(#{$baseHref + "/lab/projects/yargici/images/frontend/cargo-icon.png"}) no-repeat; width:50px; height:35px; }
+    .bonus-icon{ background:url(#{$baseHref + "/lab/projects/yargici/images/frontend/bonus-icon.png"}) no-repeat; width:72px; height:45px; }
+    .call-icon{ background:url(#{$baseHref + "/lab/projects/yargici/images/frontend/call-icon.png"}) no-repeat; width:35px; height:36px; }
+    .listview-quad { background:url(#{$baseHref + "/lab/projects/yargici/images/frontend/listview-quad.png"}) no-repeat; }
+    .listview-triple {background:url(#{$baseHref + "/lab/projects/yargici/images/frontend/listview-triple.png"}) no-repeat; }
+    .measuring-icon {background:url(#{$baseHref + "/lab/projects/yargici/images/frontend/measuring.png"}) no-repeat; width: 40px; height: 22px; }
+    .mobile-filter-icon {background:url(#{$baseHref + "/lab/projects/yargici/images/frontend/mobile-filter-icon.png"}) no-repeat; width:25px; height:17px; }
+    .mobile-filter-delete {background:url(#{$baseHref + "/lab/projects/yargici/images/frontend/mobile-filter-delete-icon.png"}) no-repeat; width:30px; height:26px; display: inline-block; }
+	  }
+}

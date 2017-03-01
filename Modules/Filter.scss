@@ -1,0 +1,217 @@
+/*Filter selection object*/
+small.selection {
+    display: none;
+    font-family:$fD;
+    font-size:15px;
+    color:$colorDefault;
+    letter-spacing:1px;
+    padding-left:2px;
+    text-transform: uppercase;
+}
+
+/*Filter module*/
+.mod-filter {
+    text-align: left;
+    &-header{
+        margin-top: 20px;
+        span{
+            display: block;
+            line-height: 1;
+            letter-spacing: 1px;
+            font-family: $fB;
+            padding-bottom: 15px;
+            padding-top: 15px;
+            cursor: pointer;
+        }
+    }
+    &-inner{
+        border-top: 1px solid $vlightBg;
+    }
+    .mod-filter-rows {
+        &-type-1{
+            .mod-filter-body {
+                padding-bottom: 20px;
+                > ul{
+                    > li{
+                        > a{
+                            display: block;
+                            padding: 8px 0;
+                            i, span{
+                                display: inline-block;
+                                vertical-align: middle;
+                            }
+                            i{
+                                @include transition(all .2s ease);
+                                width: 15px;
+                                height: 15px;
+                                border: 1px solid #ccc;
+                                background: #fff;
+                                margin-right: 10px;
+                            }
+                            &:hover{
+                                i{ margin-right: 15px; }
+                            }
+                        }
+                        &.selected{
+                            span{
+                                color: $title;
+                                font-family: $fB;
+                            }
+                            i{
+                                background: #ccc;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &-type-2{
+            .mod-filter-body {
+                padding-bottom: 20px;
+                > ul{
+                    width: 100%;
+                    > li{
+                        display: inline-block;
+                        vertical-align: top;
+                        width: 52px;
+                        > a{
+                            padding: 0;
+                            display: block;
+                            border: 1px solid $borderColor;
+                            margin:5px 5px 5px 0;
+                            text-align: center;
+                            span{
+                                padding: 10px 0;
+                                display: inline-block;
+                                vertical-align: middle;
+                            }
+                            i{
+                                display: none;
+                            }
+                            &:hover{
+                                background: #ccc;
+                            }
+                        }
+                        &.selected{
+                            > a{
+                                background: #ccc;
+                            }
+                        }
+                    }
+                }
+            }
+            .mod-price-range {
+                padding-top: 15px;
+                .left, .right{
+                    width: 47.5%;
+                    input {
+                        background: #fff;
+                        border: 1px solid $borderColor;
+                        color: $text;
+                    }
+                }
+                > span {
+                    width: 5%;
+                    float: left;
+                    text-align: center;
+                    display: block;
+                    line-height: 40px;
+                }
+            }
+        }
+    }
+    &-footer{
+        display: none;
+    }
+}
+
+/*Mobile 960px*/
+@media screen and (max-width: $breakpointSM) {
+    
+    /*Mobile filter hidden objects*/
+    .inner-content {
+        display: none;
+        padding: 0;
+        position: absolute;
+        width: 100%;
+        height: calc(100% - 1px);
+        padding: 0 20px;
+        left: 0;
+        overflow: auto;
+    }
+
+    .mod-filter{
+        &-header{
+            margin-top: 0;
+            padding-top: 23px;
+            padding-bottom: 22px;
+            cursor: pointer;
+            span{
+                display: inline-block;
+                padding: 0;
+                &:after{
+                    content: ':';
+                    display: inline-block;
+                    padding-right: 2px;
+                    position: relative;
+                    top: -2px;
+                }
+            }
+        }
+        .mod-filter-rows {
+            &-type-1{}
+            &-type-2{
+                .mod-filter-body {
+                    > ul{
+                        > li{
+                            width: 100%;
+                            > a{
+                                padding: 10px 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /*Filter selection*/
+    body.filter-selection {
+        small.selection { display: inline-block; }
+        .mod-categories-mobile{
+            display: table;
+            .cat-filter-selection{
+                opacity: 1; visibility: visible; pointer-events: inherit;
+            }
+        }
+    }
+    /*Filter selection*/
+    body.filter-level-open {
+        .mod-categories,
+        .mod-filter-rows,
+        .mod-categories-mobile{ display: none; }
+
+        .mod-categories.opened,
+        .mod-filter-rows.opened { display: block; }
+        
+        .mod-categories.opened,
+        .mod-filter-rows.opened{
+            .inner-content
+            {
+                display: block;
+            }
+        }
+
+        .header-btn{
+            span{
+                &:before{
+                    font-size: 13px;
+                    content:'\e916';
+                    display: inline-block;
+                    font-family:'icomoon';
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+}

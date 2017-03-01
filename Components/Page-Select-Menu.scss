@@ -1,0 +1,60 @@
+.page-select-menu {
+    > .title {
+        position: relative;
+        display: block;
+        border-bottom: 1px solid #999;
+        font-family: $fontDefault;
+        font-size: 1.28rem;
+        font-weight: 700;
+        line-height: 1;
+        padding: 2rem $singleOuter;
+        background: #f7f7f7;
+        &:after {
+            content: "";
+            position: absolute;
+            right: $singleOuter;
+            top: 50%;
+            margin-top: -9px;
+        }
+        &:before {
+            content: "page-select-menu opened class 'ı gelince açılıyor";
+            display: block;
+            background: orange;
+        }
+    }
+    ul.lvl1 {
+        display: none;
+        position: relative;
+        z-index: 1;
+        box-shadow: 0 10px 50px -20px #000;
+        > li {
+            > a {
+                display: block;
+                padding: toRem(40px) 0;
+                border-bottom: 1px solid #999;
+                font-family: $fontDefault;
+                font-size: 1.28rem;
+                font-weight: 700;
+                margin: 0 $singleOuter;
+            }
+            &.selected {
+                > a {
+                    color: $colorRed;
+                }
+            }
+            &:last-child {
+                > a {
+                    border-bottom: 0;
+                }
+            }
+        }
+    }
+    ul.lvl2 {
+        display: none;
+    }
+    &.opened {
+        ul.lvl1 {
+            display: block;
+        }
+    }
+}

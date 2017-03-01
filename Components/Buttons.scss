@@ -1,0 +1,93 @@
+a.btn-default {
+    position: relative;
+    display: inline-block;
+    background: $sText;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    font-size:18px;
+    color: #fff;
+    font-family: $fD;
+    text-align: center;
+    font-weight: normal;
+    @include transition(all 0.2s ease);
+    span {
+        font-size: 18px;
+        font-family: $fB;
+        color: #fff;
+        letter-spacing: 2px;
+        position: relative;
+        z-index: 2;
+        @include transition(all 0.2s ease);
+    }
+    @at-root {
+        &-text, &-login, &-forget{
+            background: none; 
+            font-size: 15px;
+            color: inherit;
+            text-transform: inherit;
+            &:before{ display: none; }
+            span{
+                font-size: 15px;
+                color: $colorDefault;
+                font-family: $fD;
+            }
+            b{
+                font-size: 15px;
+                font-family: $fB;
+                color: $colorDefault;
+            }
+            &:hover {
+                background: inherit;
+            }
+        }
+        &-full {
+            width: 100%;
+            .btn-default { width: 100%; }
+        }
+    }
+    &:hover {
+        background: $colorDefault;
+    }
+    @at-root {
+        &-facebook, &-enter, &-save, &-coupon, &-back{
+            &:before{
+                display: none;
+            }
+        }    
+    }
+}
+
+a.btn-link{
+    position: relative;
+    font-family: $fB;
+    color: #6a6b69;
+    padding: 5px 0;
+    text-decoration: underline;
+    display: inline-block;
+}
+
+a.grid-link{
+    text-decoration: underline;
+    padding: 5px;
+    display: inline-block;
+}
+a.btn-default-alternate{
+    padding: 15px 10px;
+    display: inline-block;
+    span{
+        font-family: $fB;
+        letter-spacing: 2px;
+    }
+    &:hover{
+        border-color: $colorDefault;
+    }
+}
+
+a.btn-default-alternate, a.btn-default-share{
+    background: none;
+    border: 1px solid $borderColor;
+    span{ color:$colorDefault; }
+    &:hover{
+        background: none;
+    }
+}
