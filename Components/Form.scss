@@ -200,6 +200,7 @@ span.cStyler, span.rStyler{
     }
 }
 
-@media screen and (max-width:960px) {
-    /*dd*/
+/*Mobile grid 960px*/
+@media screen and (max-width:$breakpointSM) {
+    span.rStyler{ width: 20px; height: 20px; top: 5px; }
 }

@@ -51,7 +51,7 @@
                                 </div>
                                 <div class="popup-default-grid-col popup-default-grid-col-2">
                                     <span class="link-red">Son 1 Ürün</span>
-                                    <a href="javascript:void(0);" class="btn-link"><i class="icon-ico_check"></i><span>Haritada Göster</span></a>
+                                    <a href="javascript:void(0);" class="btn-link"><i class="icon-ico_store-icon"></i><span>Haritada Göster</span></a>
                                 </div>
                             </div>
                             <div class="popup-default-grid-row">
@@ -61,7 +61,7 @@
                                 </div>
                                 <div class="popup-default-grid-col popup-default-grid-col-2">
                                     <span class="link-red">Son 1 Ürün</span>
-                                    <a href="javascript:void(0);" class="btn-link"><i class="icon-ico_check"></i><span>Haritada Göster</span></a>
+                                    <a href="javascript:void(0);" class="btn-link"><i class="icon-ico_store-icon"></i><span>Haritada Göster</span></a>
                                 </div>
                             </div>
                             <div class="popup-default-grid-row">
@@ -71,7 +71,7 @@
                                 </div>
                                 <div class="popup-default-grid-col popup-default-grid-col-2">
                                     <span class="link-red">Son 1 Ürün</span>
-                                    <a href="javascript:void(0);" class="btn-link"><i class="icon-ico_check"></i><span>Haritada Göster</span></a>
+                                    <a href="javascript:void(0);" class="btn-link"><i class="icon-ico_store-icon"></i><span>Haritada Göster</span></a>
                                 </div>
                             </div>
                         </div>
@@ -485,16 +485,12 @@
                                             </ul>
                                             <h1>MODELİN ÖLÇÜLERİ</h1>
                                             <p>Boy: 1,74 Göğüs: 80 Bel: 59 Basen: 89</p>
+                                            <a href="javascript:void(0);" class="btn-link btn-link ems-prd-store-btn">Mağaza Stoklarımı Gör</a>
                                         </div>
                                     </li>
                                     <li rel="tab-2"><a href="javascript:void(0);"><span>TESLİMAT</span></a>
                                         <div class="content">
                                             <p>Letraset sheets containing Lorem Ipsum passages, and more recently with desktop.</p>
-                                            <ul>
-                                                <li>%56 Akrilik</li>
-                                                <li>%32 Pamuk</li>
-                                                <li>%12 Polyamid</li>
-                                            </ul>
                                             <p>Letraset sheets containing Lorem Ipsum passages, and more recently with desktop.</p>
                                         </div>
                                     </li>

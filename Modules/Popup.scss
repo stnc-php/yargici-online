@@ -260,8 +260,23 @@
                     text-align: right;
                     .btn-link{
                         font-family: $fD;
+                        text-decoration: none;
                         &:hover{
-                            color:$title;
+                            color: $title;
+                        }
+                        span{
+                            text-decoration: underline;
+                        }
+                        .icon-ico_store-icon, span{
+                            display: inline-block;
+                            vertical-align: middle;
+                        }
+                        .icon-ico_store-icon{
+                            font-size:26px;
+                            margin-right: 5px;
+                            &:before{
+                                font-size:26px;
+                            }
                         }
                     }
                 }
@@ -293,6 +308,57 @@
                     padding-top: 0;
                     padding-left: 20px;
                 }
+            }
+        }
+    }
+}
+
+/*Mobile 610px*/
+@media screen and (max-width: $breakpointXS) {
+
+    .stock-store-ready { overflow: hidden; }
+    
+    /*Popup size mobile*/
+    .popup-default {
+        &-size{
+            max-width: 100%;
+            height:100%;
+            top: 0; 
+            z-index: 30;
+            .popup-default-header{
+                .btn-popup-close{ right: 20px; }
+            }
+            .popup-default-desc {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            .popup-default-body{
+                .popup-default-col{
+                    padding-left: 20px;
+                    padding-right: 20px;
+                }
+                .popup-default-col-1{
+                    padding-right: 20px;
+                    .popup-size-filter{
+                        width: 100%;
+                        display: block;
+                        padding-right: 0;
+                        .btn-default{
+                            max-width: 100%;
+                        }
+                        margin-top: 20px;
+                        &:first-child{
+                            margin-top: 0;
+                        }
+                    }
+                }
+            }
+            .popup-default-grid-size{
+                max-height: 485px;
+                .popup-default-grid-col-1, .popup-default-grid-col-2{
+                    width: 50%;
+                }
+                .popup-default-grid-col-1{ padding-right: 20px; }
             }
         }
     }

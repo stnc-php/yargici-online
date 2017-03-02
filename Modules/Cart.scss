@@ -320,7 +320,7 @@
                 background: $dBlue;
                 color: #fff;
                 text-align: center;
-                padding: 11px 20px;
+                padding: 15px 20px;
                 line-height: 20px;
             }
             &:empty{
@@ -369,7 +369,7 @@
                     width: 100%;
                     .lbl, .obj{
                         display: table-cell;
-                        vertical-align: top;
+                        vertical-align: middle;
                         padding: 10px 5px;
                     }
                     .lbl{
@@ -626,34 +626,7 @@
     /*Order delivery*/
     .ems-page-order-delivery {
         position: relative;
-        /*Cart*/
-        .ems-grid-default {
-            .ems-grid-header{
-                .ems-grid-img{
-                    span{ display: none; }
-                }
-                .ems-grid-name{
-                    padding-left: 10px;
-                    text-align: left; 
-                    span{ display: inline-block; }
-                }
-            }
-            .ems-grid-img{
-                width: 15%;
-            }
-            .ems-grid-name{
-                width: 35%;
-            }
-            .ems-grid-piece{
-                width: 35%;
-            }
-            .ems-grid-price {
-                width: 15%;
-            }
-            .ems-grid-delete{
-                display: none;
-            }
-        }
+
         /*Tab*/
         .ems-tab {
             margin-top: 0;
@@ -993,6 +966,9 @@
                             .ems-form-obj{
                                 padding-right: 30px;
                             }
+                            &.address-type-1{ 
+                                margin-top: 20px; 
+                            }
                         }
                         .ems-form-obj{
                             position: relative;
@@ -1023,6 +999,15 @@
                                 padding-right: 0;
                                 margin-bottom: 20px;
                             }
+                        }
+                    }
+                    .address-holder-double{
+                        display: table;
+                        width: 100%;
+                        .ems-field {
+                            display: table-cell;
+                            width: 50%;
+                            vertical-align: top;
                         }
                     }
                     .ems-page-default-title{
@@ -1164,392 +1149,104 @@
     }
 }
 
-@media screen and (max-width: 1100px) {
-    
+/*Mobile 1100px*/
+@media screen and (max-width: 1100px) {}
+
+
+/*Cart page desktop header reset fixed animate 960px*/
+@media screen and (min-width: $breakpointSM) {
+    .page-cart-layout{
+        .site-header.fixed-header {
+            .site-header-wrapper {position: inherit; top: inherit; }
+        }
+    }
 }
 
-/*Mobile*/
+/*Mobile 960px*/
 @media screen and (max-width: $breakpointSM) {
     .mod-mini-cart{ display: none; }
 
-    /*sepet*/
+    /*mobile cart pages*/
+    .page-cart-layout {
+        .campaign-bnr,
+        .site-footer,
+        .ems-cargo,
+        .mobile-element-bottom-menu { display: none; }
+    }
+    /*Page cart layout*/
     .page-cart {
         .ems-container {
-            padding-bottom: 50px;
-        }
-        &.step1 {
-            .ems-container {
-                padding-bottom: 70px;
-            }   
-        }
-        .ems-page-order-cart{
-            .page-top-title {
-                display: block;
-                span {
-                    padding-left: 15px;
-                }
-            }
-        }
-        .cart-logo {
-            a img { max-width: 100px; }
-        }
-        &.ems-container {
-            padding: 0;
-        }
-        .row-holder-1 {
-            padding-bottom: 0;
-        }
-        .row-2 {
-            width: 100%;
-        }
-        .row-3 {
-            width: 100%;
-            padding-left: 0;
-            z-index: inherit;
-        }
-        .tabloTabBtnAdimSiparis {
-            margin-top: 30px;
-            margin-bottom: 15px;
-            td > span a span b {
-                font-size: 12px;
-            }
-        }
-        .pnlDipToplamTable {
-            padding-left: 30px;
-            padding-right: 30px; 
-            th {
-                font-size: 17px;
-                padding: 5px 0;
-            }
-            td {
-                font-size: 18px;
-            }
-        }
-        .ems-cart-coupon {
-            padding-left: 30px;
-            padding-right: 30px;
-        }
-        .bottom-step {
-            .next {
-                margin-left: 30px;
-                margin-right: 30px;
-            }
-            a.btnDefault {
-                padding-top: 22px;
-                padding-bottom: 16px;
-            }
-        }
-        .info-main {
-            float: none;
             max-width: 100%;
-            margin: 0 30px;
+            padding: 0 0 60px 0;
         }
-
-        /*visilabs module*/
-        .also-addto-basket.visilabs-widget {
-            display: none !important;
-        }
-
-        /*teslimat*/
-        .ems-page-order-delivery {
-            .same-address, .add-new-address {
-                width: auto;
-                display: block;
-                margin: 0 30px;
-            }
-            .same-address {
-                margin-top: 25px;
-                text-align: left;
-            }
-            .add-new-address {
-                a.btnAdresEkle {
-                    display: block;
-                }
-            }
-            .ems-delivery-tab {
-                margin: 35px 20px 10px 20px;
-                &.ems-cargo-tab .divTeslimatKargo > ul > li {
-                    width: 100%;
-                    margin-left: 0;
-                    padding-left: 10px;
-                    padding-right: 10px;
-                    &:first-child {
-                        margin-top: 0;
-                    }
-                }
-                .ems-delivery-tab-header {
-                    margin:0 0 15px 0;
-                    font-size: 18px;
-                    padding: 0;
-                }
-            }
-        }
-
-        /*odeme*/
-        .ems-page-order-payment {
-            .obj-step0, .ems-pay-type-desc, .ems-cart-pay-adress { display: none; }
-            .page-top-title {
-                display: block;
-                font-size: 18px;
-                padding-left: 20px;
-                padding-top: 10px;
-                padding-bottom: 5px;
-            }
-            .cart-section-left {
-                .page-top-title { display: none; }
-            }
-            .ems-cart-pay-tab {
-                ul {
-                    table-layout: auto;
-                    padding: 0 20px;
-                    li {
-                        a {
-                            padding: 15px;
-                            font-size: 14px;
-                        }
-                    }
-                }
-            }
-            .ems-cart-pay-type {
-                .ems-pay-credit-cart {
-                    div[id$="pnlKrediKartiBilgi"]{
-                        border-width: 1px 0 0 0;
-                    }
-                }
-                .ems-pay-other {
-                    .OdemeBilgiPesinDigerOdemeNotu {
-                        border-width: 1px 0 0 0;
-                        textarea {
-                            max-width: 100%;
-                        }
-                    }
-                }
-                .tableOdemeBilgiKrediKarti {
-                    display: block;
-                    width: 100%;
-                    padding: 30px 20px 0 20px;
-                    border: none;
-                    th {
-                        font-size: 14px;
-                        padding: 0;
-                        margin-bottom: 10px;
-                        font-weight: normal;
-                    }
-                    td {
-                        padding: 0;
-                        margin-bottom: 20px;
-                        .cvc-info {
-                            > span {
-                                width: 100%;
-                            }
-                        }
-                    }
-                    .tableOdemeBilgiKrediKarti_tdtxtKKARTISIM {
-                        margin-bottom: 0;
-                    }
-                }
-                .pageOdemeBilgi_odemeTaksit {
-                    display: block;
-                    width: 100%;
-                    margin: 30px 0 10px 0;
-                    background: $vlightBg;
-                    .tableOdemeTaksit {
-                        .tableTitleOdemeTaksit {
-                            td {
-                                font-size: 12px;
-                            }
-                            td:nth-child(1) { width: 35px; }
-                        }
-                    }
-                }
-                .ems-pay-point {
-                    padding: 20px;
-                    max-width: 100%;
-                    margin-left: 0;
-                    border-top: 1px solid $borderColor;
-                    margin-bottom: 10px;
-                }
-                .tableOdemeBilgiHavale {
-                    width: 100%;
-                    tr th.tableOdemeBilgiHavale_thlbfBNK_AD_HV {border-right-width:0; border-left-width:0; }
-                    tr td.tableOdemeBilgiHavale_tddrpBNK_KOD_HV {border-right-width:0;border-left-width:0;border-bottom-width:0;}
-                    tr td.tableOdemeBilgiHavale_tddrpBNK_KOD_HV table { width: 100%; }
-                }
-            }
-        }
-        /*sonuc*/
-        .ems-page-order-result {
-            .order-result {
-                margin: 100px auto 20px auto;
-                max-width: 90%;
-                .fsize17, .g-home {
-                    font-size: 18px;
-                }
-            }
-        }
-        /*sozlesmeler*/
-        .pageSiparisOnay_chkSatisSozlesme, .pageSiparisOnay_chkOnBilgilendirmeForm {
-            cursor: pointer;
-            font-size: 14px;
-            b{ font-size: 14px; }
-        }
-        .onBilgilendirmeForm {
-            margin-top: 20px;
-            span.cStyler { width: 20px; height: 20px; }
-        }
-        .siparisOnaySozlesme {
-            margin-bottom: 0;
-            span.cStyler { width: 20px; height: 20px; }
-        }
-    }
-}
-
-/*css empty*/
-.page-cart .ems-page-order-payment .ems-cart-pay-type .ems-pay-other, 
-.ems-message,
-.page-member .ems-page-member-order-detail .order-detail-info-payment > div > div {
-    &:empty {
-        display: none !important;
-    }
-}
-
-/*Mobile Gecis*/
-@media screen and (max-width:$breakpointSM) {
-    /*Sepet*/
-    .page-cart {
-        .ems-container {
-            &:after{ display: none; }
-        }
-        .row-2 {padding-top: 25px; }
-        .ems-cart-button { display: none; }
-        .ems-grid-default{ 
-            margin-left: 0;
-            margin-right: 0;
-        }
-        .ems-cart-ntf-message {
-            margin-left: 20px;
-            margin-right: 20px;
-        }
-        .ems-cart-ntf-header, .ems-grid-ntf{
-            margin-left: 20px;
-            margin-right: 20px;
-        }
-        .ems-grid-ntf{
-            margin-bottom: 20px;
-            .ems-grid-row {
-                > div {
-                    display:inline-block;
-                    vertical-align: top;
-                }
-                .ems-grid-img {
-                    width: 30%;
-                }
-                .ems-grid-name {
-                    width: 70%;
-                }
-                .ems-grid-cart-addBtn {
-                    width: 100%;
-                    padding-left: 20px;
-                    padding-right: 20px;
-                    text-align: left;
-                    a.btnCartAddBtn {
-                        float: right;
-                        width: 50%;
-                        max-width: 150px;
-                        display: inline-block;
-                    }
-                    .total-gain{
-                        float: right;
-                        width: 50%;
-                        padding-left: 0;
-                    }
-                }
-            }
-        }
-        .bottom-step {
+        .widget-slider-content{
             margin-top: 0;
-            .next{ margin: 0;
-                > a.btnDefault {
-                    position: fixed;
-                    left: 0;
-                    width: 100%;
-                    bottom: 0;
-                    z-index: 20; 
-                    span.desktop-step-btn{ display: none; }
-                    span.mobile-step-btn{ display: block; }
-                    span { font-size: 18px !important; }
+        }
+        .ems-page-default{
+            &-left, &-right{ float: none; }
+            &-left, &-right{ width: 100%; }
+            &-left { padding: 0 20px; }
+            &-right{ padding:0; } 
+            &-title{
+                span{ border-top:0; border-bottom:0; margin: 0; }
+            }
+            &-cargo{
+                span{ margin-top: 0; }
+            }
+             .ems-cart-summary{
+                 border-left: 0;
+                 border-right: 0;
+                 .title { display: none; }
+             }
+             .total-table-wrapper{
+                 ul.total-table{
+                     li.total-amount .lbl{ font-size: 20px; }
+                 }
+             }
+             .ems-cart-button {
+                float: none;
+                &-top{
+                     border-bottom: none;
+                     border-top:1px solid $borderColor;    
                 }
-            }
-            [id$="lbfSIP_ONAYLA_DEC"] {
-                margin: 0;
-            }
-            .ems-message {
-                position: fixed;
-                bottom: 0;
-                left: 0;
-                width: 100%;
-                padding: 23px 10px 22px 10px;
-                border-radius: 0;
-            }
-        }
-        .ems-cart-summary{
-            padding: 20px;
-            > span { padding-bottom: 20px; }
-             &.fixed{
-                 position: static;
-                 width: 100%;
-                 max-width:none;
+                &-check-list{
+                    padding: 5px 0;
+                    &:first-child{ padding-right: 20px; }
+                }
+                &-prev{
+                    .btn-default{ font-size: 15px; }
                  }
-
-        }
-        .ems-cart-coupon {
-            > span { 
-                text-decoration: underline;
-            }
-        }
-        .ems-cart-coupon, .pnlDipToplamTable {
-            padding-left: 0;
-            padding-right: 0;
-        }
-        .pnlDipToplamTable {
-            .pnlDipToplam_sipToplam th {
-                text-transform: uppercase;
-            }
-        }
-        /*teslimat*/
-        .ems-page-order-delivery{
-            .add-new-address{
-                margin-right: 20px;
-            }
-            .page-top-title span{
-                margin-left: 20px;
-            }
-            .same-address{ margin-left: 20px; margin-right: 20px; }
-        }
-        .ems-grid-address {
-            margin-left: 20px;
-            margin-right: 20px;
-        }
-        .ems-page-new-address{
-            .pageErrorDefault {
-                margin-left: 20px;
-                margin-right: 20px;
-            }
-            .ems-form {
-                max-width: 100%;
-                 padding: 0 20px;
-                 .ems-field {
-                     .ems-form-obj{ max-width: 100% !important; }
+                 &-next{
+                    position: fixed;
+                    bottom: -100%;
+                    width: 100%;
+                    height: 60px;
+                    left: 0;
+                    z-index: 16;
+                    @include transition(bottom .2s ease);
+                    will-change: bottom;
+                    .btn-default{
+                        margin: 0;
+                        width: 100%;
+                        padding-top: 20px;
+                        padding-bottom: 19px;
+                    }
                  }
-            }
-            a.btnAdresIptal { left: 20px; top: 3px; }
-            .page-top-title > span { color:$dBlue; }
-        }
-        .ems-page-order-result{
-             .pageDescSiparisSonucHavale{
-                 padding-left: 20px;
-                 padding-right: 20px;
              }
         }
+
+        /*Page delivery page*/
+
     }
+    /*Page cart scroll animate cart botton top effect*/
+    body.header-fixed-animate{
+        .page-cart {
+            .ems-page-default{
+                .ems-cart-button {
+                    &-next{ bottom: 0; }
+                }
+            }
+        }
+    }
+
 }

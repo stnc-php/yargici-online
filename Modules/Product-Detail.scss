@@ -17,7 +17,7 @@
         .inner-row-2 {
             width: 420px;
             float:right; 
-            padding: 30px 0 10px 40px;
+            padding: 30px 0 30px 40px;
             position: relative;
             z-index: 2;
         }
@@ -295,6 +295,11 @@
                             > *{
                                 line-height: 25px;
                             }
+                            .btn-link {
+                                display: none;
+                                text-decoration: underline;
+                                color: #6a6b69;
+                            }
                         }
                     }
                 }
@@ -495,8 +500,14 @@ body.suggestion-popup-ready{
                     }
                     ul.content-js{
                         > li {
-                            .content{ padding:0 20px 30px 20px; height: auto !important; opacity:1 !important; overflow:visible !important; }
-                            .content-size-table{ border: 1px solid $borderColor; }
+                            .content{
+                                padding:0 20px 30px 20px;
+                                height: auto !important;
+                                opacity:1 !important;
+                                overflow:visible !important;
+                                .btn-link { display: block; }
+                            }
+                            .content-size-table{ border: 1px solid $borderColor; padding-bottom:20px; }
                         }
                         > li.selected {
                             .content{ padding:0 20px 30px 20px; }
@@ -566,12 +577,11 @@ body.suggestion-popup-ready{
                         height: calc(100% - 50%);
                         background: #fff;
                         z-index: 20;
-                        padding: 20px;
                         &-header{
                             display: block;
                             text-align: right;
-                            padding-bottom: 30px;
-                            padding-top: 10px;
+                            padding:30px 20px;
+                            cursor:pointer;
                             span{ font-size: 13px; font-family: $fB; letter-spacing: 2px; }
                         }
                         &-inner{
@@ -580,8 +590,9 @@ body.suggestion-popup-ready{
                             ul{
                                 position: absolute;
                                 width: 100%;
-                                height:calc(100% - 80px);
+                                height:calc(100% - 60px);
                                 overflow: auto;
+                                padding: 0 20px 20px;
                                 li{
                                     width: 100%;
                                     a{
@@ -675,5 +686,4 @@ body.suggestion-popup-ready{
         }
         .vail-mobile-size{ visibility: visible; opacity: .2; }
     }
-
 }

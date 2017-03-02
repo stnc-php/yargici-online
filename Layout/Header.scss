@@ -249,10 +249,11 @@
         &-inner{
             width: 100%;
             display: table;            
-            padding: 14px 10px 14px 10px;
+            padding: 14px 10px 13px 10px;
             position: fixed;
             z-index: 10;
             background: #fff;
+            border-bottom: 1px solid $borderColor;
             > div{
                 display: table-cell;
                 vertical-align: middle;
@@ -407,7 +408,7 @@
                         padding: 22px 0 22px 0;
                         border-bottom: 1px solid $borderColor;
                         &:before{
-                            content:'\e917';
+                            content:'\e918';
                             font-family:'icomoon';
                             font-size: 13px;
                             color: #ccc;

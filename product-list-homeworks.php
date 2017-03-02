@@ -8,7 +8,7 @@
             <div class="ems-col ems-col-1">
                 <div class="mod-categories-mobile">
                     <span class="cat-filter-text"><i class="icon-ico_slide-left"></i></span>
-                    <span class="cat-filter-selection"><i class="mobile-filter-delete"></i><i class="icon-ico_check"></i></span>
+                    <span class="cat-filter-selection"><i class="icon-ico_filter-delete"></i><i class="icon-ico_check"></i></span>
                 </div>
                 <div class="ems-col-wrapper">
 
@@ -206,7 +206,7 @@
                                 <div class="ems-prd-inner">
                                     <div class="ems-prd-image">
                                         <a href="javascript:void(0);" alt="YAKA DETAYLI KOLSUZ BLUZ" title="YAKA DETAYLI KOLSUZ BLUZ">
-                                            <img src="/lab/projects/yargici//upload/products/product-1.jpg" alt="YAKA DETAYLI KOLSUZ BLUZ" title="YAKA DETAYLI KOLSUZ BLUZ" />
+                                            <img src="/lab/projects/yargici/upload/products/product-1.jpg" alt="YAKA DETAYLI KOLSUZ BLUZ" title="YAKA DETAYLI KOLSUZ BLUZ" />
                                             <div class="ems-prd-icons">
                                                 <div class="ems-prd-icons-news">
                                                     <span>Yeni</span>
@@ -253,7 +253,7 @@
                                 <div class="ems-prd-inner">
                                     <div class="ems-prd-image">
                                         <a href="javascript:void(0);" alt="YAKA DETAYLI KOLSUZ BLUZ" title="YAKA DETAYLI KOLSUZ BLUZ">
-                                            <img src="/lab/projects/yargici//upload/products/product-1.jpg" alt="YAKA DETAYLI KOLSUZ BLUZ" title="YAKA DETAYLI KOLSUZ BLUZ" />
+                                            <img src="/lab/projects/yargici/upload/products/product-1.jpg" alt="YAKA DETAYLI KOLSUZ BLUZ" title="YAKA DETAYLI KOLSUZ BLUZ" />
                                              <div class="ems-prd-icons">
                                                 <div class="ems-prd-icons-news">
                                                     <span>Yeni</span>
@@ -300,7 +300,7 @@
                                 <div class="ems-prd-inner">
                                     <div class="ems-prd-image">
                                         <a href="javascript:void(0);" alt="YAKA DETAYLI KOLSUZ BLUZ" title="YAKA DETAYLI KOLSUZ BLUZ">
-                                            <img src="/lab/projects/yargici//upload/products/product-1.jpg" alt="YAKA DETAYLI KOLSUZ BLUZ" title="YAKA DETAYLI KOLSUZ BLUZ" />
+                                            <img src="/lab/projects/yargici/upload/products/product-1.jpg" alt="YAKA DETAYLI KOLSUZ BLUZ" title="YAKA DETAYLI KOLSUZ BLUZ" />
                                             <div class="ems-prd-icons">
                                                 <div class="ems-prd-icons-news">
                                                     <span>Yeni</span>
@@ -347,7 +347,7 @@
                                 <div class="ems-prd-inner">
                                     <div class="ems-prd-image">
                                         <a href="javascript:void(0);" alt="YAKA DETAYLI KOLSUZ BLUZ" title="YAKA DETAYLI KOLSUZ BLUZ">
-                                            <img src="/lab/projects/yargici//upload/products/product-1.jpg" alt="YAKA DETAYLI KOLSUZ BLUZ" title="YAKA DETAYLI KOLSUZ BLUZ" />
+                                            <img src="/lab/projects/yargici/upload/products/product-1.jpg" alt="YAKA DETAYLI KOLSUZ BLUZ" title="YAKA DETAYLI KOLSUZ BLUZ" />
                                              <div class="ems-prd-icons">
                                                 <div class="ems-prd-icons-news">
                                                     <span>Yeni</span>
@@ -394,7 +394,7 @@
                                 <div class="ems-prd-inner">
                                     <div class="ems-prd-image">
                                         <a href="javascript:void(0);" alt="YAKA DETAYLI KOLSUZ BLUZ" title="YAKA DETAYLI KOLSUZ BLUZ">
-                                            <img src="/lab/projects/yargici//upload/products/product-1.jpg" alt="YAKA DETAYLI KOLSUZ BLUZ" title="YAKA DETAYLI KOLSUZ BLUZ" />
+                                            <img src="/lab/projects/yargici/upload/products/product-1.jpg" alt="YAKA DETAYLI KOLSUZ BLUZ" title="YAKA DETAYLI KOLSUZ BLUZ" />
                                             <div class="ems-prd-icons">
                                                 <div class="ems-prd-icons-news">
                                                     <span>Yeni</span>
@@ -441,7 +441,7 @@
                                 <div class="ems-prd-inner">
                                     <div class="ems-prd-image">
                                         <a href="javascript:void(0);" alt="YAKA DETAYLI KOLSUZ BLUZ" title="YAKA DETAYLI KOLSUZ BLUZ">
-                                            <img src="/lab/projects/yargici//upload/products/product-1.jpg" alt="YAKA DETAYLI KOLSUZ BLUZ" title="YAKA DETAYLI KOLSUZ BLUZ" />
+                                            <img src="/lab/projects/yargici/upload/products/product-1.jpg" alt="YAKA DETAYLI KOLSUZ BLUZ" title="YAKA DETAYLI KOLSUZ BLUZ" />
                                             <div class="ems-prd-icons">
                                                 <div class="ems-prd-icons-news">
                                                     <span>Yeni</span>
@@ -488,7 +488,7 @@
                                 <div class="ems-prd-inner">
                                     <div class="ems-prd-image">
                                         <a href="javascript:void(0);" alt="YAKA DETAYLI KOLSUZ BLUZ" title="YAKA DETAYLI KOLSUZ BLUZ">
-                                            <img src="/lab/projects/yargici//upload/products/product-1.jpg" alt="YAKA DETAYLI KOLSUZ BLUZ" title="YAKA DETAYLI KOLSUZ BLUZ" />
+                                            <img src="/lab/projects/yargici/upload/products/product-1.jpg" alt="YAKA DETAYLI KOLSUZ BLUZ" title="YAKA DETAYLI KOLSUZ BLUZ" />
                                             <div class="ems-prd-icons">
                                                 <div class="ems-prd-icons-news">
                                                     <span>Yeni</span>
@@ -535,7 +535,7 @@
                                 <div class="ems-prd-inner">
                                     <div class="ems-prd-image">
                                         <a href="javascript:void(0);" alt="YAKA DETAYLI KOLSUZ BLUZ" title="YAKA DETAYLI KOLSUZ BLUZ">
-                                            <img src="/lab/projects/yargici//upload/products/product-1.jpg" alt="YAKA DETAYLI KOLSUZ BLUZ" title="YAKA DETAYLI KOLSUZ BLUZ" />
+                                            <img src="/lab/projects/yargici/upload/products/product-1.jpg" alt="YAKA DETAYLI KOLSUZ BLUZ" title="YAKA DETAYLI KOLSUZ BLUZ" />
                                             <div class="ems-prd-icons">
                                                 <div class="ems-prd-icons-news">
                                                     <span>Yeni</span>
@@ -582,7 +582,7 @@
                                 <div class="ems-prd-inner">
                                     <div class="ems-prd-image">
                                         <a href="javascript:void(0);" alt="YAKA DETAYLI KOLSUZ BLUZ" title="YAKA DETAYLI KOLSUZ BLUZ">
-                                            <img src="/lab/projects/yargici//upload/products/product-1.jpg" alt="YAKA DETAYLI KOLSUZ BLUZ" title="YAKA DETAYLI KOLSUZ BLUZ" />
+                                            <img src="/lab/projects/yargici/upload/products/product-1.jpg" alt="YAKA DETAYLI KOLSUZ BLUZ" title="YAKA DETAYLI KOLSUZ BLUZ" />
                                             <div class="ems-prd-icons">
                                                 <div class="ems-prd-icons-news">
                                                     <span>Yeni</span>
@@ -629,7 +629,7 @@
                                 <div class="ems-prd-inner">
                                     <div class="ems-prd-image">
                                         <a href="javascript:void(0);" alt="YAKA DETAYLI KOLSUZ BLUZ" title="YAKA DETAYLI KOLSUZ BLUZ">
-                                            <img src="/lab/projects/yargici//upload/products/product-1.jpg" alt="YAKA DETAYLI KOLSUZ BLUZ" title="YAKA DETAYLI KOLSUZ BLUZ" />
+                                            <img src="/lab/projects/yargici/upload/products/product-1.jpg" alt="YAKA DETAYLI KOLSUZ BLUZ" title="YAKA DETAYLI KOLSUZ BLUZ" />
                                             <div class="ems-prd-icons">
                                                 <div class="ems-prd-icons-news">
                                                     <span>Yeni</span>
@@ -676,7 +676,7 @@
                                 <div class="ems-prd-inner">
                                     <div class="ems-prd-image">
                                         <a href="javascript:void(0);" alt="YAKA DETAYLI KOLSUZ BLUZ" title="YAKA DETAYLI KOLSUZ BLUZ">
-                                            <img src="/lab/projects/yargici//upload/products/product-1.jpg" alt="YAKA DETAYLI KOLSUZ BLUZ" title="YAKA DETAYLI KOLSUZ BLUZ" />
+                                            <img src="/lab/projects/yargici/upload/products/product-1.jpg" alt="YAKA DETAYLI KOLSUZ BLUZ" title="YAKA DETAYLI KOLSUZ BLUZ" />
                                             <div class="ems-prd-icons">
                                                 <div class="ems-prd-icons-news">
                                                     <span>Yeni</span>
@@ -723,7 +723,7 @@
                                 <div class="ems-prd-inner">
                                     <div class="ems-prd-image">
                                         <a href="javascript:void(0);" alt="YAKA DETAYLI KOLSUZ BLUZ" title="YAKA DETAYLI KOLSUZ BLUZ">
-                                            <img src="/lab/projects/yargici//upload/products/product-1.jpg" alt="YAKA DETAYLI KOLSUZ BLUZ" title="YAKA DETAYLI KOLSUZ BLUZ" />
+                                            <img src="/lab/projects/yargici/upload/products/product-1.jpg" alt="YAKA DETAYLI KOLSUZ BLUZ" title="YAKA DETAYLI KOLSUZ BLUZ" />
                                             <div class="ems-prd-icons">
                                                 <div class="ems-prd-icons-news">
                                                     <span>Yeni</span>

@@ -135,7 +135,7 @@
             }
         }
         .ems-grid-gift-box {
-            margin-top: 15px;
+            margin-top: 10px;
             font-size: 13px;
             > a{
                 span.cStyler{ width:15px; height:15px; }
@@ -160,7 +160,8 @@
                 color: #ffffff;
                 padding: 5px;
                 top: 50%;
-                margin-top: -16px;
+                margin-top: -15px;
+                height: 30px;
                 &.minus {
                     left: -30px;
                     i{
@@ -174,7 +175,7 @@
                     }
                 }
                 &.plus {
-                    right: -30px;
+                    right: -25px;
                     i{
                         &:before{
                             content:'+';
@@ -192,6 +193,8 @@
             }
         }
         .ems-grid-delete {
+            a{ @include setTransform(rotate(0)); }
+            a:hover, a:focus{ @include setTransform(rotate(90deg)); }
             i {
                 font-size: 12px;
                 &:before{ color: $colorDefault; font-size: 12px; }
@@ -218,15 +221,6 @@
                 min-height: 50px;
                 overflow: hidden;
                 display: block;
-            }
-            [id$="lblProm"] ul {
-                display: table;
-                padding: 5px 0; 
-                font-size: 15px; 
-                color: $red;
-                &:empty {
-                    display: none;
-                }
             }
             .ems-grid-size{
                 span{
@@ -565,32 +559,6 @@
     }
 }
 
-/*sifremi unuttum*/
-.tableSifremiUnuttum {
-    width: 100%;
-    table-layout: fixed;
-    th, [id$="lbfUYE_KONTROLKODU"] {
-        font-family: $fM;
-        font-size: 14px;
-    }
-    th {
-        width: 23%;
-        text-align: left;
-    }
-    td {
-        input, a.btnUyeSifreGonder {
-            max-width: 400px;
-        }
-        a.btnUyeSifreGonder {
-            width: 100%;
-            margin-top: 10px;
-        }
-        &.tableSifremiUnuttum_tdCaptchaImage1 {
-            padding: 10px 0;
-        }
-    }
-}
-
 
 @media screen and (max-width: 1100px) {
     /*teslimat*/
@@ -672,17 +640,15 @@
     }
 }
 
+/*Mobile grid 960px*/
 @media screen and (max-width: $breakpointSM) {
-    .ems-grid-default {
-         margin-left: 20px;
-         margin-right: 20px;
-    }
-    /*sepet*/
+    
+    /*page cart*/
     .ems-grid-cart {
         > div {
             > div {
                 display: inline-block;
-                vertical-align: top;
+                vertical-align: middle;
             }
         }
         .ems-grid-header, .ems-grid-header:first-child{ display: none; }
@@ -696,27 +662,37 @@
                 padding-top: 10px;
             }
             .ems-grid-img {
-                width: 25%;
+                float: left;
+                width: 20%;
                 padding-top: 20px !important;
-                padding-right: 20px;
-                padding-left: 50px !important;
+                padding-bottom: 20px !important;
+                padding-right: 0;
+                padding-left: 0 !important;
                 img {
                     max-width: 100%;
                 }
             }
             .ems-grid-name {
-                width: 75%;
-                padding: 20px 20px 0 0;
+                width: 80%;
+                padding: 30px 50px 0 20px;
                 text-align: left;
+                > a{
+                    max-height: 40px; min-height: 40px;
+                }
+            }
+            .ems-grid-size {
+                padding-top: 5px;
             }
             .ems-grid-piece {
-                width: 15%;
+                width: 37.5%;
                 text-align: left;
-                margin-left: 25%;
+                padding-left: 50px;
             }
             .ems-grid-price {
-                width: 30%;
+                width: 37.5%;
                 text-align: right;
+                padding-right: 20px;
+                span{ font-size: 15px; }
             } 
             .ems-grid-price-total {
                 position: static;
@@ -727,29 +703,23 @@
                 }
             }
             .ems-grid-delete {
-                margin-top: 0;
                 position: absolute;
-                left: 0;
-                top: 30px;
+                right: 0;
+                top: 5px;
                 width: 50px;
                 text-align: center;
-                font-size: 14px;
                 padding-bottom: 10px;
                 a {
                     background: none !important;
                     border-radius: 0;
-                    &:before{
-                        content: '\e921';
-                        font-size: 10px;
-                        color: $sText;
-                        display: inline-block;
-                        font-family: 'icomoon';
-                    }
                     span{ display: none; }
                 }
             }
+            .ems-grid-gift-box { display: none; }
         }
     }
+
+
     /*Cart Adress*/
     .page-cart {
         .ems-grid-address {
@@ -870,13 +840,6 @@
                 &:last-child > div {
                     border-bottom-width: 0;
                 }
-                [id$="lbfURN_KDVDAHIL"] {
-                    display: inline-block;
-                    font-family: inherit;
-                    font-size: inherit;
-                    margin-top: 0;
-                    margin-left: 5px;
-                }
                 .ems-grid-img, .ems-grid-price, .ems-grid-piece, .ems-grid-price-total {
                     text-align: left;
                 }
@@ -897,9 +860,6 @@
                 display: block !important;
                 position: relative;
                 border-left:0;
-                [id$="lbfURN_KDVDAHIL"] {
-                    display:none;
-                }
                 .ems-grid-price {
                     font-size: 18px;
                     height: 51px;
@@ -992,9 +952,6 @@
                     height: 100px !important;
                     span {
                         font-size: 18px;
-                        &[id$="lbfURN_KDVDAHIL"] {
-                            display:none;
-                        }
                     }
                 }
                 .ems-grid-name {
@@ -1140,53 +1097,13 @@
         }
 
     }
-
 }
 
-@media screen and (max-width: 480px) {
-    //sepet
-    .ems-grid-cart .ems-grid-row .ems-grid-fav {
-        top: 75px;
-    }
-    //responsive table
-    .site-content {
-        .ems-grid-order, .ems-grid-order-products, .ems-grid-favorites, .ems-grid-refund, .ems-page-member-follow-list .ems-grid-default, .ems-grid-message {
-            > div {
-                > div {
-                    padding-left: 14px;
-                    padding-right: 14px;
-                    &.ems-grid-name {
-                        height: 68px;
-                        > * {
-                            height: 40px;
-                        }
-                    }
-                    &.ems-grid-report {
-                        height: 105px;
-                        > a {
-                            display: block !important;
-                            margin: 0 !important;
-                            padding: 0 !important;
-                            border: none !important;
-                            &:first-child {
-                                margin-bottom: 15px !important;
-                            }
-                        }
-                    }
-                    &.ems-grid-order-no {
-                        height: 70px;
-                    }
-                    &.ems-grid-price {
-                        height: 70px;
-                        [id$="lbfURN_KDVDAHIL"] {
-                            margin-left: 0;
-                        }
-                    }
-                    &.ems-grid-date {
-                        height: 70px;
-                    }
-                }
-            }
+/*Mobile grid 480px*/
+@media screen and (max-width: $breakpointXXS) {
+    .ems-grid-cart {
+        .ems-grid-row {
+            .ems-grid-piece{ padding-left: 50px; }
         }
     }
 }

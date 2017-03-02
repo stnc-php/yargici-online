@@ -834,8 +834,9 @@
                          font-size: 14px;
                          letter-spacing: 2px;
                          padding: 12px 5px;
-                         display: block;
+                         display: inline-block;
                          font-family: $fB;
+                         position: relative;
                          i.icon-ico_arw-fill-right{
                             display: inline-block;
                             font-size: 7px;
@@ -848,6 +849,19 @@
                             &:before{
                                 font-size: 9px;
                             }
+                        }
+                        &:before{
+                            content:'';
+                            width: 0;
+                            height: 2px;
+                            background:#fff;
+                            @include transition(all .2s ease);
+                            position: absolute;
+                            bottom: 5px;
+                            left: 0;
+                        }
+                        &:hover{
+                            &:before{ width: 100%; } 
                         }
                      }
                      p{
@@ -882,7 +896,7 @@
                         right: 0;
                         @include setTransform(translateX(-50%));
                         .bnr-box-tt1, .bnr-box-tt2{ font-size: 30px; }
-                        .bnr-box-link{ text-align: right; }
+                        .bnr-box-link{ float: right; }
                     }
                 }
                 &.last{
@@ -891,7 +905,12 @@
                     }
                 }
                 &.dark{
-                    .grid-template-text{ color: $lines; }
+                    .grid-template-text{
+                        color: $lines;
+                        .bnr-box-link{
+                            &:before{ background: $lines; }
+                        }   
+                    }
                 }
             }
         }
@@ -925,6 +944,7 @@
                             color:$lines;
                             .bnr-box-tt1{padding-top: 5px; font-size: 14px; font-family:$fD; }
                             .bnr-box-tt2 { padding-top: 5px; font-family: $fB; }
+                            .bnr-box-link:before{ background:$lines; }
                         }
                     }
                 }
@@ -942,6 +962,7 @@
                             color: $lines;
                             .bnr-box-tt1{ font-family: $dD; }
                             .bnr-box-tt2 { font-family:$fB; }
+                            .bnr-box-link:before{ background:$lines;}
                         }
                         .grid-template-img { display: inline-block; }
                     }
