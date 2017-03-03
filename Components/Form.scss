@@ -52,7 +52,7 @@ span.cStyler, span.rStyler{
             &:after{
                 position: absolute;
                 top: 50%;
-                right: 10px;
+                right: 20px;
                 content: '\e900';
                 font-family: 'icomoon';
                 font-size: 12px;
@@ -194,7 +194,7 @@ span.cStyler, span.rStyler{
                 > * {
                     display: inline-block;
                 }
-                .ems-form-obj { }
+                .ems-form-obj {}
             }
         }
     }
@@ -202,5 +202,5 @@ span.cStyler, span.rStyler{
 
 /*Mobile grid 960px*/
 @media screen and (max-width:$breakpointSM) {
-    span.rStyler{ width: 20px; height: 20px; top: 5px; }
+    span.cStyler, span.rStyler{ width: 20px; height: 20px; top: 5px; }
 }

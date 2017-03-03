@@ -681,6 +681,11 @@ body.suggestion-popup-ready{
     /*Mobile size module visible*/
     body.mobi-size-ready{
         overflow: hidden;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
         .page-detail .ems-prd-detail-inner .ems-prd-size {
             bottom: 60px;
         }

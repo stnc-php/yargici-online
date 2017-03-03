@@ -311,6 +311,54 @@
             }
         }
     }
+    /*Popup new address*/
+    &-new-address{
+        max-width: 700px;
+        .btn-popup-close{
+            right:50px;
+            .icon-ico_close{
+                font-size:20px;
+                &:before{ font-size:20px; }
+            }
+        }
+        .popup-default-body{
+            margin: 0 50px;
+            border-top: 1px solid #d8d8d8;
+            max-height: 750px;
+            overflow: auto;
+            .ems-form {
+                width: 100%;
+                max-width: 375px;
+                margin: 0 auto;
+                padding-top: 40px;
+                .ems-form-inner{
+                    .ems-message { margin-bottom: 20px; }
+                    .ems-field {
+                        textarea { resize: none; height: 120px; }
+                        .ems-form-label {width: auto; }
+                        .ems-form-obj { width: 100%; }
+                        .ems-form-double{
+                            display: table;
+                            width: 100%;
+                            margin: 10px 0 20px 0;
+                            .ems-form-obj{
+                                display: table-cell;
+                                vertical-align: middle;
+                                width: 50%;
+                            }
+                        }
+                        &.submit{
+                            margin-bottom: 0;
+                            .btn-default { width:100%; max-width:200px; }
+                        }
+                    }
+                    .ems-field-check {
+                        .ems-form-obj { position: relative; }
+                    }
+                }
+            }
+        }
+    }
 }
 
 /*Mobile 610px*/

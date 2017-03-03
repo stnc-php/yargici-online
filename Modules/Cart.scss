@@ -286,6 +286,17 @@
     .vail-cart { display: none; }
 }
 
+
+/*Page cart desktop hidden controller 960px*/
+@media screen and (min-width: 960px) {
+    .page-cart-layout{
+        .site-header .ems-row-1, .site-header .ems-row-3{ display:none; }
+        .site-header { min-height:auto; margin:30px 0; border-bottom:1px solid #d8d8d8; padding-bottom: 30px; }
+        .site-header-wrapper { border: none; z-index: 14; }
+        .site-footer, .campaign-bnr{ display:none; }
+    }
+}
+
 /*Page cart layout*/
 .page-cart {
     .ems-page-default{
@@ -293,6 +304,7 @@
         &-left{
             width: calc(100% - 375px);
             position: relative;
+            z-index: 1;
             float: left;
         }
         &-right{
@@ -325,6 +337,32 @@
             }
             &:empty{
                 display: none;
+            }
+        }
+        /*Coupon code*/
+        .ems-cart-coupon {
+            &-header{
+                display: none;
+                span{
+                    font-size: 18px;
+                    font-family: $fB;
+                }
+            }
+            .ems-cart-coupon-body {
+                .ems-cart-coupon-check{ padding:20px 0; }
+                .ems-cart-coupon-use{
+                    position: relative;
+                    input { width: 100%; max-width: 220px; margin-right: 20px; }
+                    input, .btn-default-coupon{ display: inline-block; vertical-align: middle; }
+                    .btn-default-coupon{ width:100%; max-width:160px; padding-top:16px; padding-bottom:16px; }
+                }
+            }
+            .ems-message {
+                margin-top: 10px;
+                margin-bottom: 10px;
+                &:empty{
+                    display: none;
+                }
             }
         }
         .ems-cart-box{
@@ -395,70 +433,6 @@
                         }
                     }
                 }
-            }
-        }
-        /*Coupon code*/
-        .ems-cart-coupon {
-            display: none !important;
-            padding: 10px 30px 30px 30px;
-            > span {
-                display: inline-block;
-                font-family: $fD;
-                color: $text;
-                cursor: pointer;
-            }
-            &-header{
-                cursor:pointer;
-                span{
-                    font-size: 18px;
-                    font-family: $fB;
-                }
-                i{
-                    float: right;
-                    font-size: 10px;
-                    position: relative;
-                    top:7px;
-                    &:before{
-                        font-size: 10px;
-                        color: $colorDefault;
-                    }
-                }
-            }
-            .ems-cart-coupon-body {
-                display: none;
-                .ems-cart-coupon-use{
-                    position: relative;
-                    input {
-                        width: 100%;
-                        padding-right: 50px;
-                        background: $vlightBg;
-                        height: 40px;
-                        line-height: 20px;
-                    }
-                    .btn-default-coupon{
-                        position: absolute;
-                        top: 0;
-                        right: 0;
-                        padding: 0;
-                        width: 50px;
-                        height: 40px;
-                        line-height: 40px;
-                        i{
-                            font-size: 12px;
-                            &:before{ font-size: 12px; }
-                        }
-                    }
-                }
-                .ems-message {
-                    margin-top: 5px;
-                    &:empty{
-                        display: none;
-                    }
-                }
-            }
-            &.opened {
-                .ems-cart-coupon-header {margin-bottom: 10px;}
-                .ems-cart-coupon-body {display: block;}
             }
         }
         .ems-cart-button {
@@ -627,22 +601,33 @@
     .ems-page-order-delivery {
         position: relative;
 
+        /*Delivery page cart grid*/
+        .ems-grid-cart {
+            .ems-grid-header {
+                .ems-grid-img span{ display: none; }
+                .ems-grid-name span { display: block; text-align: left; padding-left:10px; }
+            }
+            .ems-grid-row, .ems-grid-header {
+                .ems-grid-delete { display: none !important; }
+                .ems-grid-price { width: 15%; }
+            }
+        }
+
         /*Tab*/
         .ems-tab {
             margin-top: 0;
+            .balance-query{
+                .btn-link{ padding:15px 0; margin: 20px 0 5px 0; }
+            }
             .ems-page-default-title{
-                span{
-                    border: none;
-                    margin-bottom: 0;
-                    margin-top: 35px;
-                }
+                span{ border: none; margin-bottom: 0; }
             }
             /*Vertical*/
             &-vertical {
                 .ems-tab-inner{
                     > ul.content-js{
                         > li{
-                            margin-bottom: 10px;
+                            margin-bottom: 15px;
                         }
                     }   
                 }
@@ -702,6 +687,7 @@
                                                 }
                                             }
                                         }
+                                        .inline-text { display:block; font-size:13px; font-family:$fB; padding:10px; }
                                     }
                                 }
                             }
@@ -738,19 +724,21 @@
                                                 display: table-cell;
                                                 vertical-align: top;
                                                 width: 33.333%;
+                                                line-height: 22px;
                                             }
                                             span.obj{ text-align: center; }
-                                        }
-                                        .title{
-                                            > span{
-                                                span{ }
-                                            }
                                         }
                                         .line{
                                             > span{
                                                 font-family: $fD;
                                                 span{
                                                     font-family: $fD;
+                                                }
+                                                span.rStyler{
+                                                    top:0;
+                                                    display: inline-block;
+                                                    float: inherit;
+                                                    vertical-align: middle;
                                                 }
                                             }
                                         }
@@ -785,44 +773,6 @@
                                                     margin-left: 10px;
                                                 }
                                             }
-                                        }
-                                    }
-                                }
-                                .ems-3d-secure{
-                                    text-align: center;
-                                }
-                            }
-                            .balance-query{ width: 100%; }
-                            .ems-cart-pay-adress {
-                                margin-top: 35px;
-                                margin-bottom: 10px;
-                                .left, .right {
-                                    display: inline-block;
-                                    width: 49%;
-                                    vertical-align: top;
-                                }
-                                .ems-delivery-address {
-                                    &-lbl{
-                                        font-family: $fB;
-                                        font-size: 15px;
-                                        color: $colorDefault;
-                                        padding-bottom: 20px;
-                                    }
-                                    &-obj{
-                                        h1{
-                                            font-family: $fB;
-                                            font-size: 15px;
-                                            padding-bottom: 15px;    
-                                        }
-                                        min-height: 120px;
-                                        max-height: 120px;
-                                        overflow: hidden;
-                                        color: $colorDefault;
-                                        font-size: 15px;
-                                        padding:20px;
-                                        border: 1px solid $borderColor;
-                                        span{
-                                            line-height: 20px;
                                         }
                                     }
                                 }
@@ -880,6 +830,40 @@
                 }
             }
         }
+        .ems-cart-pay-adress {
+            margin-top: 35px;
+            margin-bottom: 10px;
+            .left, .right {
+                display: inline-block;
+                width: 49%;
+                vertical-align: top;
+            }
+        }
+        .ems-delivery-address {
+            &-lbl{
+                font-family: $fB;
+                font-size: 15px;
+                color: $colorDefault;
+                padding-bottom: 20px;
+            }
+            &-obj{
+                h1{
+                    font-family: $fB;
+                    font-size: 15px;
+                    padding-bottom: 15px;    
+                }
+                min-height: 120px;
+                max-height: 120px;
+                overflow: hidden;
+                color: $colorDefault;
+                font-size: 15px;
+                padding:20px;
+                border: 1px solid $borderColor;
+                span{
+                    line-height: 20px;
+                }
+            }
+        }
         .ems-form {
             &-horizontal{
                 .ems-form-inner{
@@ -904,9 +888,14 @@
                             }
                         }
                         &-check{
+                            border-top: 1px solid $borderColor;
+                            padding-top: 20px;
+                            padding-bottom: 30px;
+                            margin: 0;
                             .ems-form-obj:first-child{
-                                padding-right: 30px;
+                                padding-right: 25px;
                             }
+                            .address-type-title { padding-bottom: 10px; }
                         }
                         &-invoice-type{
                             margin-bottom: 30px;
@@ -917,8 +906,6 @@
                             }
                         }
                         &-gift-type{
-                            border-top: 1px solid $borderColor;
-                            padding-top: 40px;
                             display: table;
                             .ems-field-right, .ems-field-left{
                                 display:table-cell;
@@ -939,10 +926,7 @@
                             .ems-form-obj{
                                 &:first-child{
                                     padding-right: 0;
-                                }
-                                textarea{
-                                    margin-top:15px;
-                                }
+                                } 
                             }
                         }
                         &.address-result{
@@ -955,20 +939,26 @@
                             }
                             .ems-form-text{
                                 padding-top: 20px;
+                                max-width: 350px;
                                 >*{
                                     display: inline-block;
                                     max-width: 500px;
                                     line-height: 25px;
                                 }
                             }
+                            .address-update{
+                                a{
+                                    display: inline-block;
+                                    color: #314181;
+                                    text-decoration: underline;
+                                    padding: 10px 0;
+                                }
+                            }
                         }
                         &.address-type{
-                            .ems-form-obj{
-                                padding-right: 30px;
-                            }
-                            &.address-type-1{ 
-                                margin-top: 20px; 
-                            }
+                            border-top: none;
+                            .ems-form-obj{ padding-right:30px; line-height:22px; }
+                            &.address-type-1{ padding-top:25px; padding-bottom:15px; }
                         }
                         .ems-form-obj{
                             position: relative;
@@ -982,6 +972,7 @@
                                     border: 1px solid $colorDefault;
                                     text-align: center;
                                     cursor:pointer;
+                                    line-height: 1;
                                     &:before{
                                         content: '?';
                                         display: inline-block;
@@ -1004,6 +995,7 @@
                     .address-holder-double{
                         display: table;
                         width: 100%;
+                        padding-bottom: 20px;
                         .ems-field {
                             display: table-cell;
                             width: 50%;
@@ -1025,7 +1017,6 @@
     /*Cart order result*/
     .ems-page-order-result {
         .ems-row-1{
-            border-top:1px solid $borderColor;
             padding-top:30px;
         }
         .order-result {
@@ -1150,7 +1141,42 @@
 }
 
 /*Mobile 1100px*/
-@media screen and (max-width: 1100px) {}
+@media screen and (max-width: 1100px) {
+    .page-cart{
+        .ems-page-order-delivery{
+            .ems-tab-horizontal{
+                .ems-tab-inner{
+                    > ul.content-js{
+                        > li{
+                            .ems-form-horizontal, .ems-inst-opt{ width: 100%; float: none; }
+                            .ems-form-horizontal{ padding: 20px 10px 20px 10px; }
+                            .ems-form-horizontal .ems-form-inner .ems-field .ems-form-obj { padding: 0 10px; }
+                            .ems-inst-opt{
+                                padding-top: 5px;
+                                min-height: auto;
+                                &:before{ display: none; }
+                            }
+                        }
+                    }
+                }
+            }
+            .ems-form-horizontal{
+                .ems-form-inner{
+                    .address-holder-double{
+                        .ems-field {
+                            width: 100%;
+                            display: block;
+                        }
+                        .ems-field.address-result{
+                             .sStylerMainWrp, .ems-form-text{ max-width: 100%; }
+                             .ems-form-obj select{ max-width: 100%; }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 
 /*Cart page desktop header reset fixed animate 960px*/
@@ -1173,17 +1199,31 @@
         .ems-cargo,
         .mobile-element-bottom-menu { display: none; }
     }
+
     /*Page cart layout*/
     .page-cart {
         .ems-container {
             max-width: 100%;
             padding: 0 0 60px 0;
         }
+        /*Cart delivery page*/
+        &.step1 {
+            .ems-page-default{
+                &-left{ padding: 0; }
+                &-left, &-right{ float: none;}
+            } 
+            .ems-grid-default { margin: 0 20px; }
+        }
+        /*Cart last page*/
+        &.step2 {
+            .widget-slider-content{ display: none; }
+        }
+        /*Cart page widget slider*/
         .widget-slider-content{
             margin-top: 0;
         }
         .ems-page-default{
-            &-left, &-right{ float: none; }
+            &-left, &-right{ float: none;}
             &-left, &-right{ width: 100%; }
             &-left { padding: 0 20px; }
             &-right{ padding:0; } 
@@ -1194,8 +1234,7 @@
                 span{ margin-top: 0; }
             }
              .ems-cart-summary{
-                 border-left: 0;
-                 border-right: 0;
+                 border-left: 0; border-right: 0;
                  .title { display: none; }
              }
              .total-table-wrapper{
@@ -1233,10 +1272,209 @@
                     }
                  }
              }
+             /*Coupon code*/
+            .ems-cart-coupon {
+                .ems-cart-coupon-body {
+                    padding: 0 20px 20px;
+                    .ems-cart-coupon-use{
+                        input{ margin-right:1%; }
+                        input, .btn-default-coupon{ width:49%; max-width:49%; }
+                    }
+                }
+            }
         }
+        /*Page delivery page layout*/
+        .ems-page-order-delivery{
+            
+            /*Delivery page cart grid*/
+            .ems-grid-cart {
+                .ems-grid-row {
+                    .ems-grid-price { width: 37.5%; }
+                }
+            }
 
-        /*Page delivery page*/
-
+            /*Tab*/
+            .ems-tab-vertical{
+                .ems-tab-inner{
+                    > ul.content-js{
+                        > li{
+                            margin-bottom: 0;
+                            margin-top:2px;
+                            > a{
+                                span{ color:$lines; }
+                            }
+                            .content{ position: relative; z-index: 2; }
+                        }
+                        > li:first-child{ margin-top:0; }
+                    }
+                }
+            }
+            .ems-form .ems-form-inner{
+                .ems-field-gift-type .ems-field-right{
+                    position: fixed;
+                    bottom: 0;
+                    width: 100%;
+                    height: 60px;
+                    left: 0;
+                    z-index: 16;
+                    .ems-form-cotinue{
+                        text-align: center;
+                        .btn-default{
+                            top: inherit;
+                            margin: 0;
+                            width: 100%;
+                            max-width: 100%;
+                            padding-top: 22px;
+                            padding-bottom: 20px;
+                        }
+                    }
+                }
+                .ems-field{
+                    &.address-type{
+                        padding: 20px;
+                    }
+                    &-delivery{
+                        padding:0 20px;
+                        margin-bottom: 0;
+                    }
+                    &-gift-type{
+                        padding-left: 20px;
+                        padding-right: 20px;
+                        border: none;
+                        .ems-field-left,
+                        .ems-field-right{ display: block; padding: 0; vertical-align: inherit; width: 100%; }
+                        .ems-field-left{ border-top:1px solid $borderColor; padding-top: 20px; }
+                    }
+                    &.address-result{
+                        padding:0 20px;
+                        .sStylerMainWrp { max-width: 100%; }
+                        .ems-form-obj select{ max-width: 100%; }
+                    }
+                    &-check-1{
+                        border: none;
+                        padding: 0 20px;
+                        .address-type-title { border-top:1px solid $borderColor; padding-top: 10px;  }
+                    }
+                }
+            }
+            .ems-tab{
+                &-horizontal{
+                    .ems-tab-inner{
+                        > ul.navigation-js { display: none; }
+                        > ul.content-js{
+                            margin-bottom: 0;
+                            > li{
+                                margin: 0;
+                                display:block;
+                                border-top:1px solid $borderColor;
+                                > a{
+                                    display: block;
+                                    background: #f0f0f0;
+                                    text-align: center;
+                                    span{
+                                        color: $lines;
+                                        font-size: 15px;
+                                    }
+                                    &:before{ display: none; }
+                                }
+                                .content{
+                                    height: 0;
+                                    visibility: hidden;
+                                    opacity: 0;
+                                    .ems-form-content{ border: none; }
+                                    .ems-form-horizontal{ padding-top:0; padding-bottom:0; }
+                                }
+                            }
+                            
+                            > li.selected{
+                                border: none;
+                                > a{
+                                    background: #fff;
+                                }
+                                .content{
+                                    height: auto;
+                                    visibility: visible;
+                                    opacity: 1;
+                                }
+                            }
+                        }
+                    }
+                }
+                .balance-query {
+                    padding:0 20px;
+                    .btn-link{ margin: 15px 0; }
+                }
+                .ems-page-default{
+                    &-title span{ padding:20px 0; margin: 0 20px;  font-size:15px; color:$lines; border-top:1px solid $borderColor; }
+                }
+                .ems-contracts-form-payment{
+                    position: fixed;
+                    width: 100%;
+                    height: 60px;
+                    bottom: 0;
+                    left: 0;
+                    text-align: center;
+                    z-index: 16;
+                    .btn-default {
+                        margin-top: 0;
+                        width: 100%;
+                        margin-bottom: 0;
+                        max-width: 100%;
+                        padding-top: 21px;
+                        padding-bottom: 21px;
+                    }
+                }
+                .ems-contracts{
+                    &-title{ padding:30px 20px 20px 20px; }
+                    &-form-check{ padding:30px 20px; }
+                }
+            }
+            .ems-cart-pay-adress {
+                margin: 0;
+                padding: 0 20px;
+                .left { border-top:1px solid $borderColor; }
+                .left, .right {
+                    width: 100%;
+                }
+                .ems-delivery-address {
+                    &-lbl{ font-family:$fD; letter-spacing: 1px; padding-top: 20px; }
+                    &-obj{ min-height: auto; max-height: inherit; }
+                }
+            }
+            .ems-form-horizontal{
+                .ems-form-inner{
+                    .address-holder-double{
+                        .ems-field.address-result:last-child{ margin-bottom: 10px; }
+                    }
+                }
+            }
+        }
+        /*Cart last page*/
+        .ems-page-order-result{
+            .order-result{
+                &-content{ padding-left: 20px; padding-right: 20px; }
+                padding:50px 0 60px 0;
+                .bottom-step {
+                .prev { display: none; }
+                .next{
+                    padding: 0;
+                    width: 100%;
+                    position: fixed;
+                    bottom: 0;
+                    left: 0;
+                    height: 60px;
+                    z-index: 16;
+                    .btn-default{ margin: 0; border: none; padding-top:20px; padding-bottom:19px; }
+                    .btn-default:hover{
+                        border: none;
+                        background: $colorDefault;
+                        span{ color: #fff; }
+                        }
+                    }
+                }
+                .fsize-20{ font-size: 24px; color: $lines; letter-spacing:2px; }
+            }
+        }
     }
     /*Page cart scroll animate cart botton top effect*/
     body.header-fixed-animate{
