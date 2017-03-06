@@ -384,7 +384,7 @@
 }
 
 /*Order detail cart grid*/
-.ems-grid-order-products, .ems-grid-order-favorites, .ems-grid-order-gift, .ems-grid-order-message{
+.ems-grid-order-products, .ems-grid-favorites, .ems-grid-order-gift, .ems-grid-order-message{
     .ems-grid-header, .ems-grid-row{
         > div{  
             width: auto !important;
@@ -407,9 +407,6 @@
         .ems-grid-name{
             span{ display: inline-block; }
         }
-    }
-    > div{
-        .ems-grid-price-total{ display: table-cell !important; }
     }
     .ems-grid-row{
         border-left-width: 0;
@@ -450,10 +447,10 @@
 }
 
  /*Favorites*/
-.ems-grid-order-favorites {
+.ems-grid-favorites {
     .ems-grid-header, .ems-grid-row {
         > div{
-            &.col-7{ width: 7% !important; }
+            &.col-7{ width: 7%; }
         }
     }
     .ems-grid-row {
@@ -527,118 +524,6 @@
     }
 }
 
-/*Messages*/
-.ems-grid-message {
-    .ems-grid-row > div {
-        a {
-            display: block !important; 
-        }
-        a.emos_invisible {
-           display: none !important;
-        }
-        &.ems-grid-icon {
-            a.emos_invisible {
-                padding-right: 40px;
-            }
-            img {
-                position: absolute;
-                right: 30px;
-                top: 7px;
-            }
-        }
-    }
-    .ems-grid-row.newMessage {
-        > div {
-            font-family: $fM;
-            &.ems-grid-icon {
-                img {
-                    top: 14px;
-                }
-            }
-        }
-    }
-}
-
-
-@media screen and (max-width: 1100px) {
-    /*teslimat*/
-    .ems-grid-address {
-        .ems-grid-row {
-            margin-bottom: 20px;
-            border-top-width: 1px;
-            border-bottom-width: 1px; 
-            &:last-child{
-                > div {
-                    border-bottom-width: 0;
-                }
-            }
-            > div {
-                display: inline-block;
-                vertical-align: middle;
-                border-width: 0;
-                border-style: solid;
-                border-color: $borderColor;
-                padding: 10px 20px;
-                &.col-1 {
-                    width: 60%;
-                    padding-top: 20px;
-                }
-                &.col-2 {
-                    width: 40%;
-                    padding-right: 20px;
-                    padding-top: 20px;
-                    text-align: right;
-                }
-                &.col-3 {
-                    width: 100%;
-                    border-bottom-width: 0;
-                    margin-top: 20px;
-                    border-top-width: 1px;
-                    border-left-width: 0;
-                    > a.btnDefault {
-                        text-align: left;
-                        i{
-                            width: 20px;
-                            height: 20px;
-                            b{
-                                margin: 1px;
-                                width: 14px;
-                                height: 14px;
-                            }
-                        }
-                        span { font-size: 14px;}
-                        &.emos_selected {
-                            @include setTransform(none);
-                            span{ color: $lBlue; font-family: $fM; }
-                        }
-                    }
-                }
-            }
-            .ems-address-name {
-                font-size: 14px;
-                > span {
-                    display: none;
-                }
-            }
-            .ems-address {
-                font-size: 12px;
-            }
-            .ems-address-buttons {
-                a {
-                    font-size: 14px;
-                    i {
-                        margin-right: 10px;
-                    }
-                }
-                &.item-2 {
-                    > * {
-                        width: auto;
-                    }
-                }
-            }
-        }
-    }
-}
 
 /*Mobile grid 960px*/
 @media screen and (max-width: $breakpointSM) {
@@ -734,369 +619,109 @@
             }
         }
     }
-    /*responsive table*/
+
+    /*responsive grid table*/
     .site-content {
-        .ems-grid-order, .ems-grid-order-products, .ems-grid-favorites, .ems-grid-refund, .ems-page-member-follow-list .ems-grid-default, .ems-grid-message {
+        .ems-grid-order, .ems-grid-order-products, .ems-grid-favorites, .ems-grid-order-gift, .ems-grid-order-message {
             > div {
-                display: inline-block !important;
+                display: inline-block;
                 vertical-align: top;
                 width: 50%;
-                margin-top: 30px;
+                margin-top: 15px;
                 &:nth-child(1), &:nth-child(2) {margin-top: 0;}
                 > div {
                     display: block;
-                    padding: 14px 20px;
+                    padding: 10px 15px;
                     font-size: 16px;
                     text-align: left;
                     overflow: hidden;
-                    height: 50px;
+                    height: 60px;
+                    line-height: 40px;
                     &:empty, & > *:empty {
                         &:before {
                             content: "-";
                         } 
                     }
                     span {
-                        font-size: 12px;
+                        font-size: 15px;
                         font-weight: normal;
-                        font-family: $fM; 
-                    }
-                    &.ems-grid-img {
-                        height: 94px;
-                    }
-                    &.ems-grid-piece {
-                        height: 72px;
-                        > a {
-                            left: 75px;
-                            &:first-child {
-                                top: 33px;
-                            }
-                            &:last-child {
-                                top: 13px;
-                            }
-                        }
-                        > input {
-                            padding-right: 7%;
-                            height: 45px;
-                            line-height: 1;
-                        }
-                    }
-                    &.ems-grid-report {
-                        > a {
-                            margin-top: 0;
-                            margin-left: 20px;
-                            &:first-child {
-                                margin-left: 0;
-                                border-right: 1px solid $borderColor;
-                                padding-right: 20px;
-                            }
-                        }
-                    }
-                    &.ems-grid-name,  &.ems-grid-title {
-                        height: 72px;
-                        > * {
-                            display: block;
-                            height: 50px;
-                            overflow: hidden;
-                            line-height: 1.3;
-                        }
-                    }
-                    &.ems-grid-title {
-                        height: 70px;
-                        .lnkMesajOku {
-                            display: none;
-                        }
-                        > * {
-                            line-height: 1.5;
-                        }
-                    }
-                    &.ems-grid-price-total {
-                        height: 70px;
                     }
                 }
+                .ems-grid-img, .col-img{ height: 100px; line-height: 100px; text-align: left; }
             }
+
             .ems-grid-header {
                 border-left: 1px solid $borderColor; 
                 border-bottom: 1px solid $borderColor;
                 border-top: 1px solid $borderColor;
-                border-top-left-radius: 3px;
-                border-bottom-left-radius: 3px;
+                width: 50%;
+                float: left;
                 > div {
-                    width: 100% !important;
+                    width: 100%;
+                    border-top-width: 0;
+                    &:first-child { border-left-width: 0; border-top-width:0; }
+                    &:last-child{ border-bottom-width:0; }
+                    font-family: $fB; 
                 }
             }
+
             .ems-grid-row {
+                width:calc(100% - 50%);
                 border-bottom: 1px solid $borderColor;
                 border-top: 1px solid $borderColor;
-                border-radius: 0;
-                border-top-right-radius: 3px;
-                border-bottom-right-radius: 3px;
                 > div {
-                    width: 100% !important;
+                    width: 100%;
+                    border-left-width:0; 
+                    font-family: $fD;
                     &:first-child {
                         border-left-width: 0;
                         border-top-width: 0;
                     }
+                    .btn-link{ line-height: 1; }
+                    .grid-link { padding: 0; line-height: 1; }
+                    .btn-color {padding: 10px 0; }
                 }
                 &:last-child > div {
                     border-bottom-width: 0;
                 }
-                .ems-grid-img, .ems-grid-price, .ems-grid-piece, .ems-grid-price-total {
-                    text-align: left;
+                .col-img {
+                    a{ display: inline-block; }
+                    img { max-width: 100px; }
                 }
-                .ems-grid-img {
-                    img, a {
-                        display: table;
-                    }
+                .col-color{                    
+                    a img{ width: 25px; }
                 }
             }
         }
-        .ems-grid-order-products > div > div.ems-grid-name {
-            height: 100px;
-        }
-        .ems-grid-favorites {
-            .ems-grid-row {
-                width: auto;
-                margin-left: 90px;
-                display: block !important;
-                position: relative;
-                border-left:0;
-                .ems-grid-price {
-                    font-size: 18px;
-                    height: 51px;
-                    span {
-                        font-size: 18px;
-                    }
-                }
-                .ems-grid-name {
-                    position: absolute;
-                    top: 0;
-                    border: 0;
-                    padding: 30px 20px 0 110px; 
-                    span {
-                        display: inline-block;
-                        height: auto;
-                    }
-                }
-                .ems-grid-img {
-                    img {
-                        width: 70px;
-                    }
-                }
-                .ems-grid-piece {
-                    width: 90px !important;
-                    position: absolute;
-                    left: -90px;
-                    bottom: 8px;
-                }
-                > div {
-                    border-left:1px solid $borderColor !important;
-                }
-                .ems-grid-report {
-                    height: 80px;
-                    border-left: 0 !important;
-                    a {
-                        background: $lBlue;
-                        padding: 17px 10px 16px 10px !important;
-                        display: inline-block !important;
-                        margin: 0 !important;
-                        span {
-                            color: #fff;
-                            font-size: 14px;
-                        }
-                        &:first-child {
-                            margin: 0 !important;
-                        }
-                    }
-                }
-                .ems-grid-remove {
-                        position: absolute !important;
-                        bottom: 9px !important;
-                        top: inherit;
-                        left: 180px;
-                        right: inherit;
-                        border: 0 !important;
-                        width: auto !important;
-                    } 
-            }
-            .ems-grid-header {
-                width: 90px; 
-                float: left;
-                div {
-                    padding: 20px 10px;
-                    text-align: left;
-                    > span {
-                        font-size: 12px;
-                    }
-                }
-                .ems-grid-name, .ems-grid-piece, .ems-grid-report {
-                    display:none;
-                }
-                .ems-grid-price {
-                    height: 131px;
-                }
-            }    
-        }
-
-         .ems-page-member-follow-list {
-            .ems-grid-default > div {
-                display: block !important;
-            }
-            .ems-grid-row {
-                width: auto !important;
-                margin-left: 90px;
-                display: block !important;
-                position: relative;
-                border-left:0;
-                .ems-grid-price {
-                    font-size: 18px !important;
-                    height: 100px !important;
-                    span {
-                        font-size: 18px;
-                    }
-                }
-                .ems-grid-name {
-                    position: absolute;
-                    top: 0;
-                    border: 0;
-                    padding: 30px 20px 0 110px;
-                    height: 100px !important;
-                    a {
-                      height: 60px !important;  
-                    }
-                }
-                .ems-grid-img {
-                    img {
-                        width: 70px !important;
-                    }
-                }
-                .ems-grid-piece {
-                    width: 90px !important;
-                    position: absolute;
-                    left: -90px;
-                    bottom: 8px;
-                }
-                > div {
-                    border-left:1px solid $borderColor !important;
-                }
-                .ems-grid-report {
-                    height: 80px;
-                    border-left: 0 !important;
-                    a {
-                        background: $lBlue;
-                        padding: 17px 10px 16px 10px !important;
-                        display: inline-block !important;
-                        margin: 0 !important;
-                        span {
-                            color: #fff;
-                        }
-                        &:first-child {
-                            margin: 0 !important;
-                        }
-                    }
-                }
-                div.ems-grid-remove {
-                        width:100%;
-                        bottom: 0px !important;
-                        top: inherit !important;
-                        left: -89px;
-                        right: 0 !important;
-                        border: 0 !important;
-                        width: auto !important;
-                        background: #fff;
-                        border-top: 1px solid $borderColor !important;
-                        text-align: center;
-                    } 
-            }
-            .ems-grid-header {
-                width: 90px !important;  
-                float: left;
-                div {
-                    padding: 20px 10px !important;
-                    text-align: left;
-                    > span {
-                        /*font-size: 12px !important;
-                        font-family: $fD !important;*/
-                    }
-                }
-                .ems-grid-name, .ems-grid-piece, .ems-grid-report {
-                    display:none;
-                }
-                .ems-grid-price {
-                    height: 100px !important;
-                }
-            }    
-        }
     }
-
-    .page-member .ems-page-member-message .ems-grid-message .ems-grid-title {
-        height:100px;
-        a {
-            height: 100px;
-        }
-    }
-    .page-member .ems-page-member-order .ems-grid-row > div {
-        padding: 14px 20px !important;
-    }
-    .page-member .ems-page-member-order .ems-grid-row > div.ems-grid-detail a {
-        padding: 0 !important;
-    }
-    .page-member .ems-grid-favorites .ems-grid-remove {
-        position: static !important;
-    }
-
-    .ems-grid-favorites, .ems-page-member-follow-list .ems-grid-default {
-        .ems-grid-header {
-            .ems-grid-remove {
-                display: none;
-            }
-            .ems-grid-img {
-                width:auto !important;
-            }
-            .ems-grid-code {
-                width:auto !important;
-            }
-            .ems-grid-piece {
-                width:auto !important;
-            }
-            .ems-grid-price {
-                width:auto !important;
-            }
-            .ems-grid-date {
-                width:auto !important;
-            }
-            
+    /*Favorites grid*/
+    .ems-grid-favorites{
+        .ems-grid-header{
+            .col.col-7 { display: none; }
         }
         .ems-grid-row {
-            .ems-grid-remove {
-                width: auto !important;
+            .col.col-7 {
                 position: absolute;
-                right: 10px;
                 top: 30px;
-                padding: 0;
-                border: 0;
-                > a {
-                    padding: 16px;
-                    width: 100%;
+                z-index: 1;
+                right: 20px;
+                width: auto;
+                padding: 5px;
+                height: 45px;
+                border:none;
+                .btn-default {
+                    line-height:1;
+                    .icon-ico_close{
+                        font-size: 20px;
+                        &:before{ font-size: 20px; }
+                    }
                 }
             }
-            .ems-grid-img {
-                width:auto !important;
-            }
-            .ems-grid-code {
-                width:auto !important;
-            }
-            .ems-grid-piece {
-                width:auto !important;
-            }
-            .ems-grid-price {
-                width:auto !important;
-            }
-            .ems-grid-date {
-                width:auto !important;
-            }
         }
-
     }
+    /*Gift cart grid*/
+    .ems-grid-order-gift{ margin-top: 10px; }
+
 }
 
 /*Mobile grid 480px*/

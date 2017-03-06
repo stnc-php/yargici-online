@@ -1023,6 +1023,15 @@
          }
     }
 
+    /*Content cover*/
+    .content-cover{
+        &-img{
+            height: 280px;
+            img{ display: none; } 
+        }
+        &-text{ display: none; }
+    }
+
     /*Home page banners*/
     .bnr-box{
         max-width: 100%;

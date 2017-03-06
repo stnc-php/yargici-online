@@ -105,6 +105,8 @@
 <div class="vail vail-cart"></div>
 <div class="vail vail-languages"></div>
 <div class="vail vail-size"></div>
+<div class="vail vail-new-address"></div>
+<div class="vail vail-costs"></div>
 <div class="vail vail-mobile-size"></div>
 <div class="vail vail-filter"></div>
 <script type="text/javascript" src="/lab/projects/yargici/js/allScripts.js"></script>

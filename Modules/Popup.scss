@@ -358,6 +358,84 @@
                 }
             }
         }
+        .popup-default-footer{ display: none; }
+    }
+    &-costs{
+        border-top:8px solid #000; 
+        max-width: 800px;
+        .popup-default-header{
+            span{ color: #000; }
+            .btn-popup-close{
+                right: 20px;
+                .icon-ico_close{
+                    font-size: 20px;
+                    &:before{ color:#000; font-size: 20px; }
+                }
+            }
+        }
+        .popup-default-body{
+            padding:0 30px 30px 30px;
+            .popup-default-wrapper{
+                padding:  0 30px 30px 0;
+                max-height: 300px;
+                overflow: auto;
+            }
+            .ems-grid-default {
+                .ems-grid-col{ padding-left: 10px; padding-right: 10px;}
+                .ems-grid-col-1{ width:20%; }
+                .ems-grid-col-2{ width:50%; padding-left: 20px !important; padding-right: 20px !important;}
+                .ems-grid-col-3{ width:30%; }
+
+                .ems-grid-header{
+                    background: #fafafa;
+                    border-width: 1px 1px 0 1px;
+                    border-color: $borderColor;
+                    border-style: solid;
+                    .ems-grid-col{
+                        background: #fafafa;
+                        padding:10px; 
+                        text-align: left;
+                         > span{ font-size: 14px; }
+                    }
+                    .ems-grid-col-2{
+                        .grid-top, .grid-bottom{
+                            display: table;
+                            width: 100%;
+                            table-layout: fixed;
+                            > span{
+                                display: table-cell;
+                                vertical-align: middle;
+                                width: 33.333%;
+                                font-size: 14px;
+                                padding: 5px 0;
+                                &:nth-child(1) { text-align: left; }
+                                &:nth-child(2) { text-align: center; }
+                                &:nth-child(3) { text-align: right; }
+                            }
+                        }
+                        .grid-bottom{
+                            > span{
+                                border-top:1px solid $borderColor;
+                            }
+                        }
+                    }
+                }
+                .ems-grid-row{
+                    .ems-grid-col-2{
+                        > span{
+                            text-align: left;
+                            display: inline-block;
+                            vertical-align: middle;
+                            width: 32.5%;
+                            font-size: 14px;
+                            &:nth-child(1) { text-align: left; }
+                            &:nth-child(2) { text-align: center; }
+                            &:nth-child(3) { text-align: right; }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -365,6 +443,7 @@
 @media screen and (max-width: $breakpointXS) {
 
     .stock-store-ready { overflow: hidden; }
+    .vail-new-address, .vail-costs{ display: none; }
     
     /*Popup size mobile*/
     .popup-default {
@@ -408,6 +487,24 @@
                 }
                 .popup-default-grid-col-1{ padding-right: 20px; }
             }
+        }
+        /*Popup new address*/
+        &-new-address{
+            top: 0;
+            max-width: 100%;
+            height:100%; 
+            .btn-popup-close{ right: 20px; }
+            .popup-default-body {
+                margin-left:20px;
+                margin-right:20px;
+                .ems-form{ max-width: 100%; }
+            }
+        }
+        &-costs{
+            border: none;
+            top: 0;
+            max-width: 100%;
+            height:100%; 
         }
     }
 }

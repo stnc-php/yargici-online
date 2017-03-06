@@ -327,7 +327,7 @@
         }
         &-cargo{
             span{
-                margin-top: 20px;
+                margin-top: 10px;
                 display: block;
                 background: $dBlue;
                 color: #fff;
@@ -337,6 +337,30 @@
             }
             &:empty{
                 display: none;
+            }
+        }
+        /*Other currency*/
+        .ems-other-currency{
+            padding: 20px 0;
+            &-ico, &-txt{ display: inline-block; vertical-align: middle; }
+            &-ico{
+                width:20px;
+                height:20px; 
+                border:1px solid #5c5c5c; 
+                border-radius:100%; 
+                text-align: center;
+                padding: 1px;
+                margin-right: 10px;
+                &:before{
+                    content:'$';
+                    color: #5c5c5c;
+                    display: inline-block;
+                }
+            }
+            &-txt{
+                color: $colorDefault;
+                font-size: 15px;
+                a{ text-decoration: underline; padding-left:4px; }
             }
         }
         /*Coupon code*/
@@ -1206,6 +1230,12 @@
             max-width: 100%;
             padding: 0 0 60px 0;
         }
+        /*Cart z-index page*/
+        .ems-page-order-cart{ position:relative; z-index:2; }
+        /*Other currency*/
+        .ems-other-currency{
+            display: none;
+        }
         /*Cart delivery page*/
         &.step1 {
             .ems-page-default{
@@ -1486,5 +1516,22 @@
             }
         }
     }
+}
 
+/*Mobile grid 480px*/
+@media screen and (max-width: $breakpointXXS) {
+    .page-cart{
+        .ems-page-default{
+            /*Coupon code*/
+            .ems-cart-coupon {
+                .ems-cart-coupon-body {
+                    .ems-cart-coupon-use{
+                        input, .btn-default-coupon{ width:100%; max-width:100%; }
+                        input{ margin-right: 0; }
+                        .btn-default-coupon{ margin-top:20px; }
+                    }
+                }
+            }
+        }
+    }
 }

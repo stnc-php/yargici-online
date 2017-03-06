@@ -1,3 +1,89 @@
+<!--Popup-->
+<div class="popup-default popup-default-costs">
+    <div class="popup-default-wrapper">
+        <div class="popup-default-inner">
+            <!--Header-->
+            <div class="popup-default-header">
+                <span>SHIPPING COSTS AND METHODS</span>
+                <a href="javascript:void(0);" class="btn-popup-close"><i class="icon-ico_close"></i></a>
+            </div>
+            <!--Header-->
+
+            <!--body-->
+            <div class="popup-default-body">
+                <div class="popup-default-wrapper">    
+                    <div class="ems-grid-default ems-grid-costs">
+                        
+                        <div class="ems-grid-header">
+                            <div class="ems-grid-col ems-grid-col-1">
+                                <span>Shipping Country</span>
+                            </div>
+                            <div class="ems-grid-col ems-grid-col-2">
+                                <div class="grid-top">
+                                    <span>Orders</span>
+                                    <span>Orders</span>
+                                    <span>Package</span>
+                                </div>
+                                <div class="grid-bottom">
+                                    <span>€1-€99.99</span>
+                                    <span>€100+</span>
+                                    <span>Tracking</span>
+                                </div>
+                            </div>
+                            <div class="ems-grid-col ems-grid-col-3">
+                                <span>Import Duties & Taxes*</span>
+                            </div>
+                        </div>
+
+                        <div class="ems-grid-row">
+                            <div class="ems-grid-col ems-grid-col-1">
+                                <span>Germany</span>
+                            </div>
+                            <div class="ems-grid-col ems-grid-col-2">
+                                <span>€10</span>
+                                <span>Free</span>
+                                <span>Yes</span>
+                            </div>
+                            <div class="ems-grid-col ems-grid-col-3">
+                                <span>Prepaid and added t o your total</span>
+                            </div>
+                        </div>  
+                        <div class="ems-grid-row">
+                            <div class="ems-grid-col ems-grid-col-1">
+                                <span>Austria</span>
+                            </div>
+                            <div class="ems-grid-col ems-grid-col-2">
+                                <span>€9.000</span>
+                                <span>Free</span>
+                                <span>Yes</span>
+                            </div>
+                            <div class="ems-grid-col ems-grid-col-3">
+                                <span>Prepaid and added t o your total</span>
+                            </div>
+                        </div>
+                        <div class="ems-grid-row">
+                            <div class="ems-grid-col ems-grid-col-1">
+                                <span>Austria</span>
+                            </div>
+                            <div class="ems-grid-col ems-grid-col-2">
+                                <span>€9.000</span>
+                                <span>Free</span>
+                                <span>Yes</span>
+                            </div>
+                            <div class="ems-grid-col ems-grid-col-3">
+                                <span>Prepaid and added t o your total</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--body-->
+        </div>
+    </div>
+</div>
+<!--Popup-->
+
 <div class="ems-page page-cart step0">
     <script type="text/javascript">
         $("body").addClass("page-cart-layout");   
@@ -166,6 +252,13 @@
                             </ul>
                         </div>
                     </div>
+                    <!--Other currency-->
+                    <div class="ems-other-currency">
+                        <span class="ems-other-currency-ico"></span>
+                        <span class="ems-other-currency-txt">Diğer para birimleri<a href="javascript:void(0);">tıklayınız</a></span>
+                    </div>
+                    <!--Other currency-->
+
                     <!--Free cargo Text-->
                     <div class="ems-page-default-cargo"><span>Sepetinize X TL'lik ürün daha ekleyin, ücretsiz kargo fırsatından yararlanın</span></div>
                     <!--Free cargo Text-->

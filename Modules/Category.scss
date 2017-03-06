@@ -116,6 +116,7 @@
         letter-spacing: 2px;
         padding: 25px 0 10px 0;
     }
+    h2.member-name{ display: none; color:#fff; font-size:18px; font-family:$fD; text-align:center; padding: 10px 0 20px 0; }
     span.member-title{
         font-size: 15px;
         display: block;
@@ -154,7 +155,7 @@
 
 /*Mobile 960px*/
 @media screen and (max-width: $breakpointSM) {
-
+    /*Category Menu*/
     .mod-categories{
         &-header {
             display: block;
@@ -187,7 +188,7 @@
             }
         }   
     }
-
+    /*Category Menu Opened*/
     .mod-categories.opened{
         .mod-categories{
             &-inner{
@@ -197,4 +198,59 @@
             }
         }
     }
+    /*Left menu*/
+    .member-menu {
+        position: absolute;
+        width: 100%;
+        max-width: 95%;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        top: 50px;
+        z-index: 1;
+        h1{
+            color: #fff;
+            font-size: 24px;
+            font-family:$fB;
+            letter-spacing: 2px; 
+            text-align: center;
+            padding-bottom: 0;
+        }
+        span.member-title{
+            background:#fff;
+            padding:19px 20px 20px 20px;
+            font-size:18px;
+            cursor:pointer;
+            margin-top: 20px;
+            i.icon-ico_arrow1{
+                float: right;
+                font-size:13px;
+                position: relative;
+                top:5px; 
+                &:before{
+                    content:'\e900';
+                    color:$colorDefault;
+                    font-size:13px; 
+                }
+            }
+        }
+        h2.member-name{
+            display: block;
+        }
+        ul{
+            display: none;
+            border: none;
+            position: absolute;
+            left: 0;
+            width:100%;
+            background: #fff;
+            margin-top: -1px;
+            padding-top: 0;
+            li a{ padding: 15px 20px; font-size: 18px; }
+        }
+        &.opened{
+            ul{ display: block; }
+        }
+    }
+
 }

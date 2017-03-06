@@ -208,7 +208,7 @@
               <!--Row-->
               <div class="ems-row ems-row-2">
                     <div class="ems-col-full">
-                        <div class="logo"><a href="/"><img src="/lab/projects/yargici/images/frontend/header-logo.svg"></a></div>
+                        <div class="logo"><a href="/" title="Yargıcı"><img src="/lab/projects/yargici/images/frontend/header-logo.svg"></a></div>
                     </div>
               </div>
             <!--Row-->
@@ -248,7 +248,7 @@
                                         </div>
                                         <div class="cat-menu-cover">
                                             <a href="javascript:void(0);">
-                                                <div class="cover-img lazy-load" style="background:url(/lab/projects/yargici/upload/banners/categories/giyim-cover.jpg)"></div>
+                                                <div class="cover-img lazy-back-load" data-original="/lab/projects/yargici/upload/banners/categories/giyim-cover.jpg"></div>
                                             </a>
                                         </div>
                                     </div>
@@ -272,7 +272,7 @@
                                         </div>
                                         <div class="cat-menu-cover">
                                             <a href="javascript:void(0);">
-                                                <div class="cover-img" style="background:url(/lab/projects/yargici/upload/banners/categories/giyim-cover.jpg)"></div>
+                                                <div class="cover-img lazy-back-load" data-original="/lab/projects/yargici/upload/banners/categories/giyim-cover.jpg"></div>
                                             </a>
                                         </div>
                                     </div>
@@ -300,7 +300,7 @@
                                         </div>
                                         <div class="cat-menu-cover">
                                             <a href="javascript:void(0);">
-                                                <div class="cover-img" style="background:url(/lab/projects/yargici/upload/banners/categories/giyim-cover.jpg)"></div>
+                                                <div class="cover-img lazy-back-load" data-original="/lab/projects/yargici/upload/banners/categories/giyim-cover.jpg"></div>
                                             </a>
                                         </div>
                                     </div>
@@ -322,7 +322,7 @@
                                         </div>
                                         <div class="cat-menu-cover">
                                             <a href="javascript:void(0);">
-                                                <div class="cover-img" style="background:url(/lab/projects/yargici/upload/banners/categories/giyim-cover.jpg)"></div>
+                                                <div class="cover-img lazy-back-load" data-original="/lab/projects/yargici/upload/banners/categories/giyim-cover.jpg"></div>
                                             </a>
                                         </div>
                                     </div>
@@ -345,7 +345,7 @@
                                         </div>
                                         <div class="cat-menu-cover">
                                             <a href="javascript:void(0);">
-                                                <div class="cover-img" style="background:url(/lab/projects/yargici/upload/banners/categories/giyim-cover.jpg)"></div>
+                                                <div class="cover-img lazy-back-load" data-original="/lab/projects/yargici/upload/banners/categories/giyim-cover.jpg"></div>
                                             </a>
                                         </div>
                                     </div>
@@ -376,7 +376,7 @@
                                         </div>
                                         <div class="cat-menu-cover">
                                             <a href="javascript:void(0);">
-                                                <div class="cover-img" style="background:url(/lab/projects/yargici/upload/banners/categories/giyim-cover.jpg);"></div>
+                                                <div class="cover-img lazy-back-load" data-original="/lab/projects/yargici/upload/banners/categories/giyim-cover.jpg"></div>
                                             </a>
                                         </div>
                                     </div>
