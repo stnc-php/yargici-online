@@ -15,24 +15,27 @@
         text-align: center;
         padding: 30px 40px;
         position: relative;
+        border-top:8px solid #000; 
         span{
             display: inline-block;
             letter-spacing: 2px;
             font-size: 18px;
             font-family: $fB;
+            color: #000;
         }
         .btn-popup-close{
             position: absolute;
             top: 28px;
-            right: 40px;
+            right: 20px;
             width: 25px;
             height: 25px;
             display: inline-block;
             @include setTransform(rotate(0));
             .icon-ico_close{
-                font-size: 25px;
+                font-size: 20px;
                 &:before{
-                    font-size: 25px;
+                    font-size: 20px;
+                    color: #000;
                 }
             }
             &:hover{
@@ -361,18 +364,7 @@
         .popup-default-footer{ display: none; }
     }
     &-costs{
-        border-top:8px solid #000; 
         max-width: 800px;
-        .popup-default-header{
-            span{ color: #000; }
-            .btn-popup-close{
-                right: 20px;
-                .icon-ico_close{
-                    font-size: 20px;
-                    &:before{ color:#000; font-size: 20px; }
-                }
-            }
-        }
         .popup-default-body{
             padding:0 30px 30px 30px;
             .popup-default-wrapper{
@@ -431,6 +423,47 @@
                             &:nth-child(1) { text-align: left; }
                             &:nth-child(2) { text-align: center; }
                             &:nth-child(3) { text-align: right; }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &-currents{
+        max-width: 600px;
+        .popup-default-body{
+            padding: 0 20px;
+            ul{
+                li{
+                    a{
+                        text-align: center;
+                        display:block;
+                        padding:15px 20px;
+                        border-top: 1px solid $borderColor;
+                        span, i{ display: inline-block; vertical-align: middle; }
+                        span{ font-size: 18px; }
+                        i{ margin-right: 30px; }
+                        i:before{ font-size: 24px; color:#5c5c5c; }
+                        i.ico-eur{
+                            &:before{
+                                content:'\20AC';
+                            }
+                        }
+                        i.ico-tl{
+                            &:before{
+                                content:'t';
+                                font-family:$tl;
+                            }
+                        }
+                        i.ico-usd{
+                            &:before{
+                                content:'\0024';
+                            }
+                        }
+                        i.ico-gbp{
+                            &:before{
+                                content:'\00a3';
+                            }
                         }
                     }
                 }

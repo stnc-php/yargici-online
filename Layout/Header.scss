@@ -117,7 +117,7 @@
         > ul > li > a .icon-ico_home-works{ margin-right: 5px; display: inline-block; vertical-align: middle; position: relative; top: -2px; }
         > ul > li > a .icon-ico_home-works, > ul > li > a .icon-ico_home-works:before{ font-size:20px; }
         > ul > li > a.homeworks{padding-top: 18px; padding-bottom: 18px; }
-        > ul > li > a.brush-font { font-family:'brush'; font-size: 26px; color:#314181; padding-top: 15px; padding-bottom: 15px; line-height: 1px; }
+        > ul > li > a.brush-font { font-family:'brush'; font-size: 26px; color:#314181; padding-top: 15px; padding-bottom: 15px; line-height: 1; }
         > ul > li.selected .cat-menu{ display: block; }
     }
     .cat-menu {
@@ -236,7 +236,7 @@
     }
 }
 
-/*Mobile css*/
+/*Mobile 960px*/
 @media screen and (max-width:$breakpointSM) {
 
     .mobile-element-scroll { display: none !important; }

@@ -737,6 +737,8 @@ var mobile=function(){return{detect:function(){var uagent=navigator.userAgent.to
 						main.detectPosition.init(); 
 						if( main.current != null )
 							main.current.onResize();
+						
+						main.activeIndex();	
 					};
 					
 			});
@@ -1320,7 +1322,7 @@ var mobile=function(){return{detect:function(){var uagent=navigator.userAgent.to
 						},
 						lazyImg: function( k ){						 
 							k
-							.removeClass('lazy-load')
+							.removeClass('lazy-load lazy-back-load')
 							.addClass('load-image')
 							.css('background-image', 'url("' + ( k.attr('data-original') || '' ) + '")');		
 						},
@@ -1343,6 +1345,7 @@ var mobile=function(){return{detect:function(){var uagent=navigator.userAgent.to
 										_t.closeElem();
 										ths.addClass( o.customClass ).siblings( o.siblings ).removeClass( o.customClass );
 										_t.setPos( ths );
+										_t.lazy( ths );
 										_t.overlayControls('opened');
 									}, o.openedDelay);
 								}

@@ -133,6 +133,15 @@ body { overflow-x: hidden; }
 	background: $red;
 }
 
+.ems-prg-red, .ems-prg-nrm{ line-height: 25px; margin:1px 0; font-size: 15px; font-family:$fD; }
+
+.ems-prg-red{
+	color:#61080f;
+}
+.ems-prg-nrm{
+	color:$colorDefault;
+}
+
 .valid-font {
 	&:before {
 		content: "*";

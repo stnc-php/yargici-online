@@ -104,6 +104,8 @@
                         </div>
                         <div class="col col-5">
                             <a href="javascript:void(0);" class="grid-link grid-link-detail">Detay</a>
+                            <br/>
+                            <a href="javascript:void(0);" class="grid-link grid-link-detail">Kolay iade</a>
                         </div>
                     </div>
                     <div class="ems-grid-header">
@@ -138,6 +140,8 @@
                         </div>
                         <div class="col col-5">
                             <a href="javascript:void(0);" class="grid-link grid-link-detail">Detay</a>
+                            <br/>
+                            <a href="javascript:void(0);" class="grid-link grid-link-detail">Kolay iade</a>
                         </div>
                     </div>
                 </div>

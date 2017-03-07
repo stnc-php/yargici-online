@@ -1,22 +1,14 @@
 .ems-store{
-    &-filter {
-        display: table;
-        width: 100%;
-    }
+    &-filter { display: table; width: 100%; }
     &-filter-item{
         display: table-cell;
         vertical-align: top;
         width: 40%;
-        .btn-default{
-            width: 100%;
-        }
+        .btn-default{ width: 100%; }
     }
-    &-filter-item-empty{
-        padding-right: 15px;
-    }
-    &-filter-item-last{
-        width: 20%;
-    }
+    &-filter-item-empty{ padding-right: 15px; }
+    &-filter-item-last{ width: 20%; }
+    &-filter-item-mobile{ display: none; }
     &-lists{
         width: 100%;
         padding: 30px 0;
@@ -34,12 +26,68 @@
             margin: 20px 0 10px 0;
         }
         .btn-link{
+            text-decoration: none;
             padding: 10px 0;
             font-family: $fD;
+            text-align: center;
+            span, .icon-ico_store-icon{display: inline-block; vertical-align: middle; }
+            span{ text-decoration: underline; }
+            .icon-ico_store-icon{
+                font-size: 27px;
+                margin-right: 10px;
+                &:before{font-size: 27px; }
+            }
         }
         .address{
             display: block;
             line-height: 25px;
+        }
+    }
+}
+
+/*Mobile 960px*/
+@media screen and (max-width:$breakpointSM) {
+    /*Store*/
+    .page-store {
+        .page-top-desc{ display: none; }
+    }
+    .ems-store{
+        &-filter-item{
+            width: 100%;
+            display: block;
+            margin-top:20px;
+            .btn-default{
+                background:$colorDefault;
+                padding-top:20px;
+                padding-bottom:19px; 
+            }
+        }
+        &-filter-item-empty{ padding-right: 0; }
+        &-filter-item-last{ width: 100%; }
+        &-filter-item-mobile{
+            display: block;
+            .btn-default{
+                border: 1px solid $lines;
+                background: #fff;
+                padding-top:19px;
+                padding-bottom:18px; 
+                span{ color:$lines; }
+                &:hover{
+                    background: none;
+                    border-color: $colorDefault;
+                }
+            }
+        }
+        &-lists{ padding: 0; }
+        &-lists-col{
+            width: 100%;
+            border-top:1px solid $borderColor;
+            padding:30px 0; 
+            &:first-child{ border-top: 0; }
+            h1{ margin-top: 0; }
+        }
+        .sStylerMainWrp.sStylerWrp_select{
+             .sStylerWrp{ line-height: 30px; height:60px; }
         }
     }
 }

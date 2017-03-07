@@ -107,6 +107,7 @@
 <div class="vail vail-size"></div>
 <div class="vail vail-new-address"></div>
 <div class="vail vail-costs"></div>
+<div class="vail vail-currents"></div>
 <div class="vail vail-mobile-size"></div>
 <div class="vail vail-filter"></div>
 <script type="text/javascript" src="/lab/projects/yargici/js/allScripts.js"></script>

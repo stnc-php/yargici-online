@@ -1,4 +1,4 @@
-<!--Popup-->
+<!--Popup costs-->
 <div class="popup-default popup-default-costs">
     <div class="popup-default-wrapper">
         <div class="popup-default-inner">
@@ -82,7 +82,33 @@
         </div>
     </div>
 </div>
-<!--Popup-->
+<!--Popup costs-->
+
+<!--Popup currents-->
+<div class="popup-default popup-default-currents">
+    <div class="popup-default-wrapper">
+        <div class="popup-default-inner">
+            <!--Header-->
+            <div class="popup-default-header">
+                <span>PARA BİRİMLERİ</span>
+                <a href="javascript:void(0);" class="btn-popup-close"><i class="icon-ico_close"></i></a>
+            </div>
+            <!--Header-->
+
+            <!--body-->
+            <div class="popup-default-body">
+                <ul>
+                    <li><a href="javascript:void(0);"><i class="ico-eur"></i><span>33,90 EUR</span></a></li>
+                    <li><a href="javascript:void(0);"><i class="ico-tl"></i><span>129,86 TRY</span></a></li>
+                    <li><a href="javascript:void(0);"><i class="ico-usd"></i><span>35,77 USD</span></a></li>
+                    <li><a href="javascript:void(0);"><i class="ico-gbp"></i><span>28,85 GBP</span></a></li>
+                </ul>
+            </div>
+            <!--body-->
+        </div>
+    </div>
+</div>
+<!--Popup currents-->
 
 <div class="ems-page page-cart step0">
     <script type="text/javascript">

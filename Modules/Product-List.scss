@@ -544,6 +544,21 @@ body.quad{
            height: 280px;
            img { display: none; }
        }
+       &.type-2{
+           padding-bottom: 30px;
+           .ems-prd-list-img-cover { height: 370px; }
+           .ems-prd-list-img-inner{
+               &.first, &.last{padding-right: 0;}
+               &.last{
+                   .ems-prd-list-img-text{
+                        position: absolute;
+                        top: 50%;
+                        @include setTransform(translateY(-50%));
+                        h1, .ems-prd-price, .bnr-box-link{ color: #fff; }
+                   }
+               }
+           }
+       }
        &.type-3{
            width: 100%;
            display: block;

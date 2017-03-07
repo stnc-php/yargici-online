@@ -252,5 +252,24 @@
             ul{ display: block; }
         }
     }
-
+    /*About US*/
+    .page-about{
+        .ems-col.ems-col-1{
+            padding: 0 20px 0 20px;
+        }
+        /*Left menu*/
+        .member-menu {
+            position: inherit;
+            top: inherit;
+            left: inherit;
+            right: inherit;
+            z-index: inherit;
+            max-width: 100%;
+            h1{ display: none; }
+            span.member-title {
+                margin-top: 30px;
+                border:1px solid $borderColor; 
+            }
+        }
+    }
 }

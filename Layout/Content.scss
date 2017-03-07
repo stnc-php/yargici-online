@@ -1010,6 +1010,62 @@
     }
 }
 
+/*Gift card page*/
+.page-corporate{
+    .ems-page-gift-card{
+        padding: 0 0 60px 0;
+        .ems-row {
+            padding: 40px 0;
+            &-content{
+                > *{ text-align: center; font-size: 18px; }
+                p, ul li { line-height: 30px; }
+                p{ margin: 5px 0; }
+                margin: 0 auto;
+                max-width: 960px;
+                padding: 0 20px;
+                width: 100%;
+            }
+        }
+        .gift-card-selection{
+            width: 100%;
+            padding-top: 40px;
+            padding-bottom: 15px;
+            .gift-card-img{
+                background-repeat: no-repat !important;
+                background-size:cover !important;
+                background-position:  center center!important;
+            }
+            .gift-card-img, .gift-card-obj{ float: left; }
+            .gift-card-img{ width:485px; height: 308px; }
+            .gift-card-obj{
+                width:calc(100% - 485px);
+                padding-left:10%;
+                @include setTransform(translateY(60%));
+                .title-small { padding-bottom:5px; }
+                .add-cart{
+                    display: table;
+                    width: 100%;
+                    table-layout: fixed;
+                    margin-top: 25px;
+                    .obj {
+                        text-align: center;
+                        display: table-cell;
+                        vertical-align: middle;
+                        input{ text-align: right; color: $title; }
+                        .btn-default { width: 100%; padding-bottom:14px; }
+                    }
+                    .obj-1{ width: 30%; }
+                    .obj-2{ width: 12%; }
+                    .obj-3{ width: 58%; }
+                }
+            }
+        }
+        .ems-row-center{ background: #f7f7f7; padding-bottom:70px; }
+
+        .title-small{ font-family:$fB; line-height: 30px; letter-spacing: 1.2px; color:#5c5c5c; font-size: 18px; padding-bottom: 30px; }
+        .gift-sub-title{ font-family:$dD; font-size: 30px; letter-spacing: 3px; color: #5c5c5c; line-height: 35px; padding-bottom:35px; }
+    }
+}
 
 /*Mobile 960px*/
 @media screen and (max-width:$breakpointSM) {
@@ -1320,6 +1376,48 @@
             li:nth-child(3) a{ padding-right:0;  }
         }
     }
+    /*Content page*/
+    .ems-page-default {
+        &-full-text{ padding-right: 0; }
+        &-sub-title{ padding-bottom: 0px; padding-left: 20px; padding-right: 20px; }
+        &-content{
+            .static-font {
+                padding: 15px 20px;
+                p{ margin: 0; }
+            }
+        }
+    }
+    /*About page*/
+    .page-content-box{
+        padding: 0;
+        &-text, &-img, &-left, &-right{
+            display: block;
+            vertical-align: middle;
+        }
+        &-text{ width: 100%; padding-right: 0; }
+        &-img{
+            width: 100%;
+            height: 370px;
+            img{ display: none; }
+        }
+        /*Double content*/
+        &-double{
+            padding-top: 30px;
+            .page-content-box-img, .page-content-box-text{
+                padding: 0;
+                width: 100%;
+            }
+            .page-content-box-left{
+                width: 100%; padding-right: 0;
+                .page-content-box-text { padding:15px 20px; }
+            }
+            .page-content-box-right{
+                width: 100%; padding-left: 0;
+                .page-content-box-text { padding:15px 20px; }
+            }
+        }
+    }
+
     /*mobile home pages bottom padding*/
     body.page-home-layout {
         .site-wrapper{ padding-bottom: 60px; }
