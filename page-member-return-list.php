@@ -134,8 +134,8 @@
                         <div class="object"><input type="checkbox"></div>
                         <div class="text"><span>İade ve Geri Gönderim Şartlarını okudum,kabul ediyorum. <a href="/">(İade ve Geri Gönderim Şartlarını)</a></span></div>
                     </div>
-                    <a href="javascript:void(0);" class="btn-default btn-default-back"><i class="icon-ico_slide-left"></i><span>Vazgeç</span></a>
                     <a href="javascript:void(0);" class="btn-default btn-default-continue"><span>DEVAM ET</span></a>
+                    <a href="javascript:void(0);" class="btn-default btn-default-back"><i class="icon-ico_slide-left"></i><span>Vazgeç</span></a>
                 </div>
 
                 </div>

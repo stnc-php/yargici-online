@@ -27,7 +27,7 @@
                                         <div class="ems-form ems-form-horizontal">
                                             <div class="ems-form-inner">
                                                 <div class="ems-field ems-field-check address-type">
-                                                    <div class="ems-form-obj"><input type="radio"><span>Mağazadan Teslimat</span><i class="tooltip"></i></div>
+                                                    <div class="ems-form-obj"><input type="radio"><span>Mağazadan Teslimat</span><i class="tooltip"><div class="tooltip-text">Lorem ipsum dolor sit amet, vix ea alia eleifend platonem, ei quaestio prodesset est.</div></i></div>
                                                 </div>
                                                 <div class="ems-field address-result">
                                                     <div class="ems-form-obj"><select><option>MARMARA FORUM AVM</option><option>FORUM İSTANBUL AVM</option></select></div>
@@ -95,7 +95,7 @@
                                                                         <div class="ems-form-obj"><input type="text"></div>
                                                                     </div>
                                                                     <div class="ems-field ems-field-triple clearfix">
-                                                                        <div class="ems-form-obj">
+                                                                        <div class="ems-form-obj obj-1">
                                                                             <select>
                                                                                 <option>01</option>
                                                                                 <option>02</option>
@@ -105,7 +105,7 @@
                                                                                 <option>06</option>
                                                                             </select>
                                                                         </div>
-                                                                        <div class="ems-form-obj">
+                                                                        <div class="ems-form-obj obj-1">
                                                                             <select>
                                                                                 <option>2017</option>
                                                                                 <option>2016</option>
@@ -114,10 +114,12 @@
                                                                                 <option>2013</option>
                                                                             </select>
                                                                         </div>
-                                                                        <div class="ems-form-obj">
-                                                                            <input type="text">
+                                                                        <div class="ems-form-obj obj-1">
+                                                                            <input type="text" placeholder="CVC">
                                                                         </div>
-                                                                        <i class="tooltip"><div></div></i>
+                                                                        <div class="ems-form-obj obj-2">
+                                                                            <i class="tooltip"><div class="tooltip-text">Lorem ipsum dolor sit amet, vix ea alia eleifend platonem, ei quaestio prodesset est.</div></i>
+                                                                        </div>
                                                                     </div>
                                                                     <div class="ems-field text">
                                                                         <div class="ems-form-label"><span>KART ÜZERİNDEKİ İSİM</span></div>
@@ -345,7 +347,7 @@
                 <!--Left-->
 
                 <!--Right-->
-                <div class="ems-page-default-right">
+                <div class="ems-page-default-right content-order-list">
                     <div class="ems-cart-summary">
                         <span class="title">Sipariş Özeti</span>
                         <div class="total-table-wrapper">

@@ -502,10 +502,11 @@ body.member-login-ready {
             }
         }
     }
+    /*İadelerim son sayfa*/
     .ems-page-member-return-last{
         .page-left-padding{ padding-top: 40px; }
     }
-    /*Return detail*/
+    /*İadelerim detay sayfası*/
     .ems-page-member-return-detail{
         padding-bottom: 80px;
         .page-sip-desc{
@@ -543,6 +544,16 @@ body.member-login-ready {
             }
             &-row-1, &-row-2{ border-bottom:1px solid $borderColor; }
             &-row-2, &-row-3{ padding-left: 120px; }
+            
+            &-list{
+                padding-bottom: 30px;
+                .ems-giving-back-content {padding-top: 30px; }
+                .ems-giving-back-row-2 { border-bottom:none; }
+                .ems-giving-back-selection{
+                    float: left;
+                    width: calc(100% - 100px);
+                }
+            }
             &-prdImg{
                 float: left;
                 width: 100px;
@@ -612,7 +623,7 @@ body.member-login-ready {
             .ems-giving-check{
                 width: 100%;
                 padding: 20px 10px 0 0;
-                .object, .text{ display: inline-block; }
+                .object, .text{ display: inline-block; vertical-align: middle; }
                 .object{ width: 20px; margin-right: 10px; }
                 .text{ width: 90%; }
                 span.cStyler { width: 20px; height:20px; margin: 0;  }
@@ -676,7 +687,7 @@ body.member-login-ready {
                     position: absolute;
                     top: 50%;
                     right: 20px;
-                    margin-top: -6px;
+                    margin-top: -4px;
                     font-size: 11px;
                     &:before{
                         content:'\e900';
@@ -720,8 +731,8 @@ body.member-login-ready {
 /*Mobile 1100px*/
 @media screen and (max-width: 1100px) {
     .page-member {
+        /*Product return grid*/
         .ems-page-member-return-detail{
-            /*Product return grid*/
             .ems-grid-return-list{
                 &-items-full{
                     .ems-fnt-bld, .dropdown{ width: 100%; }
@@ -879,6 +890,71 @@ body.member-login-ready {
         .ems-page-member-password-change{
             .page-left-padding{ padding-left: 0; padding-right: 0; }
         }
+
+        /*İade sayfası*/
+        .ems-page-member-return-detail{
+            .page-left-padding { padding-top:20px; }
+            .page-top-title {
+                span{ padding: 10px 0 20px 0; }
+            }
+            .page-sip-desc{
+                .page-sip-info, .page-title-sipInfo{
+                    width: 100%;
+                    margin: 0;
+                    min-height: auto;
+                    padding-bottom:30px;
+                }
+                .page-title-sipInfo{ border: none; padding-left: 0; }
+            }
+            .ems-grid-return-list{
+                &-column{ width: 100%; }
+                &-column-2{ border-left: 0; }
+                &-items-full{
+                    .ems-fnt-bld{ display: none; }
+                    .ems-fnt-reg{ display: inline-block; vertical-align: middle; }
+                    .dropdown { margin-top:10px; margin-bottom:10px; }
+                    &:first-child{
+                        padding-top: 0;
+                        text-align: center;
+                        .ems-fnt-bld{ width: inherit; padding-bottom: 0; display: inline-block; }
+                    }
+                }
+            }
+            .ems-giving-back{
+                border: none;
+                padding-bottom: 10px;
+                &-row-1{ border: 1px solid $borderColor; }
+                &-row-2{ border: none; }
+                &-row-2, &-row-3{ padding-left: 0; padding-right: 0; }
+                &-row-3{ border-top:1px solid $borderColor; border-bottom:1px solid $borderColor; }
+
+                &-list{
+                    .ems-giving-back-row { border:1px solid $borderColor; }
+                    .ems-giving-back-row-2 { border:none; }
+                    .ems-giving-back-content {padding-top: 30px; }
+                    .ems-giving-back-selection{
+                        padding-top: 20px;
+                        .bld-title{ display: none; }
+                        padding-bottom: 10px;
+                        width: 100%;
+                        float: none;
+                        max-width: 100%;
+                        clear: both;
+                    }
+                }
+            }
+            .ems-giving-back-btns {
+                .btn-default{
+                    width: 100%;
+                    float: none;
+                    padding-top: 19px;
+                    padding-bottom: 20px;
+                    &-continue{ background:$colorDefault; }
+                    &-back{ margin-top: 10px; }
+                }
+            }
+        }
+
     }
 }
 

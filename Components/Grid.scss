@@ -192,14 +192,6 @@
                 }
             }
         }
-        .ems-grid-delete {
-            a{ @include setTransform(rotate(0)); }
-            a:hover, a:focus{ @include setTransform(rotate(90deg)); }
-            i {
-                font-size: 12px;
-                &:before{ color: $colorDefault; font-size: 12px; }
-            }
-        }
     }
 }
 
@@ -595,10 +587,16 @@
                 text-align: center;
                 padding-bottom: 10px;
                 a {
+                    @include setTransform(rotate(0));
                     background: none !important;
                     border-radius: 0;
                     span{ display: none; }
+                    i {
+                        font-size: 12px;
+                        &:before{ color: $colorDefault; font-size: 12px; }
+                    }
                 }
+                a:hover, a:focus{ @include setTransform(rotate(90deg)); }
             }
             .ems-grid-gift-box { display: none; }
         }

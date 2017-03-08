@@ -116,7 +116,7 @@
         > ul > li > a{ display: inline-block; letter-spacing: 2px; color: #5c5c5c; padding: 20px 5px; position: relative; font-size: 14px; }
         > ul > li > a .icon-ico_home-works{ margin-right: 5px; display: inline-block; vertical-align: middle; position: relative; top: -2px; }
         > ul > li > a .icon-ico_home-works, > ul > li > a .icon-ico_home-works:before{ font-size:20px; }
-        > ul > li > a.homeworks{padding-top: 18px; padding-bottom: 18px; }
+        > ul > li > a.homeworks{padding-top: 18px; padding-bottom: 18px; color:$title; }
         > ul > li > a.brush-font { font-family:'brush'; font-size: 26px; color:#314181; padding-top: 15px; padding-bottom: 15px; line-height: 1; }
         > ul > li.selected .cat-menu{ display: block; }
     }
@@ -143,17 +143,32 @@
             > ul{
                 width: 100%;
                 text-align: left;
-                padding:20px 20px 20px 40px;
+                padding:20px 20px 20px 20px;
                 > li{
                     display: inline-block;
                     vertical-align: top;
                     text-align: left;
                     width: 49%;
+                    padding: 0 10px;
                     > a{
-                        display: block;
-                        padding:6px 10px;
+                        display: inline-block;
+                        padding:6px 0;
+                        position: relative;
+                        &:before{
+                            display: inline-block;
+                            content:'';
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            width: 0;
+                            height:1px;
+                            background:$colorDefault;
+                            @include transition(all .2s ease);
+                        }
                         &:hover{
-                            padding-left: 20px;
+                            &:before{
+                                width:100%;
+                            }
                         }
                     }
                 }
@@ -419,6 +434,7 @@
                         &.homeworks{
                             padding-top: 22px;
                             padding-bottom: 22px;
+                            color: $colorDefault;
                             .icon-ico_home-works { display: none; }
                         }
                         &.brush-font{
@@ -468,8 +484,8 @@
                             display: block;
                             text-transform: uppercase;
                             border-bottom: 1px solid $borderColor;
-                            &:hover{    
-                                padding-left: 0;
+                            &:before{    
+                                display: none;
                             }
                         }
                     }

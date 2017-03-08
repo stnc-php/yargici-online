@@ -306,7 +306,7 @@
             i{
                 font-size: 10px;
                 &:before{
-                    content: '\e918';
+                    content: '\e919';
                     font-family: 'icomoon';
                     font-size: 10px;
                 }
@@ -471,7 +471,8 @@
                             height: 30px;
                             border: none;
                             &:after{
-                                margin-top: -5px;
+                                margin-top: -4px;
+                                right:5px; 
                             }
                         }
                     }

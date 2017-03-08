@@ -115,11 +115,10 @@
         $("body").addClass("page-cart-layout");   
     </script>
 
-    <div class="ems-row ems-row-1 ems-none"></div>
     <div class="ems-container">
         <div class="row-holder-1 ems-inline">
             <!--Layout-->
-            <div class="ems-page-default ems-page-order-cart">
+            <div class="ems-page-default ems-page-order-cart content-order-list">
             <!--<emos id='plhStokUyari' />
             <emos id='plhSepetBosLabel' />-->
 
@@ -241,7 +240,7 @@
                             <span class="ems-cart-button-check-list">
                                 <input type="radio">
                                 <span>Treasure / Gift Card’ını Kullan</span>
-                                <i class="tooltip"></i>
+                                <i class="tooltip"><div class="tooltip-text">Lorem ipsum dolor sit amet, vix ea alia eleifend platonem, ei quaestio prodesset est.</div></i>
                             </span>
                             <span class="ems-cart-button-check-list">
                                 <input type="radio">
@@ -258,7 +257,7 @@
                 </div>
 
                 <!--Right-->
-                <div class="ems-page-default-right">
+                <div class="ems-page-default-right content-order-list">
                     <div class="ems-cart-summary">
                         <span class="title">Sipariş Özeti</span>
                         <div class="total-table-wrapper">
@@ -286,237 +285,237 @@
                     <!--Other currency-->
 
                     <!--Free cargo Text-->
-                    <div class="ems-page-default-cargo"><span>Sepetinize X TL'lik ürün daha ekleyin, ücretsiz kargo fırsatından yararlanın</span></div>
+                    <div class="ems-page-default-cargo"><span>Sepetinize X TL'lik ürün daha ekleyin, ücretsiz kargo fırsatından yararlanın <a href="javascript:void(0);">tıklayınız</a></span></div>
                     <!--Free cargo Text-->
                 </div>
                 <div class="ems-fixer"></div>
-            </div>
-            <!--Layout-->
 
-            <!--Cart page featured slider-->
-            <div class="ems-row ems-row-1">
-                <div class="widget-slider-content">
-                    <div class="widgetQuad-swiper swiper-container">
-                        <div class="swiper-header"><h2>TAMAMLAYICI ÜRÜNLER</h2></div>
-                        <div class="swiper-inner">
-                            <ul class="swiper-wrapper">
-                                <!--Repeat products-->
-                                <li class="ems-prd swiper-slide">
-                                    <div class="ems-prd-inner">
-                                        <div class="ems-prd-top-wrp">
-                                            <div class="ems-prd-icons">
-                                                <div class="ems-prd-icons-stock"><span class="ems-prd-icons-inner"></span></div>
-                                                <div class="ems-prd-icons-discount"><span class="ems-prd-icons-inner"></span></div>
-                                                <div class="ems-prd-icons-new"><span class="ems-prd-icons-inner"></span></div>
-                                            </div>
-                                            <div class="ems-prd-image">
-                                                <a href="#">
-                                                    <img src="/lab/projects/yargici//upload/products/product-1.jpg" title="YAKA DETAYLI KOLSUZ BLUZ" alt="YAKA DETAYLI KOLSUZ BLUZ" />
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="ems-prd-bttm-wrp">
-                                            <div class="ems-prd-name"><a href="#" title="YAKA DETAYLI KOLSUZ BLUZ" alt="YAKA DETAYLI KOLSUZ BLUZ">YAKA DETAYLI KOLSUZ BLUZ</a></div>
-                                            <div class="ems-prd-price clearfix">
-                                                <div class="ems-prd-price-first">
-                                                    <span class="total">149</span>
-                                                    <span class="penny">,00</span>
-                                                    <span class="currency">TL</span>
+                <!--Cart page featured slider-->
+                <div class="ems-row ems-row-prd-slide">
+                    <div class="widget-slider-content">
+                        <div class="widgetQuad-swiper swiper-container">
+                            <div class="swiper-header"><h2>TAMAMLAYICI ÜRÜNLER</h2></div>
+                            <div class="swiper-inner">
+                                <ul class="swiper-wrapper">
+                                    <!--Repeat products-->
+                                    <li class="ems-prd swiper-slide">
+                                        <div class="ems-prd-inner">
+                                            <div class="ems-prd-top-wrp">
+                                                <div class="ems-prd-icons">
+                                                    <div class="ems-prd-icons-stock"><span class="ems-prd-icons-inner"></span></div>
+                                                    <div class="ems-prd-icons-discount"><span class="ems-prd-icons-inner"></span></div>
+                                                    <div class="ems-prd-icons-new"><span class="ems-prd-icons-inner"></span></div>
                                                 </div>
-                                                <div class="ems-prd-price-selling">
-                                                    <span class="total">149</span>
-                                                    <span class="penny">,00</span>
-                                                    <span class="currency">TL</span>
+                                                <div class="ems-prd-image">
+                                                    <a href="#">
+                                                        <img src="/lab/projects/yargici//upload/products/product-1.jpg" title="YAKA DETAYLI KOLSUZ BLUZ" alt="YAKA DETAYLI KOLSUZ BLUZ" />
+                                                    </a>
                                                 </div>
                                             </div>
-                                            <div class="ems-prd-add-cart">
-                                                <a href="javascript:void(0);" class="btn-default btn-default-add-to-cart"><span>EKLE</span></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="ems-prd swiper-slide">
-                                    <div class="ems-prd-inner">
-                                        <div class="ems-prd-top-wrp">
-                                            <div class="ems-prd-icons">
-                                                <div class="ems-prd-icons-stock"><span class="ems-prd-icons-inner"></span></div>
-                                                <div class="ems-prd-icons-discount"><span class="ems-prd-icons-inner"></span></div>
-                                                <div class="ems-prd-icons-new"><span class="ems-prd-icons-inner"></span></div>
-                                            </div>
-                                            <div class="ems-prd-image">
-                                                <a href="#">
-                                                    <img src="/lab/projects/yargici//upload/products/product-2.jpg" title="YAKA DETAYLI KOLSUZ BLUZ" alt="YAKA DETAYLI KOLSUZ BLUZ" />
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="ems-prd-bttm-wrp">
-                                            <div class="ems-prd-name"><a href="#" title="YAKA DETAYLI KOLSUZ BLUZ" alt="YAKA DETAYLI KOLSUZ BLUZ">YAKA DETAYLI KOLSUZ BLUZ</a></div>
-                                            <div class="ems-prd-price clearfix">
-                                                <div class="ems-prd-price-first">
-                                                    <span class="total">149</span>
-                                                    <span class="penny">,00</span>
-                                                    <span class="currency">TL</span>
+                                            <div class="ems-prd-bttm-wrp">
+                                                <div class="ems-prd-name"><a href="#" title="YAKA DETAYLI KOLSUZ BLUZ" alt="YAKA DETAYLI KOLSUZ BLUZ">YAKA DETAYLI KOLSUZ BLUZ</a></div>
+                                                <div class="ems-prd-price clearfix">
+                                                    <div class="ems-prd-price-first">
+                                                        <span class="total">149</span>
+                                                        <span class="penny">,00</span>
+                                                        <span class="currency">TL</span>
+                                                    </div>
+                                                    <div class="ems-prd-price-selling">
+                                                        <span class="total">149</span>
+                                                        <span class="penny">,00</span>
+                                                        <span class="currency">TL</span>
+                                                    </div>
                                                 </div>
-                                                <div class="ems-prd-price-selling">
-                                                    <span class="total">149</span>
-                                                    <span class="penny">,00</span>
-                                                    <span class="currency">TL</span>
+                                                <div class="ems-prd-add-cart">
+                                                    <a href="javascript:void(0);" class="btn-default btn-default-add-to-cart"><span>EKLE</span></a>
                                                 </div>
                                             </div>
-                                            <div class="ems-prd-add-cart">
-                                                <a href="javascript:void(0);" class="btn-default btn-default-add-to-cart"><span>EKLE</span></a>
-                                            </div>
                                         </div>
-                                    </div>
-                                </li>
-                                <li class="ems-prd swiper-slide">
-                                    <div class="ems-prd-inner">
-                                        <div class="ems-prd-top-wrp">
-                                            <div class="ems-prd-icons">
-                                                <div class="ems-prd-icons-stock"><span class="ems-prd-icons-inner"></span></div>
-                                                <div class="ems-prd-icons-discount"><span class="ems-prd-icons-inner"></span></div>
-                                                <div class="ems-prd-icons-new"><span class="ems-prd-icons-inner"></span></div>
-                                            </div>
-                                            <div class="ems-prd-image">
-                                                <a href="#">
-                                                    <img src="/lab/projects/yargici//upload/products/product-3.jpg" title="YAKA DETAYLI KOLSUZ BLUZ" alt="YAKA DETAYLI KOLSUZ BLUZ" />
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="ems-prd-bttm-wrp">
-                                            <div class="ems-prd-name"><a href="#" title="YAKA DETAYLI KOLSUZ BLUZ" alt="YAKA DETAYLI KOLSUZ BLUZ">YAKA DETAYLI KOLSUZ BLUZ</a></div>
-                                            <div class="ems-prd-price clearfix">
-                                                <div class="ems-prd-price-first">
-                                                    <span class="total">149</span>
-                                                    <span class="penny">,00</span>
-                                                    <span class="currency">TL</span>
+                                    </li>
+                                    <li class="ems-prd swiper-slide">
+                                        <div class="ems-prd-inner">
+                                            <div class="ems-prd-top-wrp">
+                                                <div class="ems-prd-icons">
+                                                    <div class="ems-prd-icons-stock"><span class="ems-prd-icons-inner"></span></div>
+                                                    <div class="ems-prd-icons-discount"><span class="ems-prd-icons-inner"></span></div>
+                                                    <div class="ems-prd-icons-new"><span class="ems-prd-icons-inner"></span></div>
                                                 </div>
-                                                <div class="ems-prd-price-selling">
-                                                    <span class="total">149</span>
-                                                    <span class="penny">,00</span>
-                                                    <span class="currency">TL</span>
+                                                <div class="ems-prd-image">
+                                                    <a href="#">
+                                                        <img src="/lab/projects/yargici//upload/products/product-2.jpg" title="YAKA DETAYLI KOLSUZ BLUZ" alt="YAKA DETAYLI KOLSUZ BLUZ" />
+                                                    </a>
                                                 </div>
                                             </div>
-                                            <div class="ems-prd-add-cart">
-                                                <a href="javascript:void(0);" class="btn-default btn-default-add-to-cart"><span>EKLE</span></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="ems-prd swiper-slide">
-                                    <div class="ems-prd-inner">
-                                        <div class="ems-prd-top-wrp">
-                                            <div class="ems-prd-icons">
-                                                <div class="ems-prd-icons-stock"><span class="ems-prd-icons-inner"></span></div>
-                                                <div class="ems-prd-icons-discount"><span class="ems-prd-icons-inner"></span></div>
-                                                <div class="ems-prd-icons-new"><span class="ems-prd-icons-inner"></span></div>
-                                            </div>
-                                            <div class="ems-prd-image">
-                                                <a href="#">
-                                                    <img src="/lab/projects/yargici//upload/products/product-1.jpg" title="YAKA DETAYLI KOLSUZ BLUZ" alt="YAKA DETAYLI KOLSUZ BLUZ" />
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="ems-prd-bttm-wrp">
-                                            <div class="ems-prd-name"><a href="#" title="YAKA DETAYLI KOLSUZ BLUZ" alt="YAKA DETAYLI KOLSUZ BLUZ">YAKA DETAYLI KOLSUZ BLUZ</a></div>
-                                            <div class="ems-prd-price clearfix">
-                                                <div class="ems-prd-price-first">
-                                                    <span class="total">149</span>
-                                                    <span class="penny">,00</span>
-                                                    <span class="currency">TL</span>
+                                            <div class="ems-prd-bttm-wrp">
+                                                <div class="ems-prd-name"><a href="#" title="YAKA DETAYLI KOLSUZ BLUZ" alt="YAKA DETAYLI KOLSUZ BLUZ">YAKA DETAYLI KOLSUZ BLUZ</a></div>
+                                                <div class="ems-prd-price clearfix">
+                                                    <div class="ems-prd-price-first">
+                                                        <span class="total">149</span>
+                                                        <span class="penny">,00</span>
+                                                        <span class="currency">TL</span>
+                                                    </div>
+                                                    <div class="ems-prd-price-selling">
+                                                        <span class="total">149</span>
+                                                        <span class="penny">,00</span>
+                                                        <span class="currency">TL</span>
+                                                    </div>
                                                 </div>
-                                                <div class="ems-prd-price-selling">
-                                                    <span class="total">149</span>
-                                                    <span class="penny">,00</span>
-                                                    <span class="currency">TL</span>
+                                                <div class="ems-prd-add-cart">
+                                                    <a href="javascript:void(0);" class="btn-default btn-default-add-to-cart"><span>EKLE</span></a>
                                                 </div>
                                             </div>
-                                            <div class="ems-prd-add-cart">
-                                                <a href="javascript:void(0);" class="btn-default btn-default-add-to-cart"><span>EKLE</span></a>
-                                            </div>
                                         </div>
-                                    </div>
-                                </li>
-                                <li class="ems-prd swiper-slide">
-                                    <div class="ems-prd-inner">
-                                        <div class="ems-prd-top-wrp">
-                                            <div class="ems-prd-icons">
-                                                <div class="ems-prd-icons-stock"><span class="ems-prd-icons-inner"></span></div>
-                                                <div class="ems-prd-icons-discount"><span class="ems-prd-icons-inner"></span></div>
-                                                <div class="ems-prd-icons-new"><span class="ems-prd-icons-inner"></span></div>
-                                            </div>
-                                            <div class="ems-prd-image">
-                                                <a href="#">
-                                                    <img src="/lab/projects/yargici//upload/products/product-2.jpg" title="YAKA DETAYLI KOLSUZ BLUZ" alt="YAKA DETAYLI KOLSUZ BLUZ" />
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="ems-prd-bttm-wrp">
-                                            <div class="ems-prd-name"><a href="#" title="YAKA DETAYLI KOLSUZ BLUZ" alt="YAKA DETAYLI KOLSUZ BLUZ">YAKA DETAYLI KOLSUZ BLUZ</a></div>
-                                            <div class="ems-prd-price clearfix">
-                                                <div class="ems-prd-price-first">
-                                                    <span class="total">149</span>
-                                                    <span class="penny">,00</span>
-                                                    <span class="currency">TL</span>
+                                    </li>
+                                    <li class="ems-prd swiper-slide">
+                                        <div class="ems-prd-inner">
+                                            <div class="ems-prd-top-wrp">
+                                                <div class="ems-prd-icons">
+                                                    <div class="ems-prd-icons-stock"><span class="ems-prd-icons-inner"></span></div>
+                                                    <div class="ems-prd-icons-discount"><span class="ems-prd-icons-inner"></span></div>
+                                                    <div class="ems-prd-icons-new"><span class="ems-prd-icons-inner"></span></div>
                                                 </div>
-                                                <div class="ems-prd-price-selling">
-                                                    <span class="total">149</span>
-                                                    <span class="penny">,00</span>
-                                                    <span class="currency">TL</span>
+                                                <div class="ems-prd-image">
+                                                    <a href="#">
+                                                        <img src="/lab/projects/yargici//upload/products/product-3.jpg" title="YAKA DETAYLI KOLSUZ BLUZ" alt="YAKA DETAYLI KOLSUZ BLUZ" />
+                                                    </a>
                                                 </div>
                                             </div>
-                                            <div class="ems-prd-add-cart">
-                                                <a href="javascript:void(0);" class="btn-default btn-default-add-to-cart"><span>EKLE</span></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="ems-prd swiper-slide">
-                                    <div class="ems-prd-inner">
-                                        <div class="ems-prd-top-wrp">
-                                            <div class="ems-prd-icons">
-                                                <div class="ems-prd-icons-stock"><span class="ems-prd-icons-inner"></span></div>
-                                                <div class="ems-prd-icons-discount"><span class="ems-prd-icons-inner"></span></div>
-                                                <div class="ems-prd-icons-new"><span class="ems-prd-icons-inner"></span></div>
-                                            </div>
-                                            <div class="ems-prd-image">
-                                                <a href="#">
-                                                    <img src="/lab/projects/yargici//upload/products/product-3.jpg" title="YAKA DETAYLI KOLSUZ BLUZ" alt="YAKA DETAYLI KOLSUZ BLUZ" />
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="ems-prd-bttm-wrp">
-                                            <div class="ems-prd-name"><a href="#" title="YAKA DETAYLI KOLSUZ BLUZ" alt="YAKA DETAYLI KOLSUZ BLUZ">YAKA DETAYLI KOLSUZ BLUZ</a></div>
-                                            <div class="ems-prd-price clearfix">
-                                                <div class="ems-prd-price-first">
-                                                    <span class="total">149</span>
-                                                    <span class="penny">,00</span>
-                                                    <span class="currency">TL</span>
+                                            <div class="ems-prd-bttm-wrp">
+                                                <div class="ems-prd-name"><a href="#" title="YAKA DETAYLI KOLSUZ BLUZ" alt="YAKA DETAYLI KOLSUZ BLUZ">YAKA DETAYLI KOLSUZ BLUZ</a></div>
+                                                <div class="ems-prd-price clearfix">
+                                                    <div class="ems-prd-price-first">
+                                                        <span class="total">149</span>
+                                                        <span class="penny">,00</span>
+                                                        <span class="currency">TL</span>
+                                                    </div>
+                                                    <div class="ems-prd-price-selling">
+                                                        <span class="total">149</span>
+                                                        <span class="penny">,00</span>
+                                                        <span class="currency">TL</span>
+                                                    </div>
                                                 </div>
-                                                <div class="ems-prd-price-selling">
-                                                    <span class="total">149</span>
-                                                    <span class="penny">,00</span>
-                                                    <span class="currency">TL</span>
+                                                <div class="ems-prd-add-cart">
+                                                    <a href="javascript:void(0);" class="btn-default btn-default-add-to-cart"><span>EKLE</span></a>
                                                 </div>
                                             </div>
-                                            <div class="ems-prd-add-cart">
-                                                <a href="javascript:void(0);" class="btn-default btn-default-add-to-cart"><span>EKLE</span></a>
+                                        </div>
+                                    </li>
+                                    <li class="ems-prd swiper-slide">
+                                        <div class="ems-prd-inner">
+                                            <div class="ems-prd-top-wrp">
+                                                <div class="ems-prd-icons">
+                                                    <div class="ems-prd-icons-stock"><span class="ems-prd-icons-inner"></span></div>
+                                                    <div class="ems-prd-icons-discount"><span class="ems-prd-icons-inner"></span></div>
+                                                    <div class="ems-prd-icons-new"><span class="ems-prd-icons-inner"></span></div>
+                                                </div>
+                                                <div class="ems-prd-image">
+                                                    <a href="#">
+                                                        <img src="/lab/projects/yargici//upload/products/product-1.jpg" title="YAKA DETAYLI KOLSUZ BLUZ" alt="YAKA DETAYLI KOLSUZ BLUZ" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="ems-prd-bttm-wrp">
+                                                <div class="ems-prd-name"><a href="#" title="YAKA DETAYLI KOLSUZ BLUZ" alt="YAKA DETAYLI KOLSUZ BLUZ">YAKA DETAYLI KOLSUZ BLUZ</a></div>
+                                                <div class="ems-prd-price clearfix">
+                                                    <div class="ems-prd-price-first">
+                                                        <span class="total">149</span>
+                                                        <span class="penny">,00</span>
+                                                        <span class="currency">TL</span>
+                                                    </div>
+                                                    <div class="ems-prd-price-selling">
+                                                        <span class="total">149</span>
+                                                        <span class="penny">,00</span>
+                                                        <span class="currency">TL</span>
+                                                    </div>
+                                                </div>
+                                                <div class="ems-prd-add-cart">
+                                                    <a href="javascript:void(0);" class="btn-default btn-default-add-to-cart"><span>EKLE</span></a>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </li>
-                                <!--Repeat products-->
-                            </ul>
+                                    </li>
+                                    <li class="ems-prd swiper-slide">
+                                        <div class="ems-prd-inner">
+                                            <div class="ems-prd-top-wrp">
+                                                <div class="ems-prd-icons">
+                                                    <div class="ems-prd-icons-stock"><span class="ems-prd-icons-inner"></span></div>
+                                                    <div class="ems-prd-icons-discount"><span class="ems-prd-icons-inner"></span></div>
+                                                    <div class="ems-prd-icons-new"><span class="ems-prd-icons-inner"></span></div>
+                                                </div>
+                                                <div class="ems-prd-image">
+                                                    <a href="#">
+                                                        <img src="/lab/projects/yargici//upload/products/product-2.jpg" title="YAKA DETAYLI KOLSUZ BLUZ" alt="YAKA DETAYLI KOLSUZ BLUZ" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="ems-prd-bttm-wrp">
+                                                <div class="ems-prd-name"><a href="#" title="YAKA DETAYLI KOLSUZ BLUZ" alt="YAKA DETAYLI KOLSUZ BLUZ">YAKA DETAYLI KOLSUZ BLUZ</a></div>
+                                                <div class="ems-prd-price clearfix">
+                                                    <div class="ems-prd-price-first">
+                                                        <span class="total">149</span>
+                                                        <span class="penny">,00</span>
+                                                        <span class="currency">TL</span>
+                                                    </div>
+                                                    <div class="ems-prd-price-selling">
+                                                        <span class="total">149</span>
+                                                        <span class="penny">,00</span>
+                                                        <span class="currency">TL</span>
+                                                    </div>
+                                                </div>
+                                                <div class="ems-prd-add-cart">
+                                                    <a href="javascript:void(0);" class="btn-default btn-default-add-to-cart"><span>EKLE</span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="ems-prd swiper-slide">
+                                        <div class="ems-prd-inner">
+                                            <div class="ems-prd-top-wrp">
+                                                <div class="ems-prd-icons">
+                                                    <div class="ems-prd-icons-stock"><span class="ems-prd-icons-inner"></span></div>
+                                                    <div class="ems-prd-icons-discount"><span class="ems-prd-icons-inner"></span></div>
+                                                    <div class="ems-prd-icons-new"><span class="ems-prd-icons-inner"></span></div>
+                                                </div>
+                                                <div class="ems-prd-image">
+                                                    <a href="#">
+                                                        <img src="/lab/projects/yargici//upload/products/product-3.jpg" title="YAKA DETAYLI KOLSUZ BLUZ" alt="YAKA DETAYLI KOLSUZ BLUZ" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="ems-prd-bttm-wrp">
+                                                <div class="ems-prd-name"><a href="#" title="YAKA DETAYLI KOLSUZ BLUZ" alt="YAKA DETAYLI KOLSUZ BLUZ">YAKA DETAYLI KOLSUZ BLUZ</a></div>
+                                                <div class="ems-prd-price clearfix">
+                                                    <div class="ems-prd-price-first">
+                                                        <span class="total">149</span>
+                                                        <span class="penny">,00</span>
+                                                        <span class="currency">TL</span>
+                                                    </div>
+                                                    <div class="ems-prd-price-selling">
+                                                        <span class="total">149</span>
+                                                        <span class="penny">,00</span>
+                                                        <span class="currency">TL</span>
+                                                    </div>
+                                                </div>
+                                                <div class="ems-prd-add-cart">
+                                                    <a href="javascript:void(0);" class="btn-default btn-default-add-to-cart"><span>EKLE</span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!--Repeat products-->
+                                </ul>
+                            </div>
+                            <div class="swiper-direction">
+                                <div class="swiper-button-prev"><i class="icon-ico_slide-left"></i></div>
+                                <div class="swiper-button-next"><i class="icon-ico_slide-lright"></i></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
                         </div>
-                        <div class="swiper-direction">
-                            <div class="swiper-button-prev"><i class="icon-ico_slide-left"></i></div>
-                            <div class="swiper-button-next"><i class="icon-ico_slide-lright"></i></div>
-                        </div>
-                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
+                <!--Cart page featured slider-->
             </div>
-            <!--Cart page featured slider-->
+            <!--Layout-->
         </div>
     </div>
     

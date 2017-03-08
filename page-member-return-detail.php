@@ -62,7 +62,7 @@
                 <!--Page sip desc-->
 
                 <!--giving back-->
-                <div class="ems-giving-back">
+                <div class="ems-giving-back ems-giving-back-list">
                     <div class="ems-giving-back-row clearfix">
                         <div class="ems-giving-back-prdImg">
                             <a href="javascript:void(0);"><img src="/lab/projects/yargici/upload/products/cart/prd-130x130-1.jpg" /></a>
@@ -72,41 +72,44 @@
                                 <span class="ems-giving-back-line"><b class="ems-fnt-bld">Ürün: </b><span class="ems-fnt-reg">YAKASI İŞLEME DETAYLI TRİKO</span></span>
                                 <span class="ems-giving-back-line"><b class="ems-fnt-bld">Sebep: ürünü iade etmek istiyorum</b></span>
                             </div>
-                            <!--Selection-->
-                            <div class="ems-giving-back-selection">
-                                <span class="bld-title">İade Seçeneği</span>
-                                <div class="ems-giving-back-select dropdown">
-                                    <span class="trigger">SEÇİNİZ</span>
-                                    <ul>
-                                        <li><a href="javascript:void(0);">KARTA İADE</a></li>
-                                        <li><a href="javascript:void(0);">İADE ÇEKİ</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <!--Description-->
-                            <div class="ems-giving-back-desc">  
-                                <span class="bld-title">Açıklama</span>
-                                <div class="ems-input-line">
-                                    <textarea></textarea>
-                                </div>
-                            </div>
-                            <!--Info note-->
-                            <div class="ems-giving-back-notes">
-                                <p class="ems-prg-red">Ürün satıcıya ulaştıktan sonra iade koşullarına uygunluğu incelenecek ve 2 iş günü içerisinde size sonuç hakkında bilgi verilecektir. İade koşulları ile ilgili detaylı bilgi için lütfen <a href="/">tıklayınız.</a></p>
-                                <p class="ems-prg-nrm">Faturanız kurumsal ise ‘ürün birim fiyatı+KDV’ şeklinde kesilmiş bir iade faturası ile birlikte gönderiniz. Faturası kurumlar adına düzenlenen siparişlere ait iadeler ‘iade faturası’ kesilmediği takdirde tamamlanmayacaktır.</p>
-                                <p class="ems-prg-red">
-                                    Seçtiğiniz ürünün bulunduğu siparişte bir kampanyadan yararlandıysanız bu siparişin iadesiyle birlikte kazanacağınız çekler iptal edilecektir.
-                                </p>
+                        </div>
+                        <!--Selection-->
+                        <div class="ems-giving-back-selection">
+                            <span class="bld-title">İade Seçeneği</span>
+                            <div class="ems-giving-back-select dropdown">
+                                <span class="trigger">SEÇİNİZ</span>
+                                <ul>
+                                    <li><a href="javascript:void(0);">KARTA İADE</a></li>
+                                    <li><a href="javascript:void(0);">İADE ÇEKİ</a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
+                    <div class="ems-giving-back-row ems-giving-back-row-2 clearfix">
+                        <!--Description-->
+                        <div class="ems-giving-back-desc">  
+                            <span class="bld-title">Açıklama</span>
+                            <div class="ems-input-line">
+                                <textarea></textarea>
+                            </div>
+                        </div>
+                        <!--Info note-->
+                        <div class="ems-giving-back-notes">
+                            <p class="ems-prg-red">Ürün satıcıya ulaştıktan sonra iade koşullarına uygunluğu incelenecek ve 2 iş günü içerisinde size sonuç hakkında bilgi verilecektir. İade koşulları ile ilgili detaylı bilgi için lütfen <a href="/">tıklayınız.</a></p>
+                            <p class="ems-prg-nrm">Faturanız kurumsal ise ‘ürün birim fiyatı+KDV’ şeklinde kesilmiş bir iade faturası ile birlikte gönderiniz. Faturası kurumlar adına düzenlenen siparişlere ait iadeler ‘iade faturası’ kesilmediği takdirde tamamlanmayacaktır.</p>
+                            <p class="ems-prg-red">
+                                Seçtiğiniz ürünün bulunduğu siparişte bir kampanyadan yararlandıysanız bu siparişin iadesiyle birlikte kazanacağınız çekler iptal edilecektir.
+                            </p>
+                        </div>
+                    </div>
+
                 </div>
                 <!--giving back-->
 
                 <!--giving back buttons-->
                 <div class="ems-giving-back-btns clearfix">
-                    <a href="javascript:void(0);" class="btn-default btn-default-back"><i class="icon-ico_slide-left"></i><span>Vazgeç</span></a>
                     <a href="javascript:void(0);" class="btn-default btn-default-continue"><span>DEVAM ET</span></a>
+                    <a href="javascript:void(0);" class="btn-default btn-default-back"><i class="icon-ico_slide-left"></i><span>Vazgeç</span></a>
                 </div>
 
                 </div>
