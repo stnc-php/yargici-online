@@ -126,7 +126,7 @@
                                                 <div class="ems-prd-top-wrp">
                                                     <div class="ems-prd-image">
                                                         <a href="#">
-                                                            <img src="/lab/projects/yargici/upload/products/product-1.jpg" title="YAKA DETAYLI KOLSUZ BLUZ" alt="YAKA DETAYLI KOLSUZ BLUZ" />
+                                                            <img src="/lab/projects/yargici/images/frontend/placeholder/390x390.png" data-original="/lab/projects/yargici/upload/products/product-1.jpg" title="YAKA DETAYLI KOLSUZ BLUZ" alt="YAKA DETAYLI KOLSUZ BLUZ" />
                                                         </a>
                                                     </div>
                                                 </div>
@@ -155,7 +155,7 @@
                                                 <div class="ems-prd-top-wrp">
                                                     <div class="ems-prd-image">
                                                         <a href="#">
-                                                            <img class="lazy-load" data-original="/lab/projects/yargici/upload/products/product-2.jpg" title="YAKA DETAYLI KOLSUZ BLUZ" alt="YAKA DETAYLI KOLSUZ BLUZ" />
+                                                            <img class="lazy-load" src="/lab/projects/yargici/images/frontend/placeholder/390x390.png" data-original="/lab/projects/yargici/upload/products/product-2.jpg" title="YAKA DETAYLI KOLSUZ BLUZ" alt="YAKA DETAYLI KOLSUZ BLUZ" />
                                                         </a>
                                                     </div>
                                                 </div>
@@ -184,7 +184,7 @@
                                                 <div class="ems-prd-top-wrp">
                                                     <div class="ems-prd-image">
                                                         <a href="#">
-                                                            <img class="lazy-load" data-original="/lab/projects/yargici/upload/products/product-3.jpg" title="YAKA DETAYLI KOLSUZ BLUZ" alt="YAKA DETAYLI KOLSUZ BLUZ" />
+                                                            <img class="lazy-load"src="/lab/projects/yargici/images/frontend/placeholder/390x390.png" data-original="/lab/projects/yargici/upload/products/product-3.jpg" title="YAKA DETAYLI KOLSUZ BLUZ" alt="YAKA DETAYLI KOLSUZ BLUZ" />
                                                         </a>
                                                     </div>
                                                 </div>
@@ -213,7 +213,7 @@
                                                 <div class="ems-prd-top-wrp">
                                                     <div class="ems-prd-image">
                                                         <a href="#">
-                                                            <img class="lazy-load" data-original="/lab/projects/yargici/upload/products/product-1.jpg" title="YAKA DETAYLI KOLSUZ BLUZ" alt="YAKA DETAYLI KOLSUZ BLUZ" />
+                                                            <img class="lazy-load" src="/lab/projects/yargici/images/frontend/placeholder/390x390.png" data-original="/lab/projects/yargici/upload/products/product-1.jpg" title="YAKA DETAYLI KOLSUZ BLUZ" alt="YAKA DETAYLI KOLSUZ BLUZ" />
                                                         </a>
                                                     </div>
                                                 </div>
@@ -242,7 +242,7 @@
                                                 <div class="ems-prd-top-wrp">
                                                     <div class="ems-prd-image">
                                                         <a href="#">
-                                                            <img class="lazy-load" data-original="/lab/projects/yargici/upload/products/product-2.jpg" title="YAKA DETAYLI KOLSUZ BLUZ" alt="YAKA DETAYLI KOLSUZ BLUZ" />
+                                                            <img class="lazy-load" src="/lab/projects/yargici/images/frontend/placeholder/390x390.png" data-original="/lab/projects/yargici/upload/products/product-2.jpg" title="YAKA DETAYLI KOLSUZ BLUZ" alt="YAKA DETAYLI KOLSUZ BLUZ" />
                                                         </a>
                                                     </div>
                                                 </div>
@@ -271,7 +271,7 @@
                                                 <div class="ems-prd-top-wrp">
                                                     <div class="ems-prd-image">
                                                         <a href="#">
-                                                            <img class="lazy-load" data-original="/lab/projects/yargici/upload/products/product-3.jpg" title="YAKA DETAYLI KOLSUZ BLUZ" alt="YAKA DETAYLI KOLSUZ BLUZ" />
+                                                            <img class="lazy-load" src="/lab/projects/yargici/images/frontend/placeholder/390x390.png" data-original="/lab/projects/yargici/upload/products/product-3.jpg" title="YAKA DETAYLI KOLSUZ BLUZ" alt="YAKA DETAYLI KOLSUZ BLUZ" />
                                                         </a>
                                                     </div>
                                                 </div>
@@ -543,7 +543,7 @@
                                             <div class="ems-prd-top-wrp">
                                                 <div class="ems-prd-image">
                                                     <a href="#">
-                                                        <img src="/lab/projects/yargici//upload/products/product-detail/240x240/canta.jpg" title="EL ÇANTASI" alt="EL ÇANTASI" />
+                                                        <img class="lazy-load" src="/lab/projects/yargici/images/frontend/placeholder/240x240.png" data-original="/lab/projects/yargici/upload/products/product-detail/240x240/canta.jpg" title="EL ÇANTASI" alt="EL ÇANTASI" />
                                                     </a>
                                                 </div>
                                             </div>
@@ -569,7 +569,7 @@
                                             <div class="ems-prd-top-wrp">
                                                 <div class="ems-prd-image">
                                                     <a href="#">
-                                                        <img src="/lab/projects/yargici//upload/products/product-detail/240x240/boncuk.jpg" title="BONCUK DETAYLI ALTIN KÜPE" alt="BONCUK DETAYLI ALTIN KÜPE" />
+                                                        <img class="lazy-load" src="/lab/projects/yargici/images/frontend/placeholder/240x240.png" data-original="/lab/projects/yargici/upload/products/product-detail/240x240/boncuk.jpg" title="BONCUK DETAYLI ALTIN KÜPE" alt="BONCUK DETAYLI ALTIN KÜPE" />
                                                     </a>
                                                 </div>
                                             </div>
@@ -595,7 +595,7 @@
                                             <div class="ems-prd-top-wrp">
                                                 <div class="ems-prd-image">
                                                     <a href="#">
-                                                        <img src="/lab/projects/yargici//upload/products/product-detail/240x240/desenli-sal.jpg" title="DESENLİ ŞAL" alt="DESENLİ ŞAL" />
+                                                        <img class="lazy-load" src="/lab/projects/yargici/images/frontend/placeholder/240x240.png"  data-original="/lab/projects/yargici/upload/products/product-detail/240x240/desenli-sal.jpg" title="DESENLİ ŞAL" alt="DESENLİ ŞAL" />
                                                     </a>
                                                 </div>
                                             </div>
@@ -621,7 +621,7 @@
                                             <div class="ems-prd-top-wrp">
                                                 <div class="ems-prd-image">
                                                     <a href="#">
-                                                        <img src="/lab/projects/yargici//upload/products/product-detail/240x240/bere.jpg" title="BERE" alt="BERE" />
+                                                        <img class="lazy-load" src="/lab/projects/yargici/images/frontend/placeholder/240x240.png"  data-original="/lab/projects/yargici/upload/products/product-detail/240x240/bere.jpg" title="BERE" alt="BERE" />
                                                     </a>
                                                 </div>
                                             </div>
@@ -668,7 +668,7 @@
                                             <div class="ems-prd-top-wrp">
                                                 <div class="ems-prd-image">
                                                     <a href="#">
-                                                        <img src="/lab/projects/yargici//upload/products/product-detail/240x240/triko-beyaz.jpg" title="TRİKO BEYAZ" alt="TRİKO BEYAZ" />
+                                                        <img class="lazy-load" src="/lab/projects/yargici/images/frontend/placeholder/240x240.png" data-original="/lab/projects/yargici/upload/products/product-detail/240x240/triko-beyaz.jpg" title="TRİKO BEYAZ" alt="TRİKO BEYAZ" />
                                                     </a>
                                                 </div>
                                             </div>
@@ -694,7 +694,7 @@
                                             <div class="ems-prd-top-wrp">
                                                 <div class="ems-prd-image">
                                                     <a href="#">
-                                                        <img src="/lab/projects/yargici//upload/products/product-detail/240x240/triko-yesil.jpg" title="TRİKO YEŞİL" alt="TRİKO YEŞİL" />
+                                                        <img class="lazy-load" src="/lab/projects/yargici/images/frontend/placeholder/240x240.png" data-original="/lab/projects/yargici/upload/products/product-detail/240x240/triko-yesil.jpg" title="TRİKO YEŞİL" alt="TRİKO YEŞİL" />
                                                     </a>
                                                 </div>
                                             </div>
@@ -720,7 +720,7 @@
                                             <div class="ems-prd-top-wrp">
                                                 <div class="ems-prd-image">
                                                     <a href="#">
-                                                        <img src="/lab/projects/yargici//upload/products/product-detail/240x240/triko-mavi.jpg" title="TRİKO MAVİ" alt="TRİKO MAVİ" />
+                                                        <img class="lazy-load" src="/lab/projects/yargici/images/frontend/placeholder/240x240.png" data-original="/lab/projects/yargici/upload/products/product-detail/240x240/triko-mavi.jpg" title="TRİKO MAVİ" alt="TRİKO MAVİ" />
                                                     </a>
                                                 </div>
                                             </div>
@@ -746,7 +746,7 @@
                                             <div class="ems-prd-top-wrp">
                                                 <div class="ems-prd-image">
                                                     <a href="#">
-                                                        <img src="/lab/projects/yargici//upload/products/product-detail/240x240/triko-kahve.jpg" title="TRİKO KAHVE" alt="TRİKO KAHVE" />
+                                                        <img class="lazy-load" src="/lab/projects/yargici/images/frontend/placeholder/240x240.png" data-original="/lab/projects/yargici/upload/products/product-detail/240x240/triko-kahve.jpg" title="TRİKO KAHVE" alt="TRİKO KAHVE" />
                                                     </a>
                                                 </div>
                                             </div>
@@ -772,7 +772,7 @@
                                             <div class="ems-prd-top-wrp">
                                                 <div class="ems-prd-image">
                                                     <a href="#">
-                                                        <img src="/lab/projects/yargici//upload/products/product-detail/240x240/triko-beyaz.jpg" title="TRİKO BEYAZ" alt="TRİKO BEYAZ" />
+                                                        <img class="lazy-load" src="/lab/projects/yargici/images/frontend/placeholder/240x240.png" data-original="/lab/projects/yargici/upload/products/product-detail/240x240/triko-beyaz.jpg" title="TRİKO BEYAZ" alt="TRİKO BEYAZ" />
                                                     </a>
                                                 </div>
                                             </div>
@@ -798,7 +798,7 @@
                                             <div class="ems-prd-top-wrp">
                                                 <div class="ems-prd-image">
                                                     <a href="#">
-                                                        <img src="/lab/projects/yargici//upload/products/product-detail/240x240/triko-yesil.jpg" title="TRİKO YEŞİL" alt="TRİKO YEŞİL" />
+                                                        <img class="lazy-load" src="/lab/projects/yargici/images/frontend/placeholder/240x240.png" data-original="/lab/projects/yargici/upload/products/product-detail/240x240/triko-yesil.jpg" title="TRİKO YEŞİL" alt="TRİKO YEŞİL" />
                                                     </a>
                                                 </div>
                                             </div>

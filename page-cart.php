@@ -119,8 +119,6 @@
         <div class="row-holder-1 ems-inline">
             <!--Layout-->
             <div class="ems-page-default ems-page-order-cart content-order-list">
-            <!--<emos id='plhStokUyari' />
-            <emos id='plhSepetBosLabel' />-->
 
             <!--Left-->
             <div class="ems-page-default-left">

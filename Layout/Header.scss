@@ -1,6 +1,6 @@
 .site-header {
     position: relative;
-    min-height: 160px;
+    min-height: 156px;
     &-wrapper {
         display:inline-block;
         width:100%;
@@ -19,71 +19,71 @@
             > .ems-col{
                 display: inline-block;
                 vertical-align: top;
+                .lng, .lng-wrp{
+                    display: inline-block;
+                    vertical-align: top;
+                    &-wrp{
+                        .dropdown {
+                            > span{
+                                display: block;
+                                background: none;
+                                height: auto;
+                                line-height: 1;
+                                padding: 10px;
+                                cursor: pointer;
+                                border: none;
+                                .lng{
+                                    letter-spacing: 2px;
+                                    font-size: 14px;
+                                    background: none;
+                                    display: inline-block;
+                                    vertical-align: middle;
+                                    padding-right: 0;
+                                }
+                            }
+                            ul {
+                                display: none;
+                                background: #f5f5f5;
+                                position: absolute;
+                                padding: 0 10px;
+                                li{
+                                    a{ display: inline-block; padding:5px 0; }
+                                    a span{ color:$colorDefault; font-size: 13px; }
+                                }
+                                li.selected{
+                                    a span{ color:$title;font-size: 13px; }
+                                }
+                            }
+                            &.opened{
+                                ul { display: block; }
+                            }
+                        }
+                    }
+                    &:first-child{
+                        .lng-rate{
+                            .dropdown{
+                                > span{
+                                    position: relative;
+                                    &:before{
+                                        content: '';
+                                        position: absolute;
+                                        top: 13px;
+                                        left: -2px;
+                                        background: $colorDefault;
+                                        width: 1px;
+                                        height: 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
             } 
             &.ems-row-1 {
                 > .ems-col-1 {
                     float: left;
                     margin-left: 20px;
                     padding-top: 10px;
-                    .lng, .lng-wrp{
-                        display: inline-block;
-                        vertical-align: top;
-                        &-wrp{
-                            .dropdown {
-                                > span{
-                                    display: block;
-                                    background: none;
-                                    height: auto;
-                                    line-height: 1;
-                                    padding: 10px;
-                                    cursor: pointer;
-                                    border: none;
-                                    .lng{
-                                        letter-spacing: 2px;
-                                        font-size: 14px;
-                                        background: none;
-                                        display: inline-block;
-                                        vertical-align: middle;
-                                        padding-right: 0;
-                                    }
-                                }
-                                ul {
-                                    display: none;
-                                    background: #f5f5f5;
-                                    position: absolute;
-                                    padding: 0 10px;
-                                    li{
-                                        a{ display: inline-block; padding:5px 0; }
-                                        a span{ color:$colorDefault; font-size: 13px; }
-                                    }
-                                    li.selected{
-                                        a span{ color:$title;font-size: 13px; }
-                                    }
-                                }
-                                &.opened{
-                                    ul { display: block; }
-                                }
-                            }
-                        }
-                        &:first-child{
-                            .lng-rate{
-                                .dropdown{
-                                    > span{
-                                        position: relative;
-                                        &:before{
-                                            content: '';
-                                            position: absolute;
-                                            top: 13px;
-                                            left: -2px;
-                                            background: $colorDefault;
-                                            width: 1px;
-                                            height: 10px;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
                 }
                 > .ems-col-2{
                     float: right;
@@ -101,6 +101,44 @@
         .site-header-wrapper {
             position: fixed;
             top: 0;
+        }
+    }
+    /*Homeworks header*/
+    &-homeworks{
+       .site-header-inner{
+            .logo{
+                position: relative;
+                top: -20px;
+                a { margin:0; }
+            }
+            .ems-row-1{
+                .ems-col-1{ margin-left: 30px; }
+            }
+       }
+       .ems-row-1{ position: relative; z-index: 1; }
+    }
+}
+
+/*Homeworks header css*/
+.back-to-site{
+    background:#f0f0f0;
+    min-height: 30px;
+    position: relative;
+    z-index: 16;
+    &-inner{
+        padding: 0 30px;
+        .site-to-back{
+            display: inline-block;
+            padding:6px 0;
+            .icon-ico_slide-left, span{
+                display: inline-block;
+            }
+            .icon-ico_slide-left{
+                font-size: 11px;
+                margin-right: 15px;
+                &:before{ font-size: 11px;color:#5c5c5c; }
+            }
+            span{ color:#5c5c5c; font-size:13px; }
         }
     }
 }
@@ -399,6 +437,11 @@
                 }
             }
         }
+    }
+
+    /*Homeworks header css*/
+    .back-to-site{
+        display: none;
     }
     
     /*Categories Menu*/

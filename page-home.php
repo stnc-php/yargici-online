@@ -236,7 +236,7 @@
                                     <div class="ems-prd-top-wrp">
                                         <div class="ems-prd-image">
                                             <a href="#">
-                                                <img data-original="/lab/projects/yargici/upload/products/product-1.jpg" class="lazy-load" title="YAKA DETAYLI KOLSUZ BLUZ" alt="YAKA DETAYLI KOLSUZ BLUZ" />
+                                                <img src="/lab/projects/yargici/images/frontend/placeholder/390x390.png" data-original="/lab/projects/yargici/upload/products/product-1.jpg" class="lazy-load" title="YAKA DETAYLI KOLSUZ BLUZ" alt="YAKA DETAYLI KOLSUZ BLUZ" />
                                             </a>
                                         </div>
                                     </div>
@@ -262,7 +262,7 @@
                                     <div class="ems-prd-top-wrp">
                                         <div class="ems-prd-image">
                                             <a href="#">
-                                                <img data-original="/lab/projects/yargici/upload/products/product-2.jpg" class="lazy-load" title="YAKA DETAYLI KOLSUZ BLUZ" alt="YAKA DETAYLI KOLSUZ BLUZ" />
+                                                <img src="/lab/projects/yargici/images/frontend/placeholder/390x390.png" data-original="/lab/projects/yargici/upload/products/product-2.jpg" class="lazy-load" title="YAKA DETAYLI KOLSUZ BLUZ" alt="YAKA DETAYLI KOLSUZ BLUZ" />
                                             </a>
                                         </div>
                                     </div>
@@ -288,7 +288,7 @@
                                     <div class="ems-prd-top-wrp">
                                         <div class="ems-prd-image">
                                             <a href="#">
-                                                <img data-original="/lab/projects/yargici/upload/products/product-3.jpg" class="lazy-load" title="YAKA DETAYLI KOLSUZ BLUZ" alt="YAKA DETAYLI KOLSUZ BLUZ" />
+                                                <img src="/lab/projects/yargici/images/frontend/placeholder/390x390.png" data-original="/lab/projects/yargici/upload/products/product-3.jpg" class="lazy-load" title="YAKA DETAYLI KOLSUZ BLUZ" alt="YAKA DETAYLI KOLSUZ BLUZ" />
                                             </a>
                                         </div>
                                     </div>
@@ -314,7 +314,7 @@
                                     <div class="ems-prd-top-wrp">
                                         <div class="ems-prd-image">
                                             <a href="#">
-                                                <img data-original="/lab/projects/yargici/upload/products/product-1.jpg" class="lazy-load" title="YAKA DETAYLI KOLSUZ BLUZ" alt="YAKA DETAYLI KOLSUZ BLUZ" />
+                                                <img src="/lab/projects/yargici/images/frontend/placeholder/390x390.png" data-original="/lab/projects/yargici/upload/products/product-1.jpg" class="lazy-load" title="YAKA DETAYLI KOLSUZ BLUZ" alt="YAKA DETAYLI KOLSUZ BLUZ" />
                                             </a>
                                         </div>
                                     </div>
@@ -340,7 +340,7 @@
                                     <div class="ems-prd-top-wrp">
                                         <div class="ems-prd-image">
                                             <a href="#">
-                                                <img data-original="/lab/projects/yargici/upload/products/product-2.jpg" class="lazy-load" title="YAKA DETAYLI KOLSUZ BLUZ" alt="YAKA DETAYLI KOLSUZ BLUZ" />
+                                                <img src="/lab/projects/yargici/images/frontend/placeholder/390x390.png" data-original="/lab/projects/yargici/upload/products/product-2.jpg" class="lazy-load" title="YAKA DETAYLI KOLSUZ BLUZ" alt="YAKA DETAYLI KOLSUZ BLUZ" />
                                             </a>
                                         </div>
                                     </div>
@@ -366,7 +366,7 @@
                                     <div class="ems-prd-top-wrp">
                                         <div class="ems-prd-image">
                                             <a href="#">
-                                                <img data-original="/lab/projects/yargici/upload/products/product-3.jpg" class="lazy-load" title="YAKA DETAYLI KOLSUZ BLUZ" alt="YAKA DETAYLI KOLSUZ BLUZ" />
+                                                <img src="/lab/projects/yargici/images/frontend/placeholder/390x390.png" data-original="/lab/projects/yargici/upload/products/product-3.jpg" class="lazy-load" title="YAKA DETAYLI KOLSUZ BLUZ" alt="YAKA DETAYLI KOLSUZ BLUZ" />
                                             </a>
                                         </div>
                                     </div>

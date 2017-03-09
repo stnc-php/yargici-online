@@ -546,61 +546,8 @@
                 }
             }
         }
-        /**/
     }
-    
-    /*Empty cart*/
-    .no-prd {
-        text-align: center;
-        margin: 100px auto;
-        .icon-bag-close {
-            display: inline-block;
-            position: relative;
-            text-align: center;
-            font-size: 100px;
-            .ico_close {
-                position: absolute;
-                top: -10px;
-                right: -20px;
-                background: $red;
-                width: 40px;
-                height: 40px;
-                border-radius: 100%;
-                text-align: center;
-                display: block;
-                &:before {
-                    content:'0';
-                    font-size: 30px;
-                    font-family: $fM;
-                    color: #fff;
-                    display: block;
-                    padding: 6px;
-                }
-            }
-            .icon-ico_basket{
-                &:before{
-                    font-size: 80px;
-                }
-            }
-        }
-        p {
-            font-size: 25px;
-            margin: 0;
-            padding: 20px 0;
-        }
-        .g-home {
-                font-size: 14px;
-                background: $dBlue;
-                margin-top: 10px;
-                &:hover {
-                    background: $lBlue;
-                }
-            > i {
-                font-size: .8em;
-                margin-right: 15px;
-            }
-        }
-    }
+
      /*Cargo info*/
      .ems-row-2{
          background: #fafafa;
@@ -1363,7 +1310,10 @@
             }
             &-cargo{
                 width: 100%;
-                span{ margin-top: 0; }
+                span{
+                    margin-top: 0;
+                    a{ display: none; }
+                }
             }
              .ems-cart-summary{
                  width: 100%;

@@ -97,7 +97,7 @@
                         overflow: auto;
                         min-height: 350px;
                         max-height: 350px;
-                        padding: 10px 0 50px 30px;
+                        padding: 10px 20px 50px 20px;
                         > li{
                             margin-top: 10px;
                             > a{
@@ -125,6 +125,9 @@
                                     font-size: 13px;
                                     letter-spacing: 1px;
                                     &:before{
+                                        position: relative;
+                                        top:-1px; 
+                                        margin-right: 5px;
                                         content: '\e904';
                                         font-family: 'icomoon';
                                         color: $colorDefault;
@@ -143,6 +146,18 @@
         }
     }
 }
+
+/*Header Homeworks search*/
+.site-header-homeworks{
+    .mod-mini-search {
+        &-body{
+            right: inherit;
+            left: 0;
+        }
+        .ems-search-suggestion{ right: inherit; left: 0; width: 400px; }
+    }
+}
+
 /*Search focused*/
 body.search-focused {
     .mod-mini-search {
@@ -153,6 +168,14 @@ body.search-focused {
             z-index: 1;
             border-bottom:1px solid $borderColor;
             .ems-field input{ width: 100%; }
+        }
+    }
+    /*Homeworks search*/
+    .site-header-homeworks{
+        .mod-mini-search {
+            &-body{
+                width: 400px;
+            }
         }
     }
 }
@@ -174,6 +197,14 @@ body.search-keyup{
         .mod-mini-search {
             &-body{ width: 350px; }
             .ems-search-suggestion{ width: 350px; }
+        }
+        /*Homeworks search*/
+        .site-header-homeworks{
+            .mod-mini-search {
+                &-body{
+                    .ems-search-suggestion { width: 400px; }
+                }
+            }
         }
     }
 }

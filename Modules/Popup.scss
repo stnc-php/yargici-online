@@ -480,6 +480,8 @@
     
     /*Popup size mobile*/
     .popup-default {
+        .popup-default-header{ border: none; }
+
         &-size{
             max-width: 100%;
             height:100%;
@@ -534,10 +536,7 @@
             }
         }
         &-costs{
-            border: none;
-            top: 0;
-            max-width: 100%;
-            height:100%; 
+           display: none !important;
         }
     }
 }

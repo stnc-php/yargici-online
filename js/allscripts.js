@@ -32,6 +32,99 @@ var mobile=function(){return{detect:function(){var uagent=navigator.userAgent.to
 	};
 })(jQuery);
 
+(function ($) {
+    $.fn.extend({
+        minusSimplePopup: function (options) {
+
+            var defaults = {
+				customClass: 'custom-popup'
+            };
+
+            var options = $.extend(defaults, options);
+
+            return this.each(function(){
+                var opt = options,
+					ID = $( this ),
+					bdy = $('body'),
+					uty = { 
+						detectEl: function( ID ){ return ID.length > 0 ? true : false; } 
+					},
+					main = {
+						clicklable: true,
+						prop: {},
+						cls: { ready: 'simple-popup-ready' },
+						el: { wrp: '.simple-minus-popup', content: '.popup-default-body', header: '.popup-default-header > span', btn: '[rel="minusPopup"]', closeBtn: '.simple-minus-popup, .simple-minus-popup-vail' },
+						template: {
+							pp: '<div class="popup-default simple-minus-popup"> <div class="popup-default-wrapper"> <div class="popup-default-inner"><div class="popup-default-header"><span></span> <a href="javascript:void(0);" class="btn-popup-close"><i class="icon-ico_close"></i></a></div><div class="popup-default-body"></div></div></div></div><div class="vail simple-minus-popup-vail"></div>'
+						
+						},
+						getTemplate: function(){
+							
+						},
+						add: function( o ){
+								ID.append( this.template.pp );
+						},
+						pp: function( o ){
+							var _t = this, k = o['typ'] || '';
+							if( k == 'open' ){ 
+								bdy.addClass( _t.cls['ready'] );
+								_t.clicklable = false;
+							}
+							else{	
+								bdy.removeClass( _t.cls['ready'] );
+								_t.clicklable = true;
+								setTimeout(function(){ _t.destroy(); }, 10);
+							}
+						},
+						set: function( e ){
+							var  _t 
+						},
+						destroy: function(){
+							var _t = this, wrp = $( _t.el.wrp );
+							e = 	wrp.removeClass( _t.prop['cls'] || '' ).find( _t.el.content );
+							if( uty.detectEl( $('iframe', e) ) )
+								$('iframe', e).removeAttr('src');
+							e.html('');
+							wrp.find( _t.el.header ).html('');	
+							_t.prop = {};
+						},
+						getObj: function( e ){
+							var _t = this;
+								_t.prop = { cls: e.attr('data-cls') || opt.customClass };
+							return _t.prop;
+						},
+						addEvent: function(){
+							var _t = this;
+							
+							$( _t.el.btn )
+							.bind('click', function( e ){
+								e.preventDefault();
+								if( _t.clicklable )
+									_t.pp({ prop: _t.getObj( $( this ) ), typ: 'open' })
+							});
+							
+							$( _t.el.closeBtn )
+							.bind('click', function(){
+								_t.pp({ typ: 'close' })
+							});
+						},
+						init: function(){
+							var _t = this;
+								_t.add({ typ: 'pp' });
+								_t.addEvent();
+						}					
+					};
+					
+				main.init();
+				
+            });
+        }
+    });
+
+})(jQuery);
+
+$('body').minusSimplePopup();
+
 /* gallery */
 (function($) {
     $.fn.extend({
@@ -891,6 +984,7 @@ var mobile=function(){return{detect:function(){var uagent=navigator.userAgent.to
 							var _t = this, drp = $( _t.drp ), opCls = _t['cls']['opened'], sCls = _t['cls']['selected'];
 							
 							clickedElem
+							.unbind('click')
 							.bind('click', function(){
 								var ths = $( this ).parent();
 								if( ths.hasClass( opCls ) ) 
@@ -902,6 +996,7 @@ var mobile=function(){return{detect:function(){var uagent=navigator.userAgent.to
 							});
 							
 							items
+							.unbind('click')
 							.bind('click', function(){
 								var ths = $( this );
 									ths.addClass( sCls ).siblings('li').removeClass( sCls ).parents('.dropdown').find('> span').html( ths.text() + '<i class="icon-ico_arrow1"></i>' );
@@ -1555,6 +1650,78 @@ var bdy = $('body'),
 		}
 	},
 	management = {
+		form: {
+			/* regex kullanılınca özel karekterler çalışmayacak */
+			regex: {
+				typ1: /[^a-zA-ZıiIğüşöçİĞÜŞÖÇ\s]+/g, /* sadece harf */
+				typ2: /[^0-9\s]+/g, /* sadece rakam */
+				typ3: /[^a-zA-ZıiI0-9ğüşöçİĞÜŞÖÇ\s]+/g /* harf rakam karışık */
+			},	
+			arr: [				
+				/*{ el: '[id$="txtUYA_CEPTELEFON"]', mask: '0(599) 9999999',required: 'required' },
+				{ el: '[id$="lbfUYA_CEPTELEFON"]', class: 'zorunluFont'},
+				{ el: '[id$="txtUYE_CEPTELEFONALAN"]', mask: '999' },
+				{ el: '[id$="txtUYE_CEPTELEFON"]', mask: '9999999' },
+				{ el: '[id$="txtUYA_POSTAKODU"]', mask: '99999' },
+				{ el: '[id$="txtARM_KEYWORD"]', placeHolder: translation['txtARM_KEYWORD'] || 'Aramak istediğiniz nedir?' },
+				{ el: '[id$="txtUYE_AD"]', regex: 'typ1', prop: 'maxlength', value: '40' },
+				{ el: '[id$="txtUYE_SOYAD"]', regex: 'typ1', prop: 'maxlength', value: '40' },
+				{ el: '[id$="txtUYA_FAT_AD"]', regex: 'typ1' },
+				{ el: '[id$="txtUYE_EMAILYENI"]', prop: 'maxlength', value: '50' },
+				{ el: '[id$="txtHCK_KEY"]', placeHolder: translation['txtHCK_KEY'] || 'Kodunuzu giriniz.' },
+				{ el: '[id$="txtUYA_ADRES"]', prop: 'maxlength', value: '160' },
+				{ el: '[id$="txtUYE_DOGUMTARIHI"]', required: 'required' },
+				{ el: '[id$="lbfUYE_DOGUMTARIHI"]', class: 'zorunluFont' }*/
+				
+				{ el: '.mod-price-range input[type="text"]', mask: '000.000.000.000.000,00' }
+				
+				
+				
+				
+				
+			],
+			set: function( o ){
+				var _t = this, el = $( o['el'] );
+				if( uty.detectEl( el ) ){
+					var msk = o['mask'] || '', plc = o['placeHolder'] || '', rqrd = o['required'] || '', cls = o['class'] || '', rgx = o['regex'] || '', prop = o['prop'] || '';
+					
+					if( prop != '' )
+						el.attr(prop, o['value'] || '');
+					
+					if( msk != '' ){
+						el.removeAttr('maxlength');
+						el.mask(msk, { autoclear: true, placeholder: '' });
+					}
+					if( plc != '' ) 
+						el.attr('placeholder', plc );
+					
+					if( rqrd != '' )	
+						el.attr('required', rqrd );	
+						
+					if( cls != '' )	
+						el.addClass( cls );
+					
+					if( rgx != '' )
+						el
+						.attr('data-regex', rgx)
+						.unbind('keyup paste', _t.events.onKeyUp)
+						.bind('keyup paste', _t.events.onKeyUp);
+				}
+			},
+			events: {
+				onKeyUp: function(){
+						var _t = formManagement, ths = $( this ), val = ths.val(), rgx = ths.attr('data-regex') || '';
+						rgx = _t.regex[ rgx ] || '';
+						if( rgx != '' )
+							ths.val( val.replace( rgx, '') );
+				}
+			},
+			init: function(){
+				var _t = this, arr = _t.arr;
+				for( var i = 0; i < arr.length; ++i )
+					_t.set( arr[ i ] );	
+			}
+		},
 		append: {
 			arr: [
 				//{ main: '.page-detail .ems-prd-color', target: '.page-detail .ems-prd-zoom-wrp li:eq(1), .page-detail .ems-prd-zoom-wrp li:eq(0)', 'type': 'after' },
@@ -1601,6 +1768,7 @@ var bdy = $('body'),
 		init: function(){
 			var _t = this;
 				_t.append.init();
+				_t.form.init();
 		}	
 	},
 	plugin = {
@@ -1678,7 +1846,7 @@ var bdy = $('body'),
 			}
 		},
 		customDropDown: {
-			cls: { active: 'active-dropDown-plugin' },			
+			cls: { active: 'active-custom-dropDown-plugin' },			
 			el: '.dropdown',
 			set: function( ID ){
 				var _t = this;
@@ -2408,6 +2576,54 @@ var bdy = $('body'),
 					_t.addEvent();
 			}
 		},
+		cart: {
+			cls: { currencyPp: 'currency-popup-ready', costsPp: 'costs-popup-ready' },
+			el: { wrp: '.page-cart', currencyBtn: '.ems-other-currency a', currencyCloseBtn: '.popup-default-currents .btn-popup-close, .vail-currents', costsBtn: '.ems-page-default-cargo a', costsCloseBtn: '.popup-default-costs .btn-popup-close, .vail-costs' },
+			addEvent: function(){
+				var _t = this;
+				
+				$( _t.el.currencyBtn )
+				.bind('click', function(){
+					if( bdy.hasClass( _t.cls['currencyPp'] ) )
+						bdy.removeClass( _t.cls['currencyPp'] );
+					else	
+						bdy.addClass( _t.cls['currencyPp'] );
+				});
+				$( _t.el.currencyCloseBtn )
+				.bind('click', function(){
+					bdy.removeClass( _t.cls['currencyPp'] );
+				});
+				
+				$( _t.el.costsBtn )
+				.bind('click', function(){
+					if( bdy.hasClass( _t.cls['costsPp'] ) )
+						bdy.removeClass( _t.cls['costsPp'] );
+					else	
+						bdy.addClass( _t.cls['costsPp'] );
+				});
+				$( _t.el.costsCloseBtn )
+				.bind('click', function(){
+					bdy.removeClass( _t.cls['costsPp'] );
+				});
+			},
+			init: function(){
+				var _t = this;
+				if( uty.detectEl( $( _t.el.wrp ) ) )
+					_t.addEvent();
+			}
+		},	
+		lookbook: {
+			cls: {  },
+			el: { wrp: '.page-cart' },
+			addEvent: function(){
+				
+			},
+			init: function(){
+				var _t = this;
+				if( uty.detectEl( $( _t.el.wrp ) ) )
+					_t.addEvent();
+			}
+		},	
 		destroy: function( o ){
 			var _t = this, typ = o['type'] || '';
 			if( typ == 'pc' ){
@@ -2429,6 +2645,7 @@ var bdy = $('body'),
 				_t.delivery.init();
 				_t.detail.init();
 				_t.login.init();
+				_t.cart.init();
 		}
 	},
 	resetDom = {
