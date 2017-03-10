@@ -323,14 +323,19 @@
                         font-size: 30px;
                         &:before{ font-size: 30px; }
                      }
+                     .icon-ico_slide-left{
+                         font-size: 13px;
+                         &:before{ font-size: 13px; }
+                     }
                 }
             }
-            .mobile-logo{
+            .mobile-logo, .mobile-title{
                 width: auto;
                 text-align: center;
                 a{
                     img{ max-width: 150px; }
                 }
+                span{ font-family:$fB; font-size: 15px; letter-spacing:2px; }
             }
             .mobile-search {
                 width: 30px;
@@ -338,7 +343,7 @@
                 a {
                     .icon-ico_search{
                         font-size: 22px;
-                        &:before{ font-size: 22px; }
+                        &:before{ font-size: 22px; font-weight: bold; }
                     }
                 }
             }
@@ -348,9 +353,18 @@
                 a {
                     .icon-ico_mini-cart{
                         font-size: 22px;
-                        &:before{ font-size: 22px; }
+                        &:before{ font-size: 22px; font-weight: bold; }
                     }
                 }
+            }
+        }
+        &-landing{
+            background:#f0f0f0;
+            .ems-smart-header-inner{
+                background:#f0f0f0;
+                padding-top: 17px;
+                padding-bottom: 17px;
+                z-index: 21;
             }
         }
     }
@@ -360,7 +374,6 @@
         min-height: auto;
         &-inner {
             .ems-row.ems-row-1{
-
                 .ems-col-1{ display: none; }
                 .ems-col-2{
                     float: none;
@@ -437,8 +450,46 @@
                 }
             }
         }
+        /*Homeworks header*/
+        &-homeworks{
+            .ems-col.ems-col-2{ display: none; }
+            .site-header-inner{
+                .ems-row.ems-row-1{
+                    z-index: inherit;
+                    .ems-col.ems-col-1{
+                        float: none;
+                        margin: 0;
+                        padding: 0;
+                        text-align: inherit;
+                        position: fixed;
+                        bottom: -100%;
+                        left: 0;
+                        z-index: 25;
+                        width: 100%;
+                        height: 100%;
+                        background: #fff;
+                        display: block;
+                        @include transition(bottom .2s ease);
+                    }
+                }
+                .ems-row.ems-row-3{
+                    position: inherit;
+                    z-index: 20;
+                    top: inherit;
+                    left: inherit;
+                    will-change: inherit;
+                    transition: none;
+                    .mobile-menu-top, .mobile-element{ display: none; }
+                }
+            }
+            .nav-main{
+                position: inherit;
+                height: auto;
+                overflow: visible;
+            }
+        }
     }
-
+    
     /*Homeworks header css*/
     .back-to-site{
         display: none;
@@ -593,4 +644,14 @@
             }
         }
     }
+    /*Product list landing page menu static*/
+    body.page-list-lp.mobi-menu-ready {
+        overflow: inherit;
+    }
+    body.page-list-lp {
+        .site-header.fixed-header{
+            .site-header-wrapper{ position: inherit; top: inherit; padding: 0; }
+        }
+    }
+
 }

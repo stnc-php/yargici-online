@@ -499,6 +499,98 @@
             }
         }
     }
+    /*Landing page*/
+    &-landing-page{
+        margin-top: 25px;
+        
+        /*Landing page layuot*/
+        .ems-col-1 { float: none; width: 100%; padding: 0; }
+        .ems-col-2{ width: 100%; padding: 0; max-width: 1600px; }
+        .title-lp{ padding:20px 50px 50px 50px; font-family:$fD; font-size: 18px; letter-spacing:2px; }
+
+        /*Landing page product list*/
+        .ems-prd { width: 33.333%; }
+        .ems-prd-inner:before{ display: none; }
+        .ems-prd-image a,
+        .ems-prd-image img { max-width: 300px; }
+
+        /*Landing page banner*/
+        .brn-box {
+            &-landing-page{
+                padding: 0 25px;
+                .left{ width: 47%; }
+                .right{ width: 53%; }
+                .bnr-box-inner{
+                    position: relative;
+                    > a{ display: block; }
+                    .bnr-box-txt{
+                        padding: 10px;
+                        width: 50%;
+                        margin: 0 auto;
+                        left: 0;
+                        right: 0;
+                        h3, h2{ font-size: 35px; }
+                        h3{ font-family:$fB; letter-spacing:3px; }
+                        h2{ font-family:$dD; }
+                        p{ line-height: 24px; margin: 3px 0; }
+                        .prd-price-wrap{
+                            padding-top:10px;
+                            padding-bottom: 10px; 
+                            > span{ font-family:$fB; font-size: 15px; }
+                            .penny{ display: inline-block; }
+                        }
+                        .btn-link{
+                            margin-top: 10px;
+                            font-size: 14px;
+                            letter-spacing: 2px;
+                            text-decoration: none;
+                            padding: 10px 0;
+                            .icon-ico_arw-fill-right{
+                                margin-left: 10px;
+                                position: relative;
+                                top:-1px; 
+                                font-size:9px; 
+                                &:before{ font-size:9px; }
+                            }
+                            &:before{
+                                content:'';
+                                width: 0;
+                                height: 2px;
+                                background:#fff;
+                                position: absolute;
+                                bottom: 5px;
+                                left: 0;
+                                @include transition(all .2s ease);
+                            }
+                            &:hover{
+                                &:before{ width: 100%; }
+                            }
+                        }
+                        &.light *{
+                            color:#fff;
+                        }
+                        &.dark *{
+                            color:$colorDefault;
+                        }
+                    }
+                    .bnr-box-txt.dark{
+                        .btn-link:before { background:$colorDefault; }
+                    }
+                    &.horizontal{
+                        text-align: left;
+                        .bnr-box-img {
+                            width: 50%;
+                        }
+                        .bnr-box-txt{
+                            padding-left: 40px;
+                            left: inherit;
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+        }
+    }   
 }
 
 /* Product list view */
@@ -530,6 +622,18 @@ body.quad{
             .ems-prd-list{
                 &-listview{
                     .ems-prd-list-view { display: none; }
+                }
+            }
+        }
+        /*Landing page*/
+        &-landing-page{
+            .brn-box {
+                &-landing-page{
+                    padding: 0;
+                    .bnr-box-inner{
+                        padding: 20px;
+                        .bnr-box-txt { width: 100%; padding: 10px 25px; }
+                    }
                 }
             }
         }
@@ -610,7 +714,7 @@ body.quad{
        margin: 0;
         .ems-col-1{
             position: fixed;
-            bottom: -100%;;
+            bottom: -100%;
             left: 0;
             width: 100%;
             height:calc(100% - 50%);
@@ -640,6 +744,66 @@ body.quad{
                 }
             }
         }
+        /*Landing page*/
+        &-landing-page{
+            padding-bottom:50px;
+            .ems-col-1{
+                position: inherit;
+                bottom: inherit;
+                left: inherit;
+                height:auto;
+                padding: 0;
+                z-index: inherit;
+                transition: none;
+                will-change: inherit;
+                padding: 0;
+            }
+            .title-lp{
+                border-top:1px solid $borderColor; 
+                padding-top: 40px;
+                padding-left: 90px;
+                padding-right: 90px;
+                margin: 0 20px;
+            }
+            .brn-box {
+                &-landing-page{
+                    .bnr-box-wrp {
+                        &.left, &.right { width: 100%; float: none; }
+                    }
+                    .bnr-box-img { height: 370px; }
+                    .bnr-box-inner{
+                        padding: 0;
+                        .bnr-box-txt {
+                            padding: 15px 20px 30px 20px;
+                            position: inherit;
+                            top: inherit;
+                            left: inherit;
+                            right: inherit;
+                            transform: none;
+                            h3,h2{
+                                font-size: 24px;
+                                letter-spacing: 2px;
+                                br{ display: none; }
+                            }
+                            h3{ padding-bottom:5px; }
+                            &.light *, &.dark *{ color:$lines; }
+                            .btn-link:before { background:$lines; }
+                        }
+                        &.horizontal{
+                            display: none;
+                            .bnr-box-img { width: 100%; }
+                            .bnr-box-txt{ padding-left: 20px; text-align: center; }
+                        }
+                    }
+                }
+            }
+            .mobile-element-filter{ display: none; }
+        }
+   }
+
+    /*Product list landing page*/
+    body.page-list-lp{
+        .mobile-element-bottom-menu { display: none; }
    }
 
    .ems-paging{

@@ -1449,7 +1449,7 @@
                             transform: none;
                             .bnr-box-tt1{ font-family:$dD; font-size: 24px; }
                             .bnr-box-tt2{ font-family:$fB; font-size: 20px; }
-                            .bnr-box-link{ text-align:center; font-family:$fB; margin-top:0; }
+                            .bnr-box-link{ text-align:center; font-family:$fB; margin-top:0; float: none; }
                         }
                     }
                 }
@@ -1468,7 +1468,7 @@
                         padding:10px 20px 30px 20px;
                         .bnr-box-tt2{ font-size:24px;letter-spacing: 1.5px; }
                         .bnr-box-tt1{ font-size:20px; letter-spacing: 2px; }
-                        .bnr-box-link{ text-align:center; font-family:$fB; margin-top:0; }
+                        .bnr-box-link{ text-align:center; font-family:$fB; margin-top:0; float: none; }
                     }
                 }
                 .grid-template-column.first{

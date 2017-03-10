@@ -235,8 +235,15 @@ body.search-keyup{
                     .prd{
                         width: 100%;
                         display: block;
-                        > ul { padding:10px 20px 20px; position: absolute; width: 100%; height:calc(100% - 90px);
-                overflow: auto; max-height: inherit; }
+                        > ul {
+                            padding:10px 20px 20px;
+                            position: fixed;
+                            width: 100%;
+                            height:calc(100% - 10px);
+                            overflow: auto;
+                            max-height: 100%;
+                            max-height: 100%;
+                        }
                         > ul > li { margin: 0; }
                         > ul > li > a { border-bottom: 1px solid $borderColor; padding: 20px 0; display: block; }
                         > ul > li > a img { display: none; }
@@ -270,13 +277,29 @@ body.search-keyup{
                 right: inherit;
                 border-bottom:none;
             }
-            .ems-search-suggestion{ width: 100%; }
+            .ems-search-suggestion{ width: 100% !important; }
         }
     }
     body.mobi-search-ready {
         overflow: hidden;
         .site-header-inner {
             .ems-row.ems-row-1 .ems-col-2{ bottom: 0; }
+        }
+    }
+    body.page-list-lp.search-focused {
+        .mod-mini-search {
+            &-body{
+                width: 100%;
+            }
+        }
+    }
+    /*Landing page*/
+    body.page-list-lp.mobi-search-ready{
+        .ems-smart-header-landing { display: none; }
+        .site-header {
+            .site-header-inner .ems-row.ems-row-1 {
+                .ems-col-1{ bottom: 0; }
+            }
         }
     }
     .vail-search { display: none !important; }
