@@ -40,8 +40,96 @@
     </div>
     <!--Double banner type-2-->
 
-    <!--Quad banner-->
+    
     <div class="ems-row ems-row-2">
+        <div class="grid-template grid-template-type-1 grid-template-type-2">
+            <div class="grid-template-inline clearfix">
+                <div class="grid-template-column left">
+                    <span class="full first">
+                    <!--Image-->
+                    <div class="grid-template-img">
+                        <div class="grid-template-cover lazy" data-original="/lab/projects/yargici/upload/banners/home-page/715x900/715x900-1.jpg">
+                        <img src="/lab/projects/yargici/images/frontend/placeholder/715x900.png" />
+                        </div>
+                    </div>
+                    <!--Image-->
+                    
+                    <!--Text-->
+                    <div class="grid-template-text align-center">
+                        <h1 class="bnr-box-tt1">% 100 DERİ</h1>
+                        <span class="bnr-box-tt2">SANDALETLERDE YAZ ASALETİ</span>
+                        <a href="javascript:void(0);" class="bnr-box-link">SATIN AL<i class="icon-ico_arw-fill-right"></i></a>
+                    </div>
+                    <!--Text-->
+                    </span>
+
+                    <span class="double last">
+                    <!--Image-->
+                    <div class="grid-template-img">
+                        <div class="grid-template-cover lazy" data-original="/lab/projects/yargici/upload/banners/home-page/450x450/450x450-1.jpg">
+                            <img src="/lab/projects/yargici/images/frontend/placeholder/450x450.png" />
+                        </div>
+                    </div>
+                    <!--Image-->
+
+                    <!--Text-->
+                    <div class="grid-template-text align-center">
+                        <i class="icon-ico_home-works"></i>
+                        <h1 class="bnr-box-tt1">YARGICIHOMEWORKS</h1>
+                        <span class="bnr-box-tt2">YENİ ÜRÜNLER</span>
+                        <a href="javascript:void(0);" class="bnr-box-link">KEŞFET<i class="icon-ico_arw-fill-right"></i></a>
+                    </div>
+                    <!--Text-->
+                    </span>
+
+                </div>
+
+                <div class="grid-template-column right">
+                    
+                    <span class="double first">
+                    <!--Image-->
+                    <div class="grid-template-img">
+                        <div class="grid-template-cover lazy" data-original="/lab/projects/yargici/upload/banners/home-page/625x750/625x750-1.jpg">
+                        <img src="/lab/projects/yargici/images/frontend/placeholder/625x750.png" />
+                        </div>
+                    </div>
+                    <!--Image-->
+
+                    <!--Text-->
+                    <div class="grid-template-text align-center">
+                        <h1 class="bnr-box-tt1">YENİ SEZON KOLEKSİYON</h1>
+                        <span class="bnr-box-tt2">SONBAHAR &amp; KIŞ</span>
+                        <a href="javascript:void(0);" class="bnr-box-link">CEKETLER<i class="icon-ico_arw-fill-right"></i></a>
+                        <br/>
+                        <a href="javascript:void(0);" class="bnr-box-link">AKSESUAR<i class="icon-ico_arw-fill-right"></i></a>
+                    </div>
+                    <!--Text-->
+                    </span>
+
+                    <span class="double last">
+                    <!--Image-->
+                    <div class="grid-template-img">
+                        <div class="grid-template-cover lazy" data-original="/lab/projects/yargici/upload/banners/home-page/350x500/350x500-2.jpg">
+                        <img src="/lab/projects/yargici/images/frontend/placeholder/350x500.png" />
+                        </div>
+                    </div>
+                    <!--Image-->
+
+                        <!--Text-->
+                    <div class="grid-template-text align-center">
+                        <h1 class="bnr-box-tt1">% 50 İNDİRİM</h1>
+                        <span class="bnr-box-tt2">YENİ SEZON ÜRÜNLERDE</span>
+                        <a href="javascript:void(0);" class="bnr-box-link">ALIŞVERİŞE BAŞLA<i class="icon-ico_arw-fill-right"></i></a> 
+                    </div>
+                    <!--Text-->
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Quad banner-->
+    <div class="ems-row ems-row-3">
         <div class="multiple-bnr type-2">
             <div class="multiple-bnr-inner">
                 <ul>
@@ -89,7 +177,7 @@
     <!--Quad banner-->
 
         <!--Main slider-->
-        <div class="ems-row ems-row-3">
+        <div class="ems-row ems-row-4">
             <div class="main-swiper swiper-container">
                 <div class="swiper-header"><span></span></div>
                 <div class="swiper-inner">
@@ -130,7 +218,7 @@
         <!--Main slider-->
 
         <!--Sites Sales Info-->
-        <div class="ems-row ems-row-4">
+        <div class="ems-row ems-row-5">
             <div class="ems-cargo clearfix">
                 <div class="ems-cargo-item">
                     <div class="ems-cargo-icon"><i class="ems-icon safe-icon"></i></div>
@@ -157,7 +245,7 @@
         <!--Sites Sales Info-->
 
         <!--Insta Feed-->
-        <div class="ems-row ems-row-4">
+        <div class="ems-row ems-row-6">
             <div class="insta-feed clearfix">
             <span class="insta-header"><a target="_blank" href="https://www.instagram.com/yargici_tr/">yargici_tr<i class="icon-ico_instgrm"></i>Son Paylaşımlarımız</a></span>
            <ul>

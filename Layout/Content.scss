@@ -646,6 +646,14 @@
         max-width: 1250px;
         margin: 0 auto;
         margin-top:25px;
+        .bnr-box-txt{
+            .icon-ico_home-works{
+                padding-bottom: 5px;
+                display: inline-block;
+                font-size: 55px;
+                &:before{ font-size: 55px; }
+            }
+        }
     }
     &-type-4 {
         max-width: 1000px;
@@ -831,7 +839,12 @@
                     }
                 }
             }
-            &.dark{ color: $lines; }
+            &.dark{
+                color: $lines;
+                .btn-link{
+                    &:before{ background: $lines; } 
+                }
+            }
             h1, .prd-price-wrap{
                 font-family: $fB;
                 letter-spacing: 2px;
@@ -860,6 +873,19 @@
                     color: $lines;
                     position: relative;
                     top: -1px;
+                }
+                &:before{
+                    content:'';
+                    background:#fff; 
+                    height: 2px;
+                    width: 0;
+                    @include transition(all .2s ease);
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                }
+                &:hover{
+                    &:before{ width: 100%; }
                 }
             }
         }
@@ -1318,7 +1344,10 @@
                 padding-bottom: 30px;
                 h2{ font-size: 24px; }
                 h3{ font-size: 20px; }
-                .btn-link { margin-top: 0; }
+                .btn-link {
+                    margin-top: 0;
+                    &:before{ background: $lines; }
+                }
                 &.light{
                     color: $lines;
                     .btn-link {

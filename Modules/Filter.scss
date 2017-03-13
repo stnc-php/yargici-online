@@ -58,7 +58,7 @@ small.selection {
                                 font-family: $fB;
                             }
                             i{
-                                background: #ccc;
+                                background: #5c5c5c;
                             }
                         }
                     }
@@ -84,17 +84,20 @@ small.selection {
                                 padding: 10px 0;
                                 display: inline-block;
                                 vertical-align: middle;
+                                @include transition(all .2s ease);
                             }
                             i{
                                 display: none;
                             }
                             &:hover{
-                                background: #ccc;
+                                background: #5c5c5c;
+                                span{ color: #fff; }
                             }
                         }
                         &.selected{
                             > a{
-                                background: #ccc;
+                                background: #5c5c5c;
+                                span{ color: #fff; }
                             }
                         }
                     }

@@ -1,6 +1,6 @@
 .site-header {
     position: relative;
-    min-height: 156px;
+    min-height: 160px;
     &-wrapper {
         display:inline-block;
         width:100%;
@@ -97,12 +97,6 @@
     .mobile-menu-top{
         display: none;
     }
-    &.fixed-header{
-        .site-header-wrapper {
-            position: fixed;
-            top: 0;
-        }
-    }
     /*Homeworks header*/
     &-homeworks{
        .site-header-inner{
@@ -146,17 +140,18 @@
 /*Header categorie Menu*/
 .nav-main {
     width: 100%;
-    max-width: 1200px;
     margin: 0 auto;
     .cat-menu-holder {
-        > ul{ display: table; width: 100%; }
-        > ul > li{ display: table-cell; vertical-align: middle; text-align: center; position: relative; }
-        > ul > li > a{ display: inline-block; letter-spacing: 2px; color: #5c5c5c; padding: 20px 5px; position: relative; font-size: 14px; }
+        > ul{ display:block; width: 100%; max-width: 1150px; text-align: center; margin: 0 auto; }
+        > ul > li{ display:inline-block; vertical-align: middle; text-align: center; position: relative; }
+        > ul > li > a{ display: inline-block; letter-spacing: 2px; color: #5c5c5c; padding: 20px 15px; position: relative; font-size: 14px; overflow: hidden; }
+        > ul > li:after{ background:$text; content:''; width:100%; height:2px; position: absolute; bottom:0; left:0; opacity: 0; visibility: hidden;}
         > ul > li > a .icon-ico_home-works{ margin-right: 5px; display: inline-block; vertical-align: middle; position: relative; top: -2px; }
         > ul > li > a .icon-ico_home-works, > ul > li > a .icon-ico_home-works:before{ font-size:20px; }
         > ul > li > a.homeworks{padding-top: 18px; padding-bottom: 18px; color:$title; }
         > ul > li > a.brush-font { font-family:'brush'; font-size: 26px; color:#314181; padding-top: 15px; padding-bottom: 15px; line-height: 1; }
         > ul > li.selected .cat-menu{ display: block; }
+        > ul > li.selected:after{ opacity: 1; visibility: visible; }
     }
     .cat-menu {
         position:absolute;
@@ -241,6 +236,8 @@
     /*Header animate*/
     .site-header {
         &-wrapper{
+            position: fixed;
+            top: 0;
             box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
             -webkit-box-shadow:0 5px 5px 0 rgba(0, 0, 0, 0.2);
             -moz-box-shadow:0 5px 5px 0 rgba(0, 0, 0, 0.2);
@@ -262,8 +259,8 @@
                 cursor:pointer;
                 margin-top: -8px;
                 .icon-ico_arw-empty-top{
-                    font-size: 16px;
-                    &:before{ font-size: 16px; }
+                    font-size: 20px;
+                    &:before{ font-size: 20px; }
                 }
             }
         }
@@ -280,13 +277,14 @@
         .site-header {
             &-wrapper{
                 padding-left: 10px;
-                padding-right: 20px;
+                padding-right: 10px;
             }
              .mobile-element{
-                 &-scroll{ right: 5px; }
+                 &-scroll{ right: 0; }
              }
         }
     }
+    .nav-main .cat-menu-holder > ul > li > a{ padding-left: 5px; padding-right: 5px; }
 }
 
 /*Mobile 960px*/
@@ -552,6 +550,7 @@
                             }
                         }
                     }
+                    &:after{ display: none; }
                 }
             }
         }

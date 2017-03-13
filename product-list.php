@@ -554,6 +554,17 @@
                             </div>
                             </li>
                             <!--Products repeat-->
+                            
+                            <!--Products repeat-->
+                            <li class="ems-prd ems-prd-alternate ems-prd-alternate-2 lazy" data-original="/lab/projects/yargici/upload/products/product-790x480.jpg">
+                            <a href="javascript:void(0);" alt="YAKA DETAYLI KOLSUZ BLUZ" title="YAKA DETAYLI KOLSUZ BLUZ">
+                                <div class="ems-prd-image">
+                                    <img src="/lab/projects/yargici/images/frontend/placeholder/790x480.png" alt="YAKA DETAYLI KOLSUZ BLUZ" title="YAKA DETAYLI KOLSUZ BLUZ">
+                                </div>
+                                </a>
+                            </li>
+                            <!--Products repeat-->
+
                             <!--Products repeat-->
                             <li class="ems-prd">
                                 <div class="ems-prd-inner">

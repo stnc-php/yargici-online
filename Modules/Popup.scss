@@ -289,31 +289,6 @@
             display: none;
         }
     }
-    /*lookbook detail popup*/
-    &-lookbook{
-        max-width: 950px;
-        z-index: 21;
-        top: 50%;
-        @include setTransform(translateY(-50%));
-        .ems-prd-detail-inner{
-            padding: 50px 60px;
-            max-width: 950px;
-            .ems-prd-icons{ display: none; }
-            .ems-prd-zoom-left{ position: absolute; top: 0; }
-        }
-        .page-detail{
-            .ems-row-2{
-                .inner-row-1{
-                    width: calc(100% - 400px);
-                }
-                .inner-row-2{
-                    width: 400px;
-                    padding-top: 0;
-                    padding-left: 20px;
-                }
-            }
-        }
-    }
     /*Popup new address*/
     &-new-address{
         max-width: 700px;
@@ -468,6 +443,36 @@
                     }
                 }
             }
+        }
+    }
+    &-simple-minus-popup{
+        max-width: 950px;
+        z-index: 31;
+        top: 50%;
+        @include setTransform(translateY(-50%));
+        .popup-default-header { border: none; }
+        .popup-default-header .btn-popup-close{ right: 0; left: 0; margin: 0 auto; }
+        .popup-default-header .btn-popup-close .icon-ico_close:before{ color:#757674; }
+        .frm-content{ height: 500px; }
+    }
+}
+
+/*Popup lookbook*/
+body.simple-popup-ready{
+    .popup-default-simple-minus-popup{ opacity: 1; display: block; }
+    .vail-simple-minus-popup{ visibility: visible; opacity: .9; z-index: 30; }
+}
+
+/*Mobile 960px*/
+@media screen and (max-width: 960px) {
+    body.quick-review-popup.simple-popup-ready { overflow: hidden }
+    .popup-default {
+        &.quick-review-popup{
+            height: 100%;
+            top: 0;
+            max-width: 100%;
+            transform: none;
+            .frm-content{ position: absolute; top: 80px; left: 0; width: 100%; height:calc(100% - 80px); }
         }
     }
 }

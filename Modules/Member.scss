@@ -449,6 +449,13 @@ body.member-login-ready {
             }
         }
     }
+    .ems-page-member-return-list,
+    .ems-page-member-return-last,
+    .ems-page-member-return-detail{
+        .content-cover{
+            .content-cover-text{ max-width: 350px; }
+        }
+    }
 
     /*Order detail*/
     .ems-page-member-order-detail {

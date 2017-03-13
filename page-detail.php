@@ -362,9 +362,11 @@
                                 </div>
                                 <!--icon-->
                                 <div class="ems-prd-zoom-inner">
-                                    <div class="ems-prd-zoom-left">
-                                        <div class="ems-prd-zoom-thumb">
-                                            <ul></ul>
+                                    <div class="ems-prd-zoom-left-wrapper">
+                                        <div class="ems-prd-zoom-left">
+                                            <div class="ems-prd-zoom-thumb">
+                                                <ul></ul>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="ems-prd-zoom-wrp">

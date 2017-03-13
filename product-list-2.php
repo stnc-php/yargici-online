@@ -479,13 +479,11 @@
                             </li>
                             <!--Products repeat-->
                             <!--Products repeat-->
-                            <li class="ems-prd ems-prd-alternate-1">
-                                <div class="ems-prd-inner">
-                                    <div class="ems-prd-image">
-                                        <a href="javascript:void(0);" alt="YAKA DETAYLI KOLSUZ BLUZ" title="YAKA DETAYLI KOLSUZ BLUZ">
-                                            <img class="lazy" src="/lab/projects/yargici/images/frontend/placeholder/390x480.png" data-original="/lab/projects/yargici/upload/products/product-390x480.jpg" alt="YAKA DETAYLI KOLSUZ BLUZ" title="YAKA DETAYLI KOLSUZ BLUZ" />
-                                        </a>
-                                    </div>
+                            <li class="ems-prd ems-prd-alternate ems-prd-alternate-1 lazy" data-original="/lab/projects/yargici/upload/products/product-390x480.jpg">
+                                <div class="ems-prd-image">
+                                    <a href="javascript:void(0);" alt="YAKA DETAYLI KOLSUZ BLUZ" title="YAKA DETAYLI KOLSUZ BLUZ">
+                                        <img class="lazy" src="/lab/projects/yargici/images/frontend/placeholder/390x480.png" alt="YAKA DETAYLI KOLSUZ BLUZ" title="YAKA DETAYLI KOLSUZ BLUZ" />
+                                    </a>
                                 </div>
                             </li>
                             <!--Products repeat-->

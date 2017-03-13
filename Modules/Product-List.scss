@@ -389,6 +389,26 @@
         .ems-prd-icons-stock{ z-index:2; }
         .ems-prd-icons-discount{ z-index:3; }
     }
+    &-alternate{
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        background-position:center center !important;
+        position: relative;
+        > a{
+            position: absolute;
+            top:0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &-alternate-2{
+        width: 50%;
+        .ems-prd-image a, .ems-prd-image img{ max-width: 790px; }
+        .ems-prd-inner{
+            &:before{ display: none; }
+        }
+     }
 }
 .ems-prd:hover{
     .ems-prd-exclusive {
@@ -602,6 +622,7 @@ body.triple {
 body.quad{
     .ems-prd-list .ems-prd{
         width: 25%;
+         &-alternate-2{ width: 50%; }
     }
 }
 
@@ -645,6 +666,7 @@ body.quad{
 
    /*Page list img*/ 
    .ems-prd-list-img {
+       padding-bottom: 40px;
        &-cover{
            height: 280px;
            img { display: none; }

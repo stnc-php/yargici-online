@@ -63,49 +63,49 @@
     
     <!--Grid Column Template-->
     <div class="ems-row ems-row-2">
-    <div class="grid-template grid-template-type-1">
-        <div class="grid-template-inline clearfix">
-            <div class="grid-template-column first dark">
-                <a href="javascript:void(0);" class="full">
-                <!--Image-->
-                <div class="grid-template-img">
-                    <div class="grid-template-cover lazy" data-original="/lab/projects/yargici/upload/banners/home-page/450x680/450x680-1.jpg">
-                        <img src="/lab/projects/yargici/images/frontend/placeholder/450x680.png" />
+        <div class="grid-template grid-template-type-1">
+            <div class="grid-template-inline clearfix">
+                <div class="grid-template-column first middle dark">
+                    <span class="full">
+                    <!--Image-->
+                    <div class="grid-template-img">
+                        <div class="grid-template-cover lazy" data-original="/lab/projects/yargici/upload/banners/home-page/450x680/450x680-1.jpg">
+                            <img src="/lab/projects/yargici/images/frontend/placeholder/450x680.png" />
+                        </div>
                     </div>
-                </div>
-                <!--Image-->
+                    <!--Image-->
 
-                <!--Text-->
-                <div class="grid-template-text">
-                    <h1 class="bnr-box-tt1">% 100 DERİ</h1>
-                    <span class="bnr-box-tt2">BOTLARDA BORDO ASİLLİĞİ</span>
-                    <span class="bnr-box-link">SATIN AL<i class="icon-ico_arw-fill-right"></i></span>
-                </div>
-                <!--Text-->
-                </a>
-            </div>
-
-            <div class="grid-template-column last">
-                <a href="javascript:void(0);" class="double first">
-                <!--Image-->
-                <div class="grid-template-img">
-                    <div class="grid-template-cover lazy" data-original="/lab/projects/yargici/upload/banners/home-page/750x590/750x590-3.jpg">
-                        <img src="/lab/projects/yargici/images/frontend/placeholder/750x590.png" />
+                    <!--Text-->
+                    <div class="grid-template-text">
+                        <h1 class="bnr-box-tt1">% 100 DERİ</h1>
+                        <span class="bnr-box-tt2">BOTLARDA BORDO ASİLLİĞİ</span>
+                        <a href="javascript:void(0);" class="bnr-box-link">SATIN AL<i class="icon-ico_arw-fill-right"></i></a>
                     </div>
+                    <!--Text-->
+                    </span>
                 </div>
-                <!--Image-->
-                
-                <!--Text-->
-                <div class="grid-template-text align-center">
-                    <span class="bnr-box-tt2">YAŞAM</span>
-                    <h1 class="bnr-box-tt1">YAŞAM ALANLARINIZDA IŞIL IŞIL KÖŞELER OLUŞTURUN</h1>
-                    <span class="bnr-box-link">ALIŞVERİŞE BAŞLA<i class="icon-ico_arw-fill-right"></i></span>
+
+                <div class="grid-template-column last">
+                    <span class="double first">
+                    <!--Image-->
+                    <div class="grid-template-img">
+                        <div class="grid-template-cover lazy" data-original="/lab/projects/yargici/upload/banners/home-page/750x590/750x590-3.jpg">
+                            <img src="/lab/projects/yargici/images/frontend/placeholder/750x590.png" />
+                        </div>
+                    </div>
+                    <!--Image-->
+                    
+                    <!--Text-->
+                    <div class="grid-template-text align-center">
+                        <span class="bnr-box-tt2">YAŞAM</span>
+                        <h1 class="bnr-box-tt1">YAŞAM ALANLARINIZDA IŞIL IŞIL KÖŞELER OLUŞTURUN</h1>
+                        <a href="javascript:void(0);" class="bnr-box-link">ALIŞVERİŞE BAŞLA<i class="icon-ico_arw-fill-right"></i></a>
+                    </div>
+                    <!--Text-->
+                    </span>
                 </div>
-                <!--Text-->
-                </a>
             </div>
         </div>
-    </div>
     </div>
     <!--Grid Column Template-->
 

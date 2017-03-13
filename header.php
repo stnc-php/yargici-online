@@ -131,7 +131,7 @@
                         <div class="mod-mini-cart-inner">
                             <div class="mod-mini-cart-header">
                                 <div class="ems-cart-info">
-                                    <div class="ems-cart-basket"><i class="icon-ico_mini-cart"></i><span>SEPETİM</span></div>
+                                    <div class="ems-cart-basket"><i class="icon-ico_mini-cart"></i></div>
                                     <div class="ems-cart-piece"><span class="prd-piece">1</span></div>
                                 </div>
                             </div>
